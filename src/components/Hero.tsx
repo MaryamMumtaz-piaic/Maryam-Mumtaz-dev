@@ -221,7 +221,7 @@ export default function Hero() {
                                 <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 via-blue-400/20 to-blue-500/20 rounded-3xl blur-2xl opacity-40" />
                                 <div className="relative w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-[#0a0a0a]">
                                     <Image
-                                        src="/images/profile.png"
+                                        src="/images/hero.png"
                                         alt="Maryam Mumtaz"
                                         fill
                                         className="object-cover transition-transform duration-700 hover:scale-105"

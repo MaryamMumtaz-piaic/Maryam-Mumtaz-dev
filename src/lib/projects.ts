@@ -6,7 +6,7 @@ export const projectsData = [
         tech: ["Next.js", "TypeScript", "Sanity CMS", "Stripe"],
         links: { github: "https://github.com/MaryamCoader", live: "https://e-commerce-website-liart-two.vercel.app/" },
         image: "/images/e-commerce.PNG",
-        color: "from-purple-500 to-pink-500"
+        color: "from-cyan-500 to-blue-600"
     },
     {
         title: "AI Spec-Driven Todo",
@@ -15,7 +15,7 @@ export const projectsData = [
         tech: ["OpenAI", "Next.js", "Dapr", "Kubernetes"],
         links: { github: "https://github.com/MaryamCoader", live: "https://github.com/MaryamCoader" },
         image: "/images/Todo-app.png",
-        color: "from-cyan-500 to-blue-600"
+        color: "from-blue-600 to-cyan-500"
     },
     {
         title: "LearnFlow AI Platform",
@@ -24,7 +24,7 @@ export const projectsData = [
         tech: ["Kafka", "Next.js 15", "Goose AI", "Dapr"],
         links: { github: "https://github.com/MaryamCoader", live: "https://github.com/MaryamCoader" },
         image: "/images/learnflow-app.PNG",
-        color: "from-blue-600 to-purple-600"
+        color: "from-cyan-600 to-blue-700"
     },
     {
         title: "Physical AI Textbook",
@@ -33,7 +33,7 @@ export const projectsData = [
         tech: ["Docusaurus", "RAG", "Python", "Cloud Native"],
         links: { github: "https://github.com/MaryamCoader", live: "https://github.com/MaryamCoader" },
         image: "/images/physical Ai.png",
-        color: "from-emerald-500 to-teal-600"
+        color: "from-blue-500 to-cyan-600"
     },
     {
         title: "AI Intelligence Agent",
@@ -42,7 +42,7 @@ export const projectsData = [
         tech: ["MCP", "OpenAI SDK", "LangChain", "n8n"],
         links: { github: "https://github.com/MaryamCoader", live: "https://github.com/MaryamCoader" },
         image: "/images/hero.jpg",
-        color: "from-orange-500 to-rose-600"
+        color: "from-cyan-400 to-blue-500"
     },
     {
         title: "Inventory Enterprise",
@@ -51,6 +51,6 @@ export const projectsData = [
         tech: ["PostgreSQL", "React", "Node.js", "Prisma"],
         links: { github: "https://github.com/MaryamCoader", live: "https://github.com/MaryamCoader" },
         image: "/images/hero.jpg",
-        color: "from-slate-600 to-slate-900"
+        color: "from-slate-700 to-slate-900"
     }
 ];

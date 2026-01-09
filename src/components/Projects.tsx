@@ -31,7 +31,7 @@ export default function Projects() {
                             Portfolio
                         </span>
                         <h2 className="relative text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
-                            Featured <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 italic font-light">Work</span>
+                            Featured <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-600 italic font-light">Work</span>
                         </h2>
                     </div>
                     <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto font-medium tracking-wide">

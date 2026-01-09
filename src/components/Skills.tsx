@@ -184,7 +184,7 @@ export default function Skills() {
                                                     whileInView={{ width: `${s.level}%` }}
                                                     viewport={{ once: true }}
                                                     transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
-                                                    className="h-full bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-400"
+                                                    className="h-full bg-gradient-to-r from-cyan-500 to-blue-500"
                                                 />
                                             </div>
                                         </div>
@@ -208,8 +208,8 @@ export default function Skills() {
 
                                 {skill.badge && (
                                     <div className="mt-6 pt-6 border-t border-white/10">
-                                        <span className="text-xs font-bold text-purple-400 flex items-center gap-2">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse" />
+                                        <span className="text-xs font-bold text-cyan-400 flex items-center gap-2">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
                                             {skill.badge}
                                         </span>
                                     </div>

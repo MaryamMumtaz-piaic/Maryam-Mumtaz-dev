@@ -41,7 +41,7 @@ export default function Education() {
             {/* Background Orbs for Consistency */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-[20%] right-[-5%] w-[400px] h-[400px] bg-cyan-500/5 rounded-full blur-[100px]" />
-                <div className="absolute bottom-[20%] left-[-5%] w-[400px] h-[400px] bg-purple-500/5 rounded-full blur-[100px]" />
+                <div className="absolute bottom-[20%] left-[-5%] w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-[100px]" />
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6">
@@ -56,7 +56,7 @@ export default function Education() {
                             Academics
                         </span>
                         <h2 className="relative text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
-                            Learning <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 italic font-light">Foundation</span>
+                            Learning <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-600 italic font-light">Foundation</span>
                         </h2>
                     </div>
                     <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto font-medium tracking-wide">
@@ -66,7 +66,7 @@ export default function Education() {
 
                 <div className="relative max-w-4xl mx-auto">
                     {/* Vertical Line */}
-                    <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-500 via-purple-500 to-transparent transform md:-translate-x-1/2 opacity-20" />
+                    <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-cyan-500 via-blue-500 to-transparent transform md:-translate-x-1/2 opacity-20" />
 
                     {educationData.map((edu, idx) => (
                         <motion.div

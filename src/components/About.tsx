@@ -14,7 +14,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 export default function About() {
-    const [activeTab, setActiveTab] = useState("ai-journey");
+    const [activeTab, setActiveTab] = useState("story");
 
     const tabs = [
         { id: "story", label: "My Story", icon: <User size={20} /> },
@@ -54,19 +54,19 @@ export default function About() {
                     </p>
                 </motion.div>
 
-                {/* Main Content - Equal Height Columns */}
-                <div className="flex flex-col lg:flex-row gap-8 items-stretch">
-                    {/* Left: Profile Card - Larger Fixed Width */}
+                {/* Main Content - Improved Sticky Behavior */}
+                <div className="flex flex-col lg:flex-row gap-8 items-start">
+                    {/* Left: Profile Card - Larger Fixed Width & Sticky */}
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="w-full lg:w-[320px] flex-shrink-0"
+                        className="w-full lg:w-[320px] flex-shrink-0 lg:sticky lg:top-28 transition-all duration-300"
                     >
-                        <div className="bg-white/5 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 shadow-2xl h-full flex flex-col">
+                        <div className="bg-white/5 backdrop-blur-md rounded-2xl overflow-hidden border border-white/10 shadow-2xl flex flex-col">
                             {/* Header matched with card background - with a slight glow */}
                             <div className="h-32 bg-gradient-to-b from-white/5 to-transparent border-b border-white/10 flex-shrink-0 relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-blue-500/10 to-blue-400/10 blur-xl px-6" />
+                                <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/10 via-blue-500/10 to-cyan-400/10 blur-xl px-6" />
                             </div>
 
                             {/* Profile Image - Super Large */}
@@ -83,8 +83,8 @@ export default function About() {
                                 </div>
                             </div>
 
-                            {/* Profile Info - Grow to fill */}
-                            <div className="px-6 pb-8 text-center flex-grow flex flex-col justify-center">
+                            {/* Profile Info - Simplified Palette */}
+                            <div className="px-6 pb-8 text-center">
                                 <h3 className="text-xl font-bold text-white mb-1">Maryam Mumtaz</h3>
                                 <p className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 text-sm font-black mb-5 uppercase tracking-tighter">
                                     AI Agent Engineer & Full-Stack Developer

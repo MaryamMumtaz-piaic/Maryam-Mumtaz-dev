@@ -28,7 +28,7 @@ export default function HackathonProjects() {
                             HACKATHONS
                         </span>
                         <h2 className="relative text-4xl md:text-6xl font-black text-white uppercase tracking-tight">
-                            Eventon <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 italic font-light">Hackathon Projects</span>
+                            Eventon <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-blue-600 italic font-light">Hackathon Projects</span>
                         </h2>
                     </div>
                     <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto font-medium tracking-wide">
@@ -48,7 +48,7 @@ export default function HackathonProjects() {
                             className="group relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#0a0a0a] via-[#111111] to-[#0a0a0a] border border-slate-800/50 hover:border-cyan-500/50 transition-all duration-500 shadow-2xl h-full flex flex-col"
                         >
                             {/* Animated Glow Effect */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-purple-500/0 group-hover:from-cyan-500/10 group-hover:via-blue-500/10 group-hover:to-purple-500/10 transition-all duration-500 rounded-3xl" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/0 via-blue-500/0 to-transparent group-hover:from-cyan-500/10 group-hover:via-blue-500/10 transition-all duration-500 rounded-3xl" />
 
                             {/* Project Image - Browser Mockup Style */}
                             <div className="relative h-64 w-full overflow-hidden bg-[#050505] flex flex-col group/browser">

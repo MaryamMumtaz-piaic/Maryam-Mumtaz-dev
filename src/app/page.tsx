@@ -4,7 +4,6 @@ import About from "@/components/About";
 import Startup from "@/components/Startup";
 import Hackathons from "@/components/Hackathons";
 import FeaturedProjects from "@/components/FeaturedProjects";
-import Testimonials from "@/components/Testimonials";
 import TechStack from "@/components/TechStack";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
@@ -20,7 +19,6 @@ export default function Home() {
       <Startup />
       <Hackathons />
       <FeaturedProjects />
-      <Testimonials />
       <TechStack />
       <FAQ />
       <Contact />

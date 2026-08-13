@@ -76,7 +76,7 @@ const aiJourney = [
   { year: "2025", event: "Began freelancing as Full-Stack Developer" },
   { year: "2025", event: "Joined PIAIC — Agentic & Robotic AI track" },
   { year: "2026", event: "Founded Marsa Empower — AI-powered platform" },
-  { year: "Now", event: "Building 550+ AI agents & 50+ projects delivered" },
+  { year: "Now", event: "Building agentic AI systems and AI-powered automation" },
 ];
 
 export default function About() {
@@ -134,7 +134,7 @@ export default function About() {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="absolute -bottom-4 -right-4 bg-white px-5 py-3 rounded-2xl shadow-xl shadow-taupe-900/10 border border-taupe-200 z-20"
               >
-                <div className="text-2xl font-bold text-taupe-700">550+</div>
+                <div className="text-2xl font-bold text-taupe-700">100+</div>
                 <div className="text-xs text-taupe-600">AI Agents Built</div>
               </motion.div>
 
@@ -143,8 +143,8 @@ export default function About() {
                 transition={{ duration: 3.5, repeat: Infinity }}
                 className="absolute -top-4 -left-4 bg-white px-5 py-3 rounded-2xl shadow-xl shadow-taupe-900/10 border border-taupe-200 z-20"
               >
-                <div className="text-2xl font-bold text-taupe-700">50+</div>
-                <div className="text-xs text-taupe-600">Projects Shipped</div>
+                <div className="text-2xl font-bold text-taupe-700">16</div>
+                <div className="text-xs text-taupe-600">Portfolio Projects</div>
               </motion.div>
             </div>
           </motion.div>
@@ -239,14 +239,14 @@ export default function About() {
             {[
               {
                 icon: FiCpu,
-                title: "Agentic & Robotic AI",
-                description: "Building autonomous AI agents that make decisions, automate workflows, and adapt to complex scenarios.",
-                tags: ["OpenAI SDK", "LangChain", "MCP", "n8n"],
+                title: "Agentic & Multi-Agent AI",
+                description: "Building autonomous AI agents that make decisions, automate workflows, and coordinate as multi-agent systems.",
+                tags: ["OpenAI SDK", "LangGraph", "CrewAI", "MCP"],
                 color: "from-taupe-500 to-taupe-700",
                 iconBg: "bg-sand-200",
                 iconColor: "text-taupe-700",
                 hoverBorder: "hover:border-taupe-400",
-                stat: "550+",
+                stat: "100+",
                 statLabel: "Agents Built",
               },
               {
@@ -258,20 +258,20 @@ export default function About() {
                 iconBg: "bg-sand-200",
                 iconColor: "text-taupe-700",
                 hoverBorder: "hover:border-taupe-400",
-                stat: "50+",
-                statLabel: "Projects Shipped",
+                stat: "16",
+                statLabel: "Portfolio Projects",
               },
               {
                 icon: FiZap,
                 title: "AI Automation",
                 description: "Connecting intelligent systems with code and no-code tools to eliminate manual work and scale operations.",
-                tags: ["RAG", "Vector DBs", "Workflows", "APIs"],
+                tags: ["RAG", "Vector DBs", "n8n", "APIs"],
                 color: "from-sand-400 to-taupe-500",
                 iconBg: "bg-taupe-100",
                 iconColor: "text-taupe-800",
                 hoverBorder: "hover:border-taupe-500",
-                stat: "90%",
-                statLabel: "Efficiency Gain",
+                stat: "5",
+                statLabel: "Anthropic Certs",
               },
             ].map((area, i) => (
               <motion.div
@@ -493,24 +493,48 @@ export default function About() {
               Certifications
             </h3>
             <div className="space-y-3">
-              {certifications.map((cert, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  className="flex items-center gap-3 p-4 bg-white rounded-xl border border-taupe-200 hover:border-taupe-400 hover:shadow-md hover:shadow-taupe-900/5 transition-all duration-300 group"
-                >
-                  <div className="w-9 h-9 rounded-lg bg-sand-200 flex items-center justify-center text-taupe-700 flex-shrink-0 group-hover:bg-sand-200 group-hover:text-taupe-900 transition-colors">
-                    <FiCheckCircle size={16} />
-                  </div>
-                  <span className="text-sm text-taupe-800 font-medium group-hover:text-taupe-900 transition-colors flex-1">
-                    {cert}
-                  </span>
-                  <FiArrowRight size={14} className="text-taupe-300 group-hover:text-taupe-700 transition-colors flex-shrink-0" />
-                </motion.div>
-              ))}
+              {certifications.map((cert, i) => {
+                const Wrapper = cert.verifyUrl ? "a" : "div";
+                return (
+                  <motion.div
+                    key={cert.name}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <Wrapper
+                      {...(cert.verifyUrl
+                        ? {
+                            href: cert.verifyUrl,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                          }
+                        : {})}
+                      className="flex items-center gap-3 p-4 bg-white rounded-xl border border-taupe-200 hover:border-taupe-400 hover:shadow-md hover:shadow-taupe-900/5 transition-all duration-300 group"
+                    >
+                      <div className="w-9 h-9 rounded-lg bg-sand-200 flex items-center justify-center text-taupe-700 flex-shrink-0 group-hover:text-taupe-900 transition-colors">
+                        <FiCheckCircle size={16} />
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <span className="block text-sm text-taupe-800 font-medium group-hover:text-taupe-900 transition-colors leading-snug">
+                          {cert.name}
+                        </span>
+                        <span className="block text-xs text-taupe-600 mt-0.5">
+                          {cert.issuer}
+                          {cert.issued && ` · ${cert.issued}`}
+                        </span>
+                      </div>
+                      {cert.verifyUrl && (
+                        <FiArrowRight
+                          size={14}
+                          className="text-taupe-300 group-hover:text-taupe-700 transition-colors flex-shrink-0"
+                        />
+                      )}
+                    </Wrapper>
+                  </motion.div>
+                );
+              })}
             </div>
           </motion.div>
         </div>

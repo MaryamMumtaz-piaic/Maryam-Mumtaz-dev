@@ -6,10 +6,10 @@ import { personalInfo } from "@/data/portfolio-data";
 import { useEffect, useState } from "react";
 
 const roles = [
-  "Full Stack Developer",
-  "AI Agent Engineer",
+  "AI Engineer",
+  "Full-Stack Developer",
   "Agentic AI Specialist",
-  "Automation Expert",
+  "Automation Engineer",
 ];
 
 function useTypingEffect(words: string[], typingSpeed = 100, deletingSpeed = 60, pauseDuration = 1800) {
@@ -202,7 +202,7 @@ export default function Hero() {
                 transition={{ delay: 1, duration: 0.5 }}
                 className="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
               >
-                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">550+</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">100+</div>
                 <div className="text-xs sm:text-sm text-taupe-600 font-medium">AI Agents Built</div>
               </motion.div>
 
@@ -212,7 +212,7 @@ export default function Hero() {
                 transition={{ delay: 1.2, duration: 0.5 }}
                 className="absolute -top-2 -left-2 sm:-top-3 sm:-left-3 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
               >
-                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">50+</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">16</div>
                 <div className="text-xs sm:text-sm text-taupe-600 font-medium">Projects</div>
               </motion.div>
 
@@ -222,8 +222,8 @@ export default function Hero() {
                 transition={{ delay: 1.4, duration: 0.5 }}
                 className="absolute top-1/2 -left-6 sm:-left-10 -translate-y-1/2 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
               >
-                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">90%</div>
-                <div className="text-xs sm:text-sm text-taupe-600 font-medium">Token Saved</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">5</div>
+                <div className="text-xs sm:text-sm text-taupe-600 font-medium">Anthropic Certs</div>
               </motion.div>
             </div>
           </motion.div>

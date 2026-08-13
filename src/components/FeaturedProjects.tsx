@@ -1,25 +1,90 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { FiGithub, FiExternalLink, FiArrowRight, FiCpu, FiDatabase } from "react-icons/fi";
-import { projects } from "@/data/portfolio-data";
+import { FiArrowRight, FiCpu } from "react-icons/fi";
+import { projects, type Project } from "@/data/portfolio-data";
+import ProjectModal from "./ProjectModal";
 import Link from "next/link";
 
-const categoryColors: Record<string, string> = {
-  "Full Stack": "bg-sand-200 text-taupe-700",
-  "AI & Agents": "bg-sand-200 text-taupe-700",
-};
+function ProjectCard({
+  project,
+  onSelect,
+  ariaHidden,
+}: {
+  project: Project;
+  onSelect: () => void;
+  ariaHidden: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      aria-hidden={ariaHidden}
+      tabIndex={ariaHidden ? -1 : 0}
+      aria-label={`View details for ${project.title}`}
+      className="group w-[260px] sm:w-[290px] flex-shrink-0 text-left bg-white rounded-2xl overflow-hidden border border-taupe-200 hover:border-taupe-400 hover:shadow-xl hover:shadow-taupe-900/10 focus:outline-none focus-visible:border-taupe-500 focus-visible:ring-2 focus-visible:ring-taupe-300 transition-all"
+    >
+      {project.image ? (
+        <div className="h-36 relative overflow-hidden bg-gradient-to-br from-taupe-400 to-taupe-600">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            sizes="290px"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </div>
+      ) : (
+        <div className="h-36 relative overflow-hidden bg-gradient-to-br from-taupe-600 via-taupe-700 to-taupe-900">
+          <div className="w-full h-full flex flex-col items-center justify-center gap-2 px-4">
+            <div className="w-12 h-12 rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20">
+              <FiCpu size={22} className="text-white/70" />
+            </div>
+            <span className="text-white/50 text-[11px] font-medium text-center line-clamp-1">
+              {project.title}
+            </span>
+          </div>
+          <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-16 h-16 rounded-full bg-white/5 translate-y-1/2 -translate-x-1/2" />
+        </div>
+      )}
 
-const fallbackStyles: Record<string, { gradient: string; icon: React.ElementType }> = {
-  "AI Intelligence Agent": { gradient: "from-taupe-700 via-taupe-800 to-taupe-900", icon: FiCpu },
-  "Inventory Enterprise": { gradient: "from-taupe-600 via-taupe-700 to-taupe-900", icon: FiDatabase },
-};
+      <div className="p-5">
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-sand-200 text-taupe-700">
+          {project.category}
+        </span>
+        <h3 className="mt-2 text-base font-bold text-taupe-900 line-clamp-1">
+          {project.title}
+        </h3>
+        <p className="mt-1.5 text-xs text-taupe-600 leading-relaxed line-clamp-2">
+          {project.description}
+        </p>
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {project.tech.slice(0, 3).map((t) => (
+            <span
+              key={t}
+              className="text-[10px] px-2 py-1 bg-sand-100 text-taupe-700 rounded-md border border-taupe-200 font-medium"
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+        <span className="mt-4 pt-3 border-t border-taupe-200 flex items-center gap-1 text-[11px] font-medium text-taupe-700 group-hover:text-taupe-900 transition-colors">
+          View Details <FiArrowRight size={11} />
+        </span>
+      </div>
+    </button>
+  );
+}
 
 export default function FeaturedProjects() {
+  const [selected, setSelected] = useState<Project | null>(null);
+
   return (
     <section id="projects" className="py-16 bg-sand-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -34,90 +99,32 @@ export default function FeaturedProjects() {
           </h2>
           <div className="mt-4 w-16 h-1 bg-gradient-to-r from-taupe-300 to-taupe-600 mx-auto rounded-full" />
         </motion.div>
+      </div>
 
-        {/* Project Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {projects.slice(0, 6).map((project, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.08 }}
-              whileHover={{ y: -5 }}
-              className="bg-white rounded-2xl overflow-hidden border border-taupe-200 hover:border-taupe-400 hover:shadow-xl hover:shadow-taupe-900/10 transition-all group"
-            >
-              {/* Image */}
-              {project.image ? (
-                <div className="h-40 relative overflow-hidden bg-gradient-to-br from-taupe-400 to-taupe-600">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </div>
-              ) : (
-                <div className={`h-40 relative overflow-hidden bg-gradient-to-br ${fallbackStyles[project.title]?.gradient || "from-taupe-500 to-taupe-700"}`}>
-                  {(() => { const FallbackIcon = fallbackStyles[project.title]?.icon || FiCpu; return (
-                    <div className="w-full h-full flex flex-col items-center justify-center gap-2">
-                      <div className="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-sm flex items-center justify-center border border-white/20">
-                        <FallbackIcon size={24} className="text-white/70" />
-                      </div>
-                      <span className="text-white/50 text-xs font-medium">{project.title}</span>
-                    </div>
-                  ); })()}
-                  <div className="absolute top-0 right-0 w-24 h-24 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
-                  <div className="absolute bottom-0 left-0 w-16 h-16 rounded-full bg-white/5 translate-y-1/2 -translate-x-1/2" />
-                </div>
-              )}
-
-              <div className="p-5">
-                <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${categoryColors[project.category] || "bg-sand-200 text-taupe-700"}`}>
-                  {project.category}
-                </span>
-                <h3 className="mt-2 text-base font-bold text-taupe-900 group-hover:text-taupe-900 transition-colors">
-                  {project.title}
-                </h3>
-                <p className="mt-1.5 text-xs text-taupe-600 leading-relaxed line-clamp-2">
-                  {project.description}
-                </p>
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {project.tech.map((t, j) => (
-                    <span key={j} className="text-[10px] px-2 py-1 bg-sand-100 text-taupe-700 rounded-md border border-taupe-200 font-medium">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Links */}
-                <div className="mt-4 pt-3 border-t border-taupe-200 flex items-center gap-2">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-8 h-8 rounded-lg bg-sand-100 hover:bg-sand-200 flex items-center justify-center text-taupe-600 hover:text-taupe-900 transition-all"
-                  >
-                    <FiGithub size={14} />
-                  </a>
-                  {project.live !== "#" && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1 px-3 py-1.5 bg-taupe-700 text-white text-[11px] font-medium rounded-lg hover:bg-taupe-800 transition-all"
-                    >
-                      Live Demo <FiExternalLink size={11} />
-                    </a>
-                  )}
-                </div>
-              </div>
-            </motion.div>
-          ))}
+      {/* Marquee — full-bleed so cards scroll edge to edge without page overflow */}
+      <div
+        className="marquee-viewport relative w-full overflow-hidden"
+        style={{ ["--marquee-duration" as string]: `${projects.length * 5}s` }}
+      >
+        <div className="marquee-track gap-5 py-2">
+          {[0, 1].map((copy) =>
+            projects.map((project) => (
+              <ProjectCard
+                key={`${copy}-${project.slug}`}
+                project={project}
+                onSelect={() => setSelected(project)}
+                ariaHidden={copy === 1}
+              />
+            ))
+          )}
         </div>
 
-        {/* View All */}
+        {/* Edge fades matching the section background */}
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-12 sm:w-24 bg-gradient-to-r from-sand-100 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-12 sm:w-24 bg-gradient-to-l from-sand-100 to-transparent" />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -132,6 +139,8 @@ export default function FeaturedProjects() {
           </Link>
         </motion.div>
       </div>
+
+      <ProjectModal project={selected} onClose={() => setSelected(null)} />
     </section>
   );
 }

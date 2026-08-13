@@ -69,3 +69,28 @@ body {
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
+
+/* Track holds two identical copies of the project list, so translating a full
+   -50% lands copy 2 exactly where copy 1 started — no visible jump on loop. */
+@keyframes marquee-ltr {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-ltr var(--marquee-duration, 70s) linear infinite;
+}
+
+.marquee-viewport:hover .marquee-track,
+.marquee-viewport:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    transform: translateX(-50%);
+  }
+}

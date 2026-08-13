@@ -1,38 +1,39 @@
 export const personalInfo = {
   name: "Maryam Mumtaz",
-  title: "Full Stack Developer & AI Agent Engineer",
-  tagline: "AI Agent Engineer & Full-Stack Developer | Founder Marsa Empower",
+  title: "AI Engineer & Full-Stack Developer",
+  tagline: "AI Engineer & Full-Stack Developer | Founder, Marsa Empower",
   location: "Karachi, Sindh, Pakistan",
   email: "maryamqureshimumtazm.a@gmail.com",
-  phone: "+92 300 0000000",
   status: "Available for Hire",
   portfolio: "https://maryam-mumtaz.vercel.app/",
   resume: "https://maryam-resume.vercel.app/",
-  linkedin: "https://www.linkedin.com/in/maryam-mumtaz-315358361/",
+  linkedin: "https://www.linkedin.com/in/maryam-mumtaz",
   github: "https://github.com/MaryamMumtaz-piaic",
-  bio: "Maryam Mumtaz is an AI Engineer specializing in architecting Agentic Infrastructure and autonomous applications. Based in Karachi, Pakistan, she is the founder of Marsa Empower and has delivered 50+ real-world AI projects.",
+  bio: "I build intelligent AI agents, autonomous workflows, scalable full-stack platforms, and AI-powered automation systems. Founder of Marsa Empower, working across agentic AI, MCP, RAG, and cloud-native engineering.",
   summary:
-    "I'm Maryam Mumtaz, a dedicated AI Engineer and Full-Stack Developer from Karachi, Pakistan. As the founder of Marsa Empower (also known as Mersa Empower), I design intelligent automation workflows, agentic AI systems, and scalable web platforms. My expertise spans across OpenAI SDK, LangChain, and modern web technologies to drive digital transformation.",
+    "I'm Maryam Mumtaz, an AI Engineer and Full-Stack Developer from Karachi, Pakistan, and the founder of Marsa Empower. I design and ship agentic AI systems, multi-agent architectures, and AI-powered automation — combining Python and FastAPI on the backend with Next.js and TypeScript on the frontend, and connecting it all through MCP, RAG, and workflow automation with n8n.",
+  availability:
+    "Always open to full-time opportunities, freelance projects, consulting, and strategic partnerships.",
   motto: "Engineering intelligence into every system, one line of code at a time.",
 };
 
 export const coreFocusAreas = [
   {
-    title: "Agentic & Robotic AI",
+    title: "Agentic & Multi-Agent AI",
     description:
-      "Autonomous decision-making, workflow automation, and adaptive AI agents.",
+      "Autonomous agents and coordinated multi-agent systems that plan, decide, and execute.",
     icon: "robot",
   },
   {
     title: "Full-Stack Development",
     description:
-      "Scalable web platforms, responsive frontends, and robust backends.",
+      "Scalable web platforms, responsive frontends, and robust APIs.",
     icon: "code",
   },
   {
     title: "AI Automation & Integration",
     description:
-      "Intelligent automation connecting code & no-code solutions.",
+      "Workflow automation across code and no-code, powered by MCP, RAG, and n8n.",
     icon: "automation",
   },
 ];
@@ -40,11 +41,11 @@ export const coreFocusAreas = [
 export const experience = [
   {
     company: "Marsa Empower",
-    role: "Founder & CEO",
+    role: "Founder",
     period: "January 2026 - Present",
     location: "Karachi, Pakistan",
     description:
-      "Founded Marsa Empower (Mersa Empower) to create a digital platform that empowers individuals, ideas, and communities through AI-driven content and engagement.",
+      "Founded Marsa Empower to build a digital platform that empowers individuals, ideas, and communities through AI-driven content and engagement.",
     responsibilities: [
       "Vision and strategic direction",
       "Platform development and digital presence",
@@ -59,11 +60,11 @@ export const experience = [
     period: "January 2025 - Present",
     location: "Self-employed",
     description:
-      "Delivering custom web applications, AI automation solutions, and full-stack projects for clients worldwide.",
+      "Delivering custom web applications, AI agents, and automation workflows for clients.",
     responsibilities: [
-      "Building scalable web applications with Next.js & React",
+      "Building web applications with Next.js & React",
       "Developing AI-powered automation workflows",
-      "Client consultation and project management",
+      "Client consultation and project scoping",
       "End-to-end development from design to deployment",
     ],
   },
@@ -73,7 +74,7 @@ export const experience = [
     period: "April 2025 - Present",
     location: "Karachi",
     description:
-      "Creating stunning web experiences and visual designs for businesses and individuals.",
+      "Building web experiences and visual identities for businesses and individuals.",
     responsibilities: [
       "Responsive website development",
       "UI/UX design with Figma & Canva",
@@ -87,95 +88,383 @@ export const education = [
   {
     institution: "PIAIC",
     degree: "Agentic & Robotic AI Engineer",
-    period: "April 2025 - October 2026",
+    period: "April 2025 - Present",
     status: "In Process",
   },
   {
-    institution: "Govt of Sindh VTC Jacobline Sadder Karachi",
-    degree: "DIT (Diploma Information Technology)",
+    institution: "Govt. of Sindh VTC Jacobline Saddar Karachi",
+    degree: "DIT — Diploma in Information Technology",
     period: "February 2023 - September 2024",
     status: "Completed",
   },
   {
     institution: "Govt. Degree College for Women",
-    degree: "Intermediate, Engineering",
+    degree: "Intermediate — Engineering",
     period: "April 2021 - November 2023",
     status: "Completed",
   },
 ];
 
-export const certifications = [
-  "DIT (Diploma Information Technology)",
-  "Graphic Designer",
-  "PIAIC — Agentic & Robotic AI Engineer",
-];
+export type Certification = {
+  name: string;
+  issuer: string;
+  issued?: string;
+  credentialId?: string;
+  verifyUrl?: string;
+};
 
-export const projects = [
+export const certifications: Certification[] = [
   {
-    title: "Modern E-Commerce Platform",
-    description:
-      "Comprehensive clothing e-commerce with real-time inventory, Stripe payments, and order tracking dashboard.",
-    tech: ["Next.js", "TypeScript", "Sanity CMS", "Stripe"],
-    github: "https://github.com/MaryamMumtaz-piaic",
-    live: "https://e-commerce-website-liart-two.vercel.app/",
-    image: "/images/e-commerce.PNG",
-    featured: true,
-    category: "Full Stack",
+    name: "Claude Code in Action",
+    issuer: "Anthropic",
+    issued: "March 2026",
+    credentialId: "vnisr68f3767",
+    verifyUrl: "https://verify.skilljar.com/c/vnisr68f3767",
   },
   {
+    name: "Model Context Protocol: Advanced Topics",
+    issuer: "Anthropic",
+    issued: "March 2026",
+    credentialId: "3atanznvm4zr",
+    verifyUrl: "https://verify.skilljar.com/c/3atanznvm4zr",
+  },
+  {
+    name: "Introduction to Model Context Protocol",
+    issuer: "Anthropic",
+    issued: "March 2026",
+    credentialId: "scyu7pokq3nq",
+    verifyUrl: "https://verify.skilljar.com/c/scyu7pokq3nq",
+  },
+  {
+    name: "AI Fluency: Framework & Foundations",
+    issuer: "Anthropic",
+    issued: "April 2026",
+  },
+  {
+    name: "Claude 101",
+    issuer: "Anthropic",
+    issued: "April 2026",
+  },
+  {
+    name: "Graphic Designer",
+    issuer: "JDC Free IT City",
+  },
+];
+
+export type Project = {
+  slug: string;
+  title: string;
+  description: string;
+  tech: string[];
+  github: string;
+  live: string;
+  image: string;
+  featured: boolean;
+  category: string;
+  highlights: string[];
+};
+
+const AGENTS_REPO = "https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main";
+
+export const projects: Project[] = [
+  {
+    slug: "ai-command-control-center",
+    title: "AI Command & Control Center",
+    description:
+      "Unified command center that deploys, monitors, and chains 29 AI agents from a single dashboard, with live execution logs and per-agent cost tracking.",
+    tech: ["Python", "LangGraph", "CrewAI", "FastAPI", "WebSockets", "PostgreSQL", "Redis", "Docker"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-30-ai-command-control-center`,
+    live: "",
+    image: "",
+    featured: true,
+    category: "Agentic AI",
+    highlights: [
+      "Single dashboard controlling and monitoring all 29 prior agents",
+      "Real-time agent health monitoring with live execution logs",
+      "On-the-fly agent chaining and dynamic pipeline creation",
+      "Resource usage and API cost tracking per agent and user",
+      "Master REST API gateway with role-based access control",
+    ],
+  },
+  {
+    slug: "ai-agents-portfolio",
+    title: "AI Agents Portfolio — 100+ Agents",
+    description:
+      "An ongoing agent engineering practice of 100+ completed AI agents, spanning single intelligent agents, multi-agent crews, and enterprise AI platforms.",
+    tech: ["Python", "OpenAI SDK", "LangChain", "LangGraph", "CrewAI", "MCP", "FastAPI"],
+    github: "https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents",
+    live: "",
+    image: "",
+    featured: true,
+    category: "Agentic AI",
+    highlights: [
+      "100+ AI agents completed across research, automation, and analysis domains",
+      "Phase 1 — intelligent single agents for research, debugging, and triage",
+      "Phase 2 — multi-agent crews coordinating specialists in parallel and in sequence",
+      "Phase 3 — enterprise platforms with RAG, billing, and multi-tenancy",
+      "Standardized FastAPI + Tailwind delivery pattern across the collection",
+    ],
+  },
+  {
+    slug: "enterprise-workflow-automation",
+    title: "Enterprise AI Workflow Automation",
+    description:
+      "AI-native visual workflow builder for composing agent pipelines from 20+ node types with conditional logic, webhook and cron triggers, and one-click deploy.",
+    tech: ["Python", "LangGraph", "CrewAI", "FastAPI", "Canvas API", "PostgreSQL", "Redis", "Docker"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-26-enterprise-workflow-automation`,
+    live: "",
+    image: "",
+    featured: true,
+    category: "Enterprise AI",
+    highlights: [
+      "Visual node-based workflow builder using the Canvas API",
+      "20+ pre-built agent node types (researcher, writer, coder, analyzer)",
+      "Conditional branching and loop logic inside workflows",
+      "Webhook, cron, and event-based trigger system",
+      "Community marketplace for sharing pre-built workflows",
+    ],
+  },
+  {
+    slug: "ai-saas-platform",
+    title: "Full AI SaaS Platform",
+    description:
+      "Production AI SaaS with OAuth authentication, three Stripe-billed subscription tiers, and ten specialized AI tools gated by plan.",
+    tech: ["Python", "OpenAI SDK", "LangChain", "FastAPI", "PostgreSQL", "Stripe", "OAuth2", "Docker"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-29-ai-saas-platform`,
+    live: "",
+    image: "",
+    featured: true,
+    category: "AI SaaS",
+    highlights: [
+      "Full auth system with Google and GitHub OAuth",
+      "Three-tier subscriptions with Stripe billing and webhook handling",
+      "Ten AI tools including writer, code reviewer, and SEO analyzer",
+      "Admin panel with user management and revenue analytics",
+      "Token usage tracking and per-user quota enforcement",
+    ],
+  },
+  {
+    slug: "multi-tenant-rag-platform",
+    title: "Multi-Tenant RAG Platform",
+    description:
+      "Enterprise RAG system where each tenant gets an isolated knowledge store and branded assistant, with LLM fallback that writes answers back into the tenant's memory.",
+    tech: ["Python", "LangChain", "Chroma DB", "FastAPI", "PostgreSQL", "JWT", "Docker"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-21-multi-tenant-rag-platform`,
+    live: "",
+    image: "",
+    featured: true,
+    category: "RAG",
+    highlights: [
+      "Multi-tenant architecture with complete per-tenant data isolation",
+      "RAG-first routing with LLM fallback and automatic knowledge-base growth",
+      "Per-tenant custom AI personas and system prompts",
+      "Live analytics on answer source, retrieval score, and citations",
+      "Tenant isolation verified on every query",
+    ],
+  },
+  {
+    slug: "autonomous-data-science-pipeline",
+    title: "Autonomous Data Science Pipeline",
+    description:
+      "Six-agent pipeline that takes any CSV and a target column through profiling, cleaning, feature engineering, model selection, and tuning to a finished model card.",
+    tech: ["Python", "OpenAI SDK", "Scikit-learn", "Pandas", "FastAPI", "WebSockets", "Chart.js"],
+    github: `${AGENTS_REPO}/phase-2-multi-agent-systems/day-15-autonomous-data-science-pipeline`,
+    live: "",
+    image: "",
+    featured: true,
+    category: "Multi-Agent",
+    highlights: [
+      "End-to-end automated ML workflow on any CSV, no code required",
+      "Automatic classification vs regression detection from the target",
+      "Cross-validated leaderboard across five candidate models",
+      "GridSearchCV hyperparameter tuning of the winning model",
+      "Model card with held-out metrics and feature importances",
+    ],
+  },
+  {
+    slug: "ai-devops-pipeline",
+    title: "AI DevOps Review Pipeline",
+    description:
+      "Multi-agent code review that runs quality, security, coverage, and performance analysts in parallel, then merges their findings into a deployment verdict.",
+    tech: ["Python", "OpenAI SDK", "GitHub REST API", "FastAPI", "WebSockets", "Chart.js"],
+    github: `${AGENTS_REPO}/phase-2-multi-agent-systems/day-12-ai-devops-pipeline`,
+    live: "",
+    image: "",
+    featured: true,
+    category: "Multi-Agent",
+    highlights: [
+      "Four analyst agents run concurrently via asyncio, merged by a decision agent",
+      "Pulls diffs directly from a public GitHub pull request URL",
+      "Security findings tagged with CWE and OWASP categories",
+      "APPROVE / REQUEST CHANGES / BLOCK verdict with rollback plan",
+      "Copy-ready PR comment and full PDF export",
+    ],
+  },
+  {
+    slug: "learnflow-ai-platform",
+    title: "LearnFlow AI Platform",
+    description:
+      "Autonomous microservices-based learning platform with persistent memory and struggle detection built on an event-driven architecture.",
+    tech: ["Kafka", "Next.js 15", "Goose AI", "Dapr"],
+    github: "https://github.com/MaryamMumtaz-piaic",
+    live: "https://frontend-rho-seven-ssq2gwtp54.vercel.app/",
+    image: "/images/learnflow-app.PNG",
+    featured: true,
+    category: "Multi-Agent",
+    highlights: [
+      "Microservices coordinated through Dapr and Kafka events",
+      "Persistent learner memory across sessions",
+      "Automatic struggle detection to adapt the learning path",
+      "Built for Eventon Hackathon III",
+    ],
+  },
+  {
+    slug: "physical-ai-textbook",
+    title: "Physical AI Textbook",
+    description:
+      "AI-native textbook platform for Physical AI and Humanoid Robotics, with custom RAG agents and Urdu translation support.",
+    tech: ["Docusaurus", "RAG", "Python", "Cloud Native"],
+    github: "https://github.com/MaryamMumtaz-piaic",
+    live: "https://ai-native-book-iota.vercel.app/",
+    image: "/images/physical Ai.png",
+    featured: true,
+    category: "RAG",
+    highlights: [
+      "Custom RAG agents answering questions grounded in the textbook",
+      "Bilingual content with Urdu translation support",
+      "Docusaurus-based content platform deployed cloud-native",
+      "Built for Eventon Hackathon I",
+    ],
+  },
+  {
+    slug: "ai-spec-driven-todo",
     title: "AI Spec-Driven Todo",
     description:
-      "Professional task management system evolved from CLI to Kubernetes-deployed AI agent system.",
+      "Task management system evolved from a CLI tool into a distributed, Kubernetes-deployed AI agent system using spec-driven development.",
     tech: ["OpenAI", "Next.js", "Dapr", "Kubernetes"],
     github: "https://github.com/MaryamMumtaz-piaic",
     live: "https://todo-app-sigma-hazel-46.vercel.app/",
     image: "/images/Todo-app.png",
     featured: true,
     category: "AI & Agents",
+    highlights: [
+      "Spec-driven development from CLI through to cloud deployment",
+      "Dapr building blocks for service invocation and state",
+      "Deployed on Kubernetes",
+      "Built for Eventon Hackathon II",
+    ],
   },
   {
-    title: "LearnFlow AI Platform",
+    slug: "slide-generator-agent",
+    title: "SlideGeneratorAgent",
     description:
-      "Autonomous microservices-based learning platform with persistent memory and struggle detection.",
-    tech: ["Kafka", "Next.js 15", "Goose AI", "Dapr"],
-    github: "https://github.com/MaryamMumtaz-piaic",
-    live: "https://frontend-rho-seven-ssq2gwtp54.vercel.app/",
-    image: "/images/learnflow-app.PNG",
-    featured: true,
-    category: "AI & Agents",
-  },
-  {
-    title: "Physical AI Textbook",
-    description:
-      "AI-native platform for Humanoid Robotics with custom RAG agents and Urdu translation support.",
-    tech: ["Docusaurus", "RAG", "Python", "Cloud Native"],
-    github: "https://github.com/MaryamMumtaz-piaic",
-    live: "https://ai-native-book-iota.vercel.app/",
-    image: "/images/physical Ai.png",
-    featured: true,
-    category: "AI & Agents",
-  },
-  {
-    title: "AI Intelligence Agent",
-    description:
-      "550+ agents ecosystem built using MCP protocols, focused on autonomous execution and optimization.",
-    tech: ["MCP", "OpenAI SDK", "LangChain", "n8n"],
-    github: "https://github.com/MaryamMumtaz-piaic",
-    live: "#",
+      "AI web app that converts a single topic into a structured 20–22 slide deck with optional per-slide images, exportable as Markdown or standalone HTML.",
+    tech: ["Python", "FastAPI", "OpenAI SDK", "Tailwind CSS", "HTML"],
+    github: "https://github.com/MaryamMumtaz-piaic/SlideGeneratorAgent",
+    live: "",
     image: "",
-    featured: true,
-    category: "AI & Agents",
+    featured: false,
+    category: "AI Automation",
+    highlights: [
+      "Topic-to-deck generation targeting 20–22 slides with 3–5 bullets each",
+      "Language selection across English, Urdu, and Hindi",
+      "Optional per-slide images, remote or downloaded locally",
+      "Live preview with slide thumbnails and navigation",
+      "One-click export to Markdown and standalone HTML",
+    ],
   },
   {
-    title: "Inventory Enterprise",
+    slug: "social-post-creator-agent",
+    title: "SocialPostCreatorAgent",
     description:
-      "Real-time inventory management with barcode scanning and multi-vendor supplier management.",
-    tech: ["PostgreSQL", "React", "Node.js", "Prisma"],
-    github: "https://github.com/MaryamMumtaz-piaic",
-    live: "#",
+      "AI content agent that generates platform-specific social posts for six networks, enforcing each platform's character limits and tone from both a CLI and web UI.",
+    tech: ["Python", "OpenAI SDK", "NewsAPI", "CLI", "Web UI"],
+    github: "https://github.com/MaryamMumtaz-piaic/SocialPostCreatorAgent",
+    live: "",
+    image: "",
+    featured: false,
+    category: "AI Automation",
+    highlights: [
+      "Six platforms supported: Twitter, Facebook, Instagram, LinkedIn, TikTok, YouTube",
+      "Platform-specific formatting, tone adaptation, and character-limit enforcement",
+      "Dual interface — rich interactive CLI plus a responsive web UI",
+      "Optional topic research via NewsAPI integration",
+      "Clipboard copy and markdown file export",
+    ],
+  },
+  {
+    slug: "custom-prompt-agent",
+    title: "CustomPromptAgent",
+    description:
+      "Prompt engineering assistant that builds structured prompts from six guided inputs with live preview, reusable templates, and five AI enhancement modes.",
+    tech: ["Python", "FastAPI", "OpenAI GPT-4.1", "Gemini 2.0", "Tailwind CSS"],
+    github: "https://github.com/MaryamMumtaz-piaic/CustomPromptAgent",
+    live: "",
+    image: "",
+    featured: false,
+    category: "AI Automation",
+    highlights: [
+      "Six structured inputs: role, task, tone, format, audience, context",
+      "Real-time live preview as the prompt is composed",
+      "Five enhancement modes: balanced, technical, creative, strategic, educational",
+      "Save, load, and export prompt templates as .txt or .json",
+      "Voice input via the Web Speech API",
+    ],
+  },
+  {
+    slug: "mariam-shop-ecommerce",
+    title: "Mariam.shop E-Commerce",
+    description:
+      "Production-ready storefront with Stripe checkout, NextAuth role-based access, a protected admin dashboard, and an OpenAI-powered support chatbot.",
+    tech: ["Next.js 16", "TypeScript", "Prisma", "Neon Postgres", "Stripe", "NextAuth", "OpenAI SDK", "Zustand"],
+    github: "https://github.com/MaryamMumtaz-piaic/Maryam-E-Commerce",
+    live: "",
     image: "",
     featured: true,
     category: "Full Stack",
+    highlights: [
+      "Full shopping flow: catalog, search, sorting, cart, and wishlist",
+      "Stripe Checkout with a webhook that records orders",
+      "NextAuth v5 authentication with USER and ADMIN roles",
+      "Admin dashboard for products, order status, and bulk catalog import",
+      "Embedded OpenAI support chatbot for shopping queries",
+      "Runs on deterministic mock data when no DATABASE_URL is set",
+    ],
+  },
+  {
+    slug: "modern-ecommerce-platform",
+    title: "Modern E-Commerce Platform",
+    description:
+      "Clothing e-commerce storefront with real-time inventory, Stripe payments, and an order tracking dashboard.",
+    tech: ["Next.js", "TypeScript", "Sanity CMS", "Stripe"],
+    github: "https://github.com/MaryamMumtaz-piaic/E-commerce-Website",
+    live: "https://e-commerce-website-liart-two.vercel.app/",
+    image: "/images/e-commerce.PNG",
+    featured: true,
+    category: "Full Stack",
+    highlights: [
+      "Product catalog managed through Sanity CMS",
+      "Stripe payment integration",
+      "Real-time inventory and order tracking dashboard",
+    ],
+  },
+  {
+    slug: "luxe-beauty-cosmetics",
+    title: "Luxe Beauty Cosmetics Site",
+    description:
+      "Luxury cosmetics brand site with 3D product scenes and smooth-scroll motion design, built with Claude Code against a documented design system.",
+    tech: ["Next.js 15", "React 19", "TypeScript", "Three.js", "Framer Motion", "Lenis", "Tailwind CSS"],
+    github: "https://github.com/MaryamMumtaz-piaic/claudecode-cosmetic-website",
+    live: "",
+    image: "",
+    featured: false,
+    category: "Full Stack",
+    highlights: [
+      "3D product visuals via React Three Fiber and Drei",
+      "Smooth-scroll experience powered by Lenis",
+      "Framer Motion animation throughout",
+      "Design system and agent specs committed alongside the code",
+    ],
   },
 ];
 
@@ -188,7 +477,7 @@ export const hackathons = [
     tech: ["Docusaurus", "RAG", "Python", "Cloud Native"],
     live: "https://ai-native-book-iota.vercel.app/",
     image: "/images/physical Ai.png",
-    achievement: "Top Participant",
+    achievement: "Participant",
   },
   {
     title: "Evolution of Todo",
@@ -198,7 +487,7 @@ export const hackathons = [
     tech: ["OpenAI", "Next.js", "Dapr", "Kubernetes"],
     live: "https://todo-app-sigma-hazel-46.vercel.app/",
     image: "/images/Todo-app.png",
-    achievement: "Top Participant",
+    achievement: "Participant",
   },
   {
     title: "LearnFlow AI",
@@ -208,145 +497,82 @@ export const hackathons = [
     tech: ["Kafka", "Next.js 15", "Goose AI", "Dapr"],
     live: "https://frontend-rho-seven-ssq2gwtp54.vercel.app/",
     image: "/images/learnflow-app.PNG",
-    achievement: "Top Participant",
+    achievement: "Participant",
   },
 ];
 
 export const skillCategories = [
   {
-    category: "Full Stack",
+    category: "AI & Agentic Systems",
     skills: [
-      { name: "Next.js", level: 98 },
-      { name: "React", level: 95 },
-      { name: "TypeScript", level: 95 },
-      { name: "Python/FastAPI", level: 90 },
-      { name: "MySQL/PostgreSQL", level: 92 },
-      { name: "Tailwind CSS", level: 95 },
-    ],
-  },
-  {
-    category: "AI & Agents",
-    skills: [
-      { name: "OpenAI SDK", level: 98 },
       { name: "Agentic AI", level: 95 },
-      { name: "LangChain", level: 90 },
-      { name: "Prompt Engineering", level: 98 },
-      { name: "MCP Protocol", level: 92 },
-      { name: "RAG & Vector DBs", level: 88 },
+      { name: "Multi-Agent Systems", level: 92 },
+      { name: "OpenAI SDK", level: 95 },
+      { name: "LangChain / LangGraph", level: 90 },
+      { name: "CrewAI", level: 88 },
+      { name: "MCP", level: 92 },
+      { name: "RAG", level: 90 },
+      { name: "Prompt Engineering", level: 95 },
+      { name: "AI Automation & n8n", level: 90 },
     ],
   },
   {
-    category: "Cloud Platforms",
+    category: "Frontend",
     skills: [
-      { name: "Vercel", level: 98 },
-      { name: "Firebase", level: 95 },
-      { name: "Neon Database", level: 92 },
-      { name: "DigitalOcean", level: 90 },
-      { name: "AWS", level: 85 },
-    ],
-  },
-  {
-    category: "DevOps & Containers",
-    skills: [
-      { name: "Docker", level: 95 },
-      { name: "Minikube", level: 92 },
-      { name: "kubectl-ai", level: 90 },
-      { name: "Kubernetes", level: 88 },
-      { name: "Helm Charts", level: 85 },
-    ],
-  },
-  {
-    category: "UI/UX Design",
-    skills: [
-      { name: "Canva", level: 98 },
-      { name: "Figma", level: 95 },
-      { name: "UI/UX Design", level: 92 },
+      { name: "Next.js", level: 95 },
+      { name: "React", level: 93 },
+      { name: "TypeScript", level: 92 },
+      { name: "JavaScript", level: 92 },
+      { name: "HTML & CSS", level: 95 },
       { name: "Tailwind CSS", level: 95 },
+    ],
+  },
+  {
+    category: "Backend",
+    skills: [
+      { name: "Python", level: 93 },
+      { name: "FastAPI", level: 92 },
+      { name: "PHP", level: 80 },
+      { name: "SQL", level: 88 },
+      { name: "PostgreSQL", level: 88 },
+      { name: "Prisma", level: 85 },
+      { name: "REST APIs", level: 92 },
+    ],
+  },
+  {
+    category: "Cloud & DevOps",
+    skills: [
+      { name: "Docker", level: 90 },
+      { name: "Kubernetes", level: 85 },
+      { name: "Minikube", level: 88 },
+      { name: "Helm", level: 82 },
+      { name: "GitHub Actions", level: 85 },
+      { name: "Vercel", level: 95 },
+      { name: "AWS", level: 80 },
+      { name: "CI/CD", level: 85 },
+    ],
+  },
+  {
+    category: "Databases & Infrastructure",
+    skills: [
+      { name: "PostgreSQL", level: 88 },
+      { name: "Neon", level: 88 },
+      { name: "MySQL", level: 85 },
+      { name: "Redis", level: 82 },
+      { name: "Vector Databases", level: 88 },
     ],
   },
   {
     category: "Tools",
     skills: [
-      { name: "VS Code", level: 98 },
+      { name: "Git & GitHub", level: 95 },
+      { name: "VS Code", level: 95 },
+      { name: "Cursor", level: 90 },
       { name: "Claude Code", level: 95 },
-      { name: "Git/GitHub", level: 95 },
-      { name: "Postman", level: 92 },
+      { name: "Postman", level: 90 },
+      { name: "Figma", level: 88 },
+      { name: "Canva", level: 92 },
     ],
-  },
-];
-
-export const testimonials = [
-  {
-    name: "Ayesha Khan",
-    role: "CEO, TechNova Solutions",
-    text: "Maryam delivered an exceptional e-commerce platform that exceeded our expectations. Her attention to detail and understanding of AI integration made our product stand out in the market.",
-    rating: 5,
-  },
-  {
-    name: "Fatima Ahmed",
-    role: "Founder, EduLearn Platform",
-    text: "Working with Maryam was a game-changer for our startup. She built our entire AI-powered learning platform from scratch with incredible speed and quality.",
-    rating: 5,
-  },
-  {
-    name: "Sana Malik",
-    role: "CTO, DataFlow Systems",
-    text: "Maryam's expertise in agentic AI and automation transformed our workflow. She reduced our processing time by 90% with her intelligent automation solutions.",
-    rating: 5,
-  },
-  {
-    name: "Zainab Hassan",
-    role: "Product Manager, CloudScale Inc",
-    text: "Exceptional full-stack developer with deep AI knowledge. Maryam built our inventory management system with features we didn't even know we needed.",
-    rating: 5,
-  },
-  {
-    name: "Hira Noor",
-    role: "Marketing Director, BrandPeak",
-    text: "Maryam designed our entire brand identity and website. The UI/UX was stunning and our conversion rate doubled within the first month of launch.",
-    rating: 5,
-  },
-  {
-    name: "Amna Rizvi",
-    role: "Co-Founder, AgriTech AI",
-    text: "We needed an AI agent to automate crop analysis reports. Maryam built it in record time with LangChain and OpenAI — it now saves us 20+ hours weekly.",
-    rating: 5,
-  },
-  {
-    name: "Rabia Sheikh",
-    role: "Operations Lead, LogiFlow",
-    text: "Maryam automated our entire order tracking pipeline using n8n and custom APIs. The system runs flawlessly and our team couldn't be happier.",
-    rating: 5,
-  },
-  {
-    name: "Nadia Iqbal",
-    role: "Freelance Client, USA",
-    text: "Hired Maryam for a Next.js dashboard project. She delivered ahead of schedule with clean code, great documentation, and excellent communication throughout.",
-    rating: 5,
-  },
-  {
-    name: "Sara Tariq",
-    role: "Startup Founder, FinEdge",
-    text: "Maryam's full-stack skills are top-notch. She built our fintech MVP with Stripe integration, user auth, and a beautiful responsive design — all in under 3 weeks.",
-    rating: 5,
-  },
-  {
-    name: "Maham Ali",
-    role: "Head of Engineering, NexGen Labs",
-    text: "We brought Maryam on to build our AI chatbot with RAG and vector databases. Her deep understanding of agentic systems made the project a huge success.",
-    rating: 5,
-  },
-  {
-    name: "Kiran Batool",
-    role: "Creative Director, PixelCraft",
-    text: "From graphic design to full development — Maryam handled everything seamlessly. She has a rare combination of creative and technical talent.",
-    rating: 5,
-  },
-  {
-    name: "Anum Zahra",
-    role: "Project Manager, DevSphere",
-    text: "Maryam consistently delivers high-quality work. Her MCP protocol agents and Kubernetes deployments have been running without issues for months.",
-    rating: 5,
   },
 ];
 
@@ -354,38 +580,38 @@ export const faqs = [
   {
     question: "What services do you offer?",
     answer:
-      "I offer full-stack web development, AI agent development, automation workflows (code & no-code with n8n), UI/UX design, graphic design, and consulting for AI-driven digital transformation.",
+      "I build AI agents and multi-agent systems, AI-powered automation workflows (code and no-code with n8n), and full-stack web platforms with Next.js and FastAPI. I also take on consulting for teams adopting agentic AI.",
   },
   {
     question: "What technologies do you specialize in?",
     answer:
-      "My core stack includes Next.js, React, TypeScript, Python, and AI tools like OpenAI SDK, LangChain, and MCP protocols. I also work with Docker, Kubernetes, and various cloud platforms.",
+      "Agentic AI with the OpenAI SDK, LangChain, LangGraph, CrewAI, MCP, and RAG on the AI side; Next.js, React, TypeScript, Python, and FastAPI for full-stack work; Docker, Kubernetes, and Vercel for deployment.",
   },
   {
-    question: "Are you available for freelance work?",
+    question: "Are you available for work?",
     answer:
-      "Yes! I'm always open to freelance projects, full-time opportunities, consulting, and partnerships. Feel free to reach out via email or LinkedIn.",
+      "Yes. Always open to full-time opportunities, freelance projects, consulting, and strategic partnerships. The fastest way to reach me is email or LinkedIn.",
   },
   {
     question: "How do you approach a new project?",
     answer:
-      "I start with understanding your requirements, then plan the architecture, design the UI/UX, develop iteratively with regular feedback, and deploy with CI/CD pipelines for reliability.",
+      "I start by clarifying requirements and constraints, then plan the architecture, build iteratively with regular checkpoints, and ship with CI/CD so changes stay safe to deploy.",
   },
   {
     question: "What is your experience with AI agents?",
     answer:
-      "I've built 550+ AI agents using MCP protocols, OpenAI SDK, and LangChain. My agents handle autonomous execution, workflow automation, and intelligent decision-making.",
+      "I completed a 30-day agent engineering program spanning single intelligent agents, multi-agent systems, and enterprise AI platforms — including a multi-tenant RAG platform, a visual workflow automation builder, and a command center that orchestrates all 29 preceding agents.",
   },
   {
-    question: "Do you offer ongoing support after project delivery?",
+    question: "Do you offer support after delivery?",
     answer:
-      "Absolutely. I provide post-launch support including bug fixes, feature updates, performance optimization, and technical consultation to ensure your project continues to succeed.",
+      "Yes. I provide post-launch support including bug fixes, feature updates, performance work, and technical consultation.",
   },
 ];
 
 export const achievements = [
-  { label: "Projects Delivered", value: "50+" },
-  { label: "AI Agents Built", value: "550+" },
-  { label: "Token Usage Reduced", value: "90%" },
-  { label: "Happy Clients", value: "30+" },
+  { label: "AI Agents Built", value: "100+" },
+  { label: "Portfolio Projects", value: "16" },
+  { label: "Anthropic Certifications", value: "5" },
+  { label: "Hackathons", value: "3" },
 ];

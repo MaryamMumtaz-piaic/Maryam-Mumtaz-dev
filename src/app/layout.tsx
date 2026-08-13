@@ -79,7 +79,7 @@ export default function RootLayout({
     "description": "AI Agent Engineer specializing in agentic AI and scalable automation. Founder of Marsa Empower.",
     "sameAs": [
       "https://github.com/MaryamMumtaz-piaic",
-      "https://www.linkedin.com/in/maryam-mumtaz-315358361/"
+      "https://www.linkedin.com/in/maryam-mumtaz"
     ],
     "address": {
       "@type": "PostalAddress",

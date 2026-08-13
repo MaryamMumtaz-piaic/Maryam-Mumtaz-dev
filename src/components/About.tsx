@@ -18,10 +18,8 @@ import {
 import { HiOutlineAcademicCap } from "react-icons/hi";
 import {
   personalInfo,
-  coreFocusAreas,
   education,
   certifications,
-  achievements,
 } from "@/data/portfolio-data";
 
 const techExpertise = [
@@ -127,25 +125,6 @@ export default function About() {
               <div className="absolute -z-0 -top-6 -right-6 w-32 h-32 bg-taupe-200 rounded-3xl rotate-6" />
               <div className="absolute -z-0 -bottom-6 -left-6 w-24 h-24 bg-taupe-200/50 rounded-2xl -rotate-6" />
               <div className="absolute -z-0 top-1/2 -right-10 w-20 h-20 bg-sand-300 rounded-full" />
-
-              {/* Floating cards */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity }}
-                className="absolute -bottom-4 -right-4 bg-white px-5 py-3 rounded-2xl shadow-xl shadow-taupe-900/10 border border-taupe-200 z-20"
-              >
-                <div className="text-2xl font-bold text-taupe-700">100+</div>
-                <div className="text-xs text-taupe-600">AI Agents Built</div>
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [0, 8, 0] }}
-                transition={{ duration: 3.5, repeat: Infinity }}
-                className="absolute -top-4 -left-4 bg-white px-5 py-3 rounded-2xl shadow-xl shadow-taupe-900/10 border border-taupe-200 z-20"
-              >
-                <div className="text-2xl font-bold text-taupe-700">16</div>
-                <div className="text-xs text-taupe-600">Portfolio Projects</div>
-              </motion.div>
             </div>
           </motion.div>
 
@@ -197,30 +176,6 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* ========== Stats Banner ========== */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-24"
-        >
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {achievements.map((stat, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center p-5 bg-white rounded-2xl border border-taupe-200 hover:border-taupe-400 hover:shadow-md hover:shadow-taupe-900/5 transition-all"
-              >
-                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">{stat.value}</div>
-                <div className="text-xs sm:text-sm text-taupe-600 mt-1 font-medium">{stat.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
         {/* ========== Core Focus Areas ========== */}
         <div className="mb-24">
           <motion.div
@@ -246,8 +201,6 @@ export default function About() {
                 iconBg: "bg-sand-200",
                 iconColor: "text-taupe-700",
                 hoverBorder: "hover:border-taupe-400",
-                stat: "100+",
-                statLabel: "Agents Built",
               },
               {
                 icon: FiTarget,
@@ -258,8 +211,6 @@ export default function About() {
                 iconBg: "bg-sand-200",
                 iconColor: "text-taupe-700",
                 hoverBorder: "hover:border-taupe-400",
-                stat: "16",
-                statLabel: "Portfolio Projects",
               },
               {
                 icon: FiZap,
@@ -270,8 +221,6 @@ export default function About() {
                 iconBg: "bg-taupe-100",
                 iconColor: "text-taupe-800",
                 hoverBorder: "hover:border-taupe-500",
-                stat: "5",
-                statLabel: "Anthropic Certs",
               },
             ].map((area, i) => (
               <motion.div
@@ -287,14 +236,10 @@ export default function About() {
                 <div className={`h-1.5 bg-gradient-to-r ${area.color}`} />
 
                 <div className="p-6">
-                  {/* Icon + stat row */}
-                  <div className="flex items-center justify-between mb-5">
+                  {/* Icon */}
+                  <div className="mb-5">
                     <div className={`w-12 h-12 rounded-xl ${area.iconBg} flex items-center justify-center ${area.iconColor} group-hover:scale-110 transition-transform`}>
                       <area.icon size={24} />
-                    </div>
-                    <div className="text-right">
-                      <div className={`text-xl font-extrabold ${area.iconColor}`}>{area.stat}</div>
-                      <div className="text-[11px] text-taupe-600 font-medium">{area.statLabel}</div>
                     </div>
                   </div>
 

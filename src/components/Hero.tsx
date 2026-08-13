@@ -195,36 +195,6 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Floating badges */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1, duration: 0.5 }}
-                className="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
-              >
-                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">100+</div>
-                <div className="text-xs sm:text-sm text-taupe-600 font-medium">AI Agents Built</div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1.2, duration: 0.5 }}
-                className="absolute -top-2 -left-2 sm:-top-3 sm:-left-3 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
-              >
-                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">16</div>
-                <div className="text-xs sm:text-sm text-taupe-600 font-medium">Projects</div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1.4, duration: 0.5 }}
-                className="absolute top-1/2 -left-6 sm:-left-10 -translate-y-1/2 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
-              >
-                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">5</div>
-                <div className="text-xs sm:text-sm text-taupe-600 font-medium">Anthropic Certs</div>
-              </motion.div>
             </div>
           </motion.div>
         </div>

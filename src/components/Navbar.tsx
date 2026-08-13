@@ -25,7 +25,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm"
+          ? "bg-sand-50/85 backdrop-blur-md border-b border-taupe-200 shadow-sm shadow-taupe-900/5"
           : "bg-transparent"
       }`}
     >
@@ -33,13 +33,13 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <a href="#home" className="flex items-center gap-2">
             <Image
-              src="/images/hero.png"
+              src="/images/maryam.png"
               alt="Maryam Mumtaz"
               width={36}
               height={36}
-              className="rounded-full object-cover"
+              className="rounded-full object-cover ring-2 ring-taupe-300"
             />
-            <span className="text-lg font-bold text-violet-600">Maryam Mumtaz</span>
+            <span className="text-lg font-bold text-taupe-800">Maryam Mumtaz</span>
           </a>
 
           {/* Desktop */}
@@ -48,14 +48,14 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-600 hover:text-violet-600 transition-colors"
+                className="text-sm font-medium text-taupe-700 hover:text-taupe-900 transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="px-4 py-2 bg-violet-600 text-white text-sm font-medium rounded-lg hover:bg-violet-700 transition-colors"
+              className="px-4 py-2 bg-taupe-700 text-white text-sm font-medium rounded-lg hover:bg-taupe-800 transition-colors"
             >
               Hire Me
             </a>
@@ -63,7 +63,7 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className="md:hidden text-gray-700"
+            className="md:hidden text-taupe-800"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -73,14 +73,14 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t shadow-lg">
+        <div className="md:hidden bg-sand-50 border-t border-taupe-200 shadow-lg shadow-taupe-900/10">
           <div className="px-4 py-4 space-y-3">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block text-gray-600 hover:text-violet-600 font-medium"
+                className="block text-taupe-700 hover:text-taupe-900 font-medium"
               >
                 {link.label}
               </a>
@@ -88,7 +88,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
-              className="block w-full text-center px-4 py-2 bg-violet-600 text-white rounded-lg"
+              className="block w-full text-center px-4 py-2 bg-taupe-700 text-white rounded-lg"
             >
               Hire Me
             </a>

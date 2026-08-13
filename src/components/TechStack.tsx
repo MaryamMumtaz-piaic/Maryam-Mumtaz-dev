@@ -11,17 +11,17 @@ import {
 import { skillCategories } from "@/data/portfolio-data";
 
 const categoryMeta = [
-  { icon: FiCode, gradient: "from-blue-500 to-cyan-500", light: "bg-blue-50", text: "text-blue-600" },
-  { icon: FiCpu, gradient: "from-violet-500 to-purple-600", light: "bg-violet-50", text: "text-violet-600" },
-  { icon: FiCloud, gradient: "from-emerald-500 to-teal-500", light: "bg-emerald-50", text: "text-emerald-600" },
-  { icon: FiBox, gradient: "from-orange-500 to-amber-500", light: "bg-orange-50", text: "text-orange-600" },
-  { icon: FiPenTool, gradient: "from-pink-500 to-rose-500", light: "bg-pink-50", text: "text-pink-600" },
-  { icon: FiTool, gradient: "from-gray-600 to-gray-800", light: "bg-gray-100", text: "text-gray-600" },
+  { icon: FiCode, gradient: "from-taupe-400 to-taupe-600", light: "bg-sand-200", text: "text-taupe-700" },
+  { icon: FiCpu, gradient: "from-taupe-500 to-taupe-700", light: "bg-sand-200", text: "text-taupe-700" },
+  { icon: FiCloud, gradient: "from-sand-400 to-taupe-500", light: "bg-sand-100", text: "text-taupe-700" },
+  { icon: FiBox, gradient: "from-taupe-500 to-taupe-700", light: "bg-taupe-100", text: "text-taupe-800" },
+  { icon: FiPenTool, gradient: "from-taupe-300 to-taupe-500", light: "bg-sand-200", text: "text-taupe-700" },
+  { icon: FiTool, gradient: "from-taupe-700 to-taupe-900", light: "bg-taupe-100", text: "text-taupe-800" },
 ];
 
 export default function TechStack() {
   return (
-    <section id="skills" className="py-24 bg-white overflow-hidden">
+    <section id="skills" className="py-24 bg-sand-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -30,16 +30,16 @@ export default function TechStack() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-1.5 bg-violet-100 text-violet-700 text-sm font-semibold rounded-full uppercase tracking-wider">
+          <span className="inline-block px-4 py-1.5 bg-white border border-taupe-200 text-taupe-700 text-sm font-semibold rounded-full uppercase tracking-wider">
             Expertise
           </span>
-          <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-gray-900">
-            Tech Stack & <span className="text-violet-600">Expert Skills</span>
+          <h2 className="mt-4 text-4xl sm:text-5xl font-bold text-taupe-900">
+            Tech Stack & <span className="text-taupe-600">Expert Skills</span>
           </h2>
-          <p className="mt-4 text-gray-500 max-w-xl mx-auto">
+          <p className="mt-4 text-taupe-600 max-w-xl mx-auto">
             Technologies and tools I use to build intelligent, scalable solutions
           </p>
-          <div className="mt-6 w-24 h-1.5 bg-gradient-to-r from-violet-500 to-violet-700 mx-auto rounded-full" />
+          <div className="mt-6 w-24 h-1.5 bg-gradient-to-r from-taupe-300 to-taupe-600 mx-auto rounded-full" />
         </motion.div>
 
         {/* Skill Cards Grid */}
@@ -58,10 +58,10 @@ export default function TechStack() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="bg-white rounded-3xl p-7 border border-gray-100 hover:border-violet-200 hover:shadow-xl hover:shadow-violet-50 transition-all group relative overflow-hidden"
+                className="bg-white rounded-3xl p-7 border border-taupe-200 hover:border-taupe-400 hover:shadow-xl hover:shadow-taupe-900/10 transition-all group relative overflow-hidden"
               >
                 {/* Background number */}
-                <div className="absolute -top-2 -right-2 text-8xl font-black text-gray-50 group-hover:text-violet-50 transition-colors select-none">
+                <div className="absolute -top-2 -right-2 text-8xl font-black text-sand-100 group-hover:text-sand-200 transition-colors select-none">
                   0{i + 1}
                 </div>
 
@@ -72,10 +72,10 @@ export default function TechStack() {
                       <Icon size={22} />
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 text-lg group-hover:text-violet-700 transition-colors">
+                      <h3 className="font-bold text-taupe-900 text-lg group-hover:text-taupe-900 transition-colors">
                         {cat.category}
                       </h3>
-                      <p className="text-xs text-gray-400">{cat.skills.length} skills</p>
+                      <p className="text-xs text-taupe-600">{cat.skills.length} skills</p>
                     </div>
                   </div>
                   <div className={`text-xl font-bold ${meta.text}`}>
@@ -94,14 +94,14 @@ export default function TechStack() {
                       transition={{ delay: i * 0.05 + j * 0.08 }}
                     >
                       <div className="flex justify-between mb-1.5">
-                        <span className="text-sm font-medium text-gray-700">
+                        <span className="text-sm font-medium text-taupe-800">
                           {skill.name}
                         </span>
                         <span className={`text-xs font-bold ${meta.text} ${meta.light} px-2 py-0.5 rounded-full`}>
                           {skill.level}%
                         </span>
                       </div>
-                      <div className="w-full h-2.5 bg-gray-100 rounded-full overflow-hidden">
+                      <div className="w-full h-2.5 bg-sand-200 rounded-full overflow-hidden">
                         <motion.div
                           initial={{ width: 0 }}
                           whileInView={{ width: `${skill.level}%` }}

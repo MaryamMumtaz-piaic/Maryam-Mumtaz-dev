@@ -32,10 +32,10 @@ export default function Contact() {
   };
 
   const inputClass =
-    "w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:border-violet-400 focus:ring-2 focus:ring-violet-50 focus:bg-white transition-all placeholder:text-gray-400";
+    "w-full px-4 py-3 bg-sand-50 border border-taupe-200 rounded-xl text-sm text-taupe-900 focus:outline-none focus:border-taupe-500 focus:ring-2 focus:ring-taupe-100 focus:bg-white transition-all placeholder:text-taupe-500";
 
   return (
-    <section id="contact" className="py-16 bg-white overflow-hidden">
+    <section id="contact" className="py-16 bg-sand-50 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -44,13 +44,13 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-10"
         >
-          <span className="inline-block px-3 py-1 bg-violet-100 text-violet-700 text-xs font-semibold rounded-full uppercase tracking-wider">
+          <span className="inline-block px-3 py-1 bg-white border border-taupe-200 text-taupe-700 text-xs font-semibold rounded-full uppercase tracking-wider">
             Get in Touch
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-gray-900">
-            Contact <span className="text-violet-600">Me</span>
+          <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-taupe-900">
+            Contact <span className="text-taupe-600">Me</span>
           </h2>
-          <div className="mt-4 w-16 h-1 bg-gradient-to-r from-violet-500 to-violet-700 mx-auto rounded-full" />
+          <div className="mt-4 w-16 h-1 bg-gradient-to-r from-taupe-300 to-taupe-600 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid lg:grid-cols-5 gap-6">
@@ -61,7 +61,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
-            <div className="bg-gradient-to-br from-violet-600 via-violet-700 to-violet-900 rounded-2xl p-6 text-white relative overflow-hidden h-full flex flex-col justify-between">
+            <div className="bg-gradient-to-br from-taupe-700 via-taupe-800 to-taupe-900 rounded-2xl p-6 text-white relative overflow-hidden h-full flex flex-col justify-between">
               {/* Decorative */}
               <div className="absolute top-0 right-0 w-28 h-28 rounded-full bg-white/5 -translate-y-1/2 translate-x-1/2" />
               <div className="absolute bottom-0 left-0 w-20 h-20 rounded-full bg-white/5 translate-y-1/2 -translate-x-1/2" />
@@ -70,7 +70,7 @@ export default function Contact() {
                 <h3 className="text-lg font-bold mb-2">
                   Let&apos;s Work Together
                 </h3>
-                <p className="text-violet-200 text-xs leading-relaxed mb-5">
+                <p className="text-sand-300 text-xs leading-relaxed mb-5">
                   Open to freelance, full-time, consulting, and partnerships. Whether you need AI, web, or automation — let&apos;s make it happen.
                 </p>
 
@@ -81,7 +81,7 @@ export default function Contact() {
                       <FiMail size={14} />
                     </div>
                     <div>
-                      <p className="text-violet-300 text-[10px]">Email</p>
+                      <p className="text-sand-400 text-[10px]">Email</p>
                       <p className="text-xs">{personalInfo.email}</p>
                     </div>
                   </a>
@@ -90,7 +90,7 @@ export default function Contact() {
                       <FiMapPin size={14} />
                     </div>
                     <div>
-                      <p className="text-violet-300 text-[10px]">Location</p>
+                      <p className="text-sand-400 text-[10px]">Location</p>
                       <p className="text-xs">{personalInfo.location}</p>
                     </div>
                   </div>
@@ -102,7 +102,7 @@ export default function Contact() {
                     <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
                     <span className="text-xs font-semibold">Currently Available</span>
                   </div>
-                  <p className="text-violet-200 text-[10px] mt-1">
+                  <p className="text-sand-300 text-[10px] mt-1">
                     Open for new opportunities
                   </p>
                 </div>
@@ -136,14 +136,14 @@ export default function Contact() {
             viewport={{ once: true }}
             className="lg:col-span-3"
           >
-            <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-              <h3 className="text-base font-bold text-gray-900 mb-1">Send a Message</h3>
-              <p className="text-gray-400 text-xs mb-5">I&apos;ll get back to you within 24 hours.</p>
+            <div className="bg-white rounded-2xl p-6 border border-taupe-200 shadow-sm shadow-taupe-900/5">
+              <h3 className="text-base font-bold text-taupe-900 mb-1">Send a Message</h3>
+              <p className="text-taupe-600 text-xs mb-5">I&apos;ll get back to you within 24 hours.</p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="relative">
-                    <FiUser size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400" />
+                    <FiUser size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-taupe-500" />
                     <input
                       type="text"
                       placeholder="Your Name"
@@ -154,7 +154,7 @@ export default function Contact() {
                     />
                   </div>
                   <div className="relative">
-                    <FiMail size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400" />
+                    <FiMail size={14} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-taupe-500" />
                     <input
                       type="email"
                       placeholder="Your Email"
@@ -167,7 +167,7 @@ export default function Contact() {
                 </div>
 
                 <div className="relative">
-                  <FiMessageSquare size={14} className="absolute left-3.5 top-3.5 text-gray-400" />
+                  <FiMessageSquare size={14} className="absolute left-3.5 top-3.5 text-taupe-500" />
                   <input
                     type="text"
                     placeholder="Subject"
@@ -189,7 +189,7 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full px-5 py-3 bg-violet-600 text-white font-semibold rounded-xl hover:bg-violet-700 transition-all hover:shadow-lg hover:shadow-violet-200 flex items-center justify-center gap-2 text-sm group"
+                  className="w-full px-5 py-3 bg-taupe-700 text-white font-semibold rounded-xl hover:bg-taupe-800 transition-all hover:shadow-lg hover:shadow-taupe-900/20 flex items-center justify-center gap-2 text-sm group"
                 >
                   {sent ? (
                     <>

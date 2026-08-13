@@ -1,16 +1,25 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-violet-50: #f5f3ff;
-  --color-violet-100: #ede9fe;
-  --color-violet-200: #ddd6fe;
-  --color-violet-300: #c4b5fd;
-  --color-violet-400: #a78bfa;
-  --color-violet-500: #8b5cf6;
-  --color-violet-600: #7c3aed;
-  --color-violet-700: #6d28d9;
-  --color-violet-800: #5b21b6;
-  --color-violet-900: #4c1d95;
+  /* Warm sand — sampled from the hijab portrait highlights. Page + section surfaces. */
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #f8f3ea;
+  --color-sand-200: #f2e9db;
+  --color-sand-300: #e7dac6;
+  --color-sand-400: #d8c8b8;
+  --color-sand-500: #c8b39c;
+
+  /* Taupe — sampled from the drape mid-tones and shadows. Text, borders, headings. */
+  --color-taupe-100: #ede2d6;
+  --color-taupe-200: #dcc9b5;
+  --color-taupe-300: #c3a68d;
+  --color-taupe-400: #b08870;
+  --color-taupe-500: #a87860;
+  --color-taupe-600: #8a6a55;
+  --color-taupe-700: #6f5442;
+  --color-taupe-800: #513c2d;
+  --color-taupe-900: #33251b;
+
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -20,12 +29,12 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background: #fafafa;
-  color: #1a1a2e;
+  background: #fdfbf7;
+  color: #33251b;
 }
 
 ::selection {
-  background-color: #7c3aed;
+  background-color: #8a6a55;
   color: white;
 }
 
@@ -33,11 +42,14 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f2e9db;
 }
 ::-webkit-scrollbar-thumb {
-  background: #7c3aed;
+  background: #b08870;
   border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8a6a55;
 }
 
 @keyframes fadeInUp {

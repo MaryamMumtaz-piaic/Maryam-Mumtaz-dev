@@ -25,10 +25,10 @@ interface Message {
 }
 
 const capabilityCards = [
-  { icon: FiCode, title: "Skills & Tech Stack", color: "from-violet-500 to-purple-600" },
-  { icon: FiLayers, title: "AI & Projects", color: "from-blue-500 to-cyan-500" },
-  { icon: FiMail, title: "Contact & Hire", color: "from-pink-500 to-rose-500" },
-  { icon: FiBriefcase, title: "Experience", color: "from-amber-500 to-orange-500" },
+  { icon: FiCode, title: "Skills & Tech Stack", color: "from-taupe-500 to-taupe-700" },
+  { icon: FiLayers, title: "AI & Projects", color: "from-taupe-400 to-taupe-600" },
+  { icon: FiMail, title: "Contact & Hire", color: "from-sand-400 to-taupe-500" },
+  { icon: FiBriefcase, title: "Experience", color: "from-taupe-600 to-taupe-800" },
 ];
 
 const quickQuestions = [
@@ -65,7 +65,7 @@ function renderInline(text: string) {
     if (part.startsWith("**") && part.endsWith("**"))
       return <strong key={i} className="font-bold">{part.slice(2, -2)}</strong>;
     if (part.startsWith("`") && part.endsWith("`"))
-      return <code key={i} className="bg-gray-100 text-violet-600 px-1 py-0.5 rounded text-xs">{part.slice(1, -1)}</code>;
+      return <code key={i} className="bg-sand-200 text-taupe-800 px-1 py-0.5 rounded text-xs">{part.slice(1, -1)}</code>;
     return <span key={i}>{part}</span>;
   });
 }
@@ -176,27 +176,27 @@ export default function ChatBot() {
               setOpen(true);
               setMinimized(false);
             }}
-            className="fixed bottom-6 right-6 z-50 w-[60px] h-[60px] bg-gradient-to-br from-violet-500 via-violet-600 to-purple-700 text-white rounded-full shadow-2xl shadow-violet-300/50 flex items-center justify-center group cursor-pointer"
+            className="fixed bottom-6 right-6 z-50 w-[60px] h-[60px] bg-gradient-to-br from-taupe-600 via-taupe-700 to-taupe-900 text-white rounded-full shadow-2xl shadow-taupe-900/25 flex items-center justify-center group cursor-pointer"
           >
             <FiMessageCircle size={26} />
 
             {/* Pulse ring 1 */}
             <motion.span
-              className="absolute inset-0 rounded-full bg-violet-500/30"
+              className="absolute inset-0 rounded-full bg-sand-2000/30"
               animate={{ scale: [1, 1.6], opacity: [0.4, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
             />
             {/* Pulse ring 2 (staggered) */}
             <motion.span
-              className="absolute inset-0 rounded-full bg-violet-400/20"
+              className="absolute inset-0 rounded-full bg-taupe-400/20"
               animate={{ scale: [1, 1.8], opacity: [0.3, 0] }}
               transition={{ duration: 2, repeat: Infinity, ease: "easeOut", delay: 0.7 }}
             />
 
             {/* Tooltip */}
-            <span className="absolute right-full mr-3 px-3 py-1.5 bg-gray-900 text-white text-xs font-medium rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
+            <span className="absolute right-full mr-3 px-3 py-1.5 bg-taupe-900 text-white text-xs font-medium rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
               Chat with Maryam&apos;s AI
-              <span className="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-2 bg-gray-900 rotate-45" />
+              <span className="absolute top-1/2 -right-1 -translate-y-1/2 w-2 h-2 bg-taupe-900 rotate-45" />
             </span>
 
             {/* Unread badge */}
@@ -230,10 +230,10 @@ export default function ChatBot() {
             }}
             exit={{ opacity: 0, y: 30, scale: 0.9 }}
             transition={{ type: "spring", damping: 22, stiffness: 260 }}
-            className="fixed bottom-6 right-6 max-sm:bottom-0 max-sm:right-0 max-sm:left-0 max-sm:w-full max-sm:rounded-t-3xl max-sm:rounded-b-none z-50 w-[360px] sm:w-[420px] bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl shadow-violet-200/40 border border-gray-200/60 flex flex-col overflow-hidden"
+            className="fixed bottom-6 right-6 max-sm:bottom-0 max-sm:right-0 max-sm:left-0 max-sm:w-full max-sm:rounded-t-3xl max-sm:rounded-b-none z-50 w-[360px] sm:w-[420px] bg-white/95 backdrop-blur-xl rounded-3xl shadow-2xl shadow-taupe-900/20 border border-taupe-200 flex flex-col overflow-hidden"
           >
             {/* ===== Header ===== */}
-            <div className="relative bg-gradient-to-r from-violet-600 via-violet-600 to-purple-700 text-white p-4 flex items-center justify-between flex-shrink-0 overflow-hidden">
+            <div className="relative bg-gradient-to-r from-taupe-700 via-taupe-800 to-taupe-900 text-white p-4 flex items-center justify-between flex-shrink-0 overflow-hidden">
               {/* Decorative circles */}
               <div className="absolute -top-6 -right-6 w-24 h-24 rounded-full bg-white/10" />
               <div className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-white/5" />
@@ -254,12 +254,12 @@ export default function ChatBot() {
                       <motion.span
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        className="text-violet-200 text-xs"
+                        className="text-sand-300 text-xs"
                       >
                         Thinking...
                       </motion.span>
                     ) : (
-                      <span className="text-violet-200 text-xs">Online</span>
+                      <span className="text-sand-300 text-xs">Online</span>
                     )}
                   </div>
                 </div>
@@ -288,7 +288,7 @@ export default function ChatBot() {
             {!minimized && (
               <>
                 {/* ===== Messages / Welcome ===== */}
-                <div className="flex-1 overflow-y-auto bg-gradient-to-b from-violet-50/20 via-white to-white">
+                <div className="flex-1 overflow-y-auto bg-gradient-to-b from-sand-100 via-sand-50 to-white">
                   <AnimatePresence mode="wait">
                     {showWelcome ? (
                       /* ===== Welcome Screen ===== */
@@ -305,7 +305,7 @@ export default function ChatBot() {
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
                           transition={{ type: "spring", delay: 0.1 }}
-                          className="w-16 h-16 rounded-2xl bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center text-white mb-4 shadow-lg shadow-violet-200/50"
+                          className="w-16 h-16 rounded-2xl bg-gradient-to-br from-taupe-500 to-taupe-700 flex items-center justify-center text-white mb-4 shadow-lg shadow-taupe-900/15"
                         >
                           <FiCpu size={28} />
                         </motion.div>
@@ -314,7 +314,7 @@ export default function ChatBot() {
                           initial={{ opacity: 0, y: 5 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.15 }}
-                          className="text-base font-bold text-gray-800 mb-1"
+                          className="text-base font-bold text-taupe-900 mb-1"
                         >
                           Hi! I&apos;m Maryam&apos;s AI
                         </motion.h4>
@@ -322,7 +322,7 @@ export default function ChatBot() {
                           initial={{ opacity: 0, y: 5 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.2 }}
-                          className="text-sm text-gray-500 text-center mb-5"
+                          className="text-sm text-taupe-600 text-center mb-5"
                         >
                           Ask me anything about her skills, projects, or experience.
                         </motion.p>
@@ -335,14 +335,14 @@ export default function ChatBot() {
                               initial={{ opacity: 0, y: 10 }}
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ delay: 0.25 + i * 0.06 }}
-                              className="flex items-center gap-2.5 p-3 rounded-xl bg-gray-50 border border-gray-100 hover:border-violet-200 hover:bg-violet-50/50 transition-colors"
+                              className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-taupe-200 hover:border-taupe-400 hover:bg-sand-200/50 transition-colors"
                             >
                               <div
                                 className={`w-8 h-8 rounded-lg bg-gradient-to-br ${card.color} flex items-center justify-center text-white flex-shrink-0`}
                               >
                                 <card.icon size={14} />
                               </div>
-                              <span className="text-xs font-medium text-gray-700 leading-tight">
+                              <span className="text-xs font-medium text-taupe-800 leading-tight">
                                 {card.title}
                               </span>
                             </motion.div>
@@ -351,7 +351,7 @@ export default function ChatBot() {
 
                         {/* Quick Questions List */}
                         <div className="w-full space-y-1.5">
-                          <p className="text-xs font-medium text-gray-400 mb-2 px-1">
+                          <p className="text-xs font-medium text-taupe-600 mb-2 px-1">
                             Try asking:
                           </p>
                           {quickQuestions.map((q, i) => (
@@ -361,16 +361,16 @@ export default function ChatBot() {
                               animate={{ opacity: 1, x: 0 }}
                               transition={{ delay: 0.4 + i * 0.06 }}
                               onClick={() => handleSend(q.text)}
-                              className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-gray-600 hover:bg-violet-50 hover:text-violet-700 transition-colors group text-left"
+                              className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-taupe-700 hover:bg-sand-200 hover:text-taupe-900 transition-colors group text-left"
                             >
                               <q.icon
                                 size={15}
-                                className="text-violet-400 flex-shrink-0"
+                                className="text-taupe-500 flex-shrink-0"
                               />
                               <span className="flex-1">{q.text}</span>
                               <FiChevronRight
                                 size={14}
-                                className="text-gray-300 group-hover:text-violet-400 transition-colors flex-shrink-0"
+                                className="text-taupe-300 group-hover:text-taupe-700 transition-colors flex-shrink-0"
                               />
                             </motion.button>
                           ))}
@@ -386,7 +386,7 @@ export default function ChatBot() {
                       >
                         {/* Today pill */}
                         <div className="flex justify-center mb-2">
-                          <span className="px-3 py-1 bg-gray-100 text-gray-400 text-[10px] font-medium rounded-full">
+                          <span className="px-3 py-1 bg-sand-200 text-taupe-700 text-[10px] font-medium rounded-full">
                             {todayLabel}
                           </span>
                         </div>
@@ -408,7 +408,7 @@ export default function ChatBot() {
                           >
                             {/* Assistant avatar */}
                             {msg.role === "assistant" && (
-                              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
+                              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-taupe-500 to-taupe-700 text-white flex items-center justify-center flex-shrink-0 mt-0.5 shadow-sm">
                                 <FiCpu size={14} />
                               </div>
                             )}
@@ -422,8 +422,8 @@ export default function ChatBot() {
                               <div
                                 className={`px-3.5 py-2.5 text-sm leading-relaxed ${
                                   msg.role === "user"
-                                    ? "bg-gradient-to-br from-violet-600 to-violet-700 text-white rounded-2xl rounded-tr-md shadow-sm"
-                                    : "bg-white text-gray-700 rounded-2xl rounded-tl-md border border-gray-100 shadow-sm"
+                                    ? "bg-gradient-to-br from-taupe-700 to-taupe-800 text-white rounded-2xl rounded-tr-md shadow-sm"
+                                    : "bg-white text-taupe-800 rounded-2xl rounded-tl-md border border-taupe-200 shadow-sm"
                                 }`}
                               >
                                 {renderContent(msg.content)}
@@ -435,7 +435,7 @@ export default function ChatBot() {
                                     initial={{ opacity: 0, y: -2 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -2 }}
-                                    className="text-[10px] text-gray-400 mt-1 px-1"
+                                    className="text-[10px] text-taupe-600 mt-1 px-1"
                                   >
                                     {formatTime(msg.timestamp)}
                                   </motion.span>
@@ -452,15 +452,15 @@ export default function ChatBot() {
                             animate={{ opacity: 1, x: 0 }}
                             className="flex gap-2.5"
                           >
-                            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-taupe-500 to-taupe-700 text-white flex items-center justify-center flex-shrink-0 shadow-sm">
                               <FiCpu size={14} />
                             </div>
-                            <div className="bg-white px-4 py-3 rounded-2xl rounded-tl-md border border-gray-100 shadow-sm flex items-center gap-2.5">
+                            <div className="bg-white px-4 py-3 rounded-2xl rounded-tl-md border border-taupe-200 shadow-sm flex items-center gap-2.5">
                               <div className="flex gap-1">
                                 {[0, 1, 2].map((dot) => (
                                   <motion.span
                                     key={dot}
-                                    className="w-1.5 h-1.5 rounded-full bg-violet-400"
+                                    className="w-1.5 h-1.5 rounded-full bg-taupe-400"
                                     animate={{
                                       scale: [1, 1.4, 1],
                                       opacity: [0.4, 1, 0.4],
@@ -474,7 +474,7 @@ export default function ChatBot() {
                                   />
                                 ))}
                               </div>
-                              <span className="text-xs text-gray-400">Thinking</span>
+                              <span className="text-xs text-taupe-600">Thinking</span>
                             </div>
                           </motion.div>
                         )}
@@ -486,8 +486,8 @@ export default function ChatBot() {
                 </div>
 
                 {/* ===== Input Area ===== */}
-                <div className="p-3 border-t border-gray-100 bg-white flex-shrink-0">
-                  <div className="flex gap-2 items-end rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 focus-within:border-violet-400 focus-within:ring-2 focus-within:ring-violet-100 transition-all">
+                <div className="p-3 border-t border-taupe-200 bg-white flex-shrink-0">
+                  <div className="flex gap-2 items-end rounded-xl border border-taupe-200 bg-sand-50 px-3 py-2 focus-within:border-taupe-500 focus-within:ring-2 focus-within:ring-taupe-100 transition-all">
                     <textarea
                       ref={textareaRef}
                       value={input}
@@ -503,7 +503,7 @@ export default function ChatBot() {
                         }
                       }}
                       placeholder="Ask about Maryam..."
-                      className="flex-1 bg-transparent text-sm resize-none focus:outline-none max-h-[100px] leading-relaxed placeholder:text-gray-400"
+                      className="flex-1 bg-transparent text-sm text-taupe-900 resize-none focus:outline-none max-h-[100px] leading-relaxed placeholder:text-taupe-500"
                       style={{ height: "auto", minHeight: "24px" }}
                     />
                     <motion.button
@@ -511,7 +511,7 @@ export default function ChatBot() {
                       whileTap={{ scale: 0.9 }}
                       onClick={() => handleSend()}
                       disabled={loading || !input.trim()}
-                      className="w-8 h-8 bg-violet-600 text-white rounded-lg hover:bg-violet-700 transition-colors disabled:opacity-30 flex items-center justify-center flex-shrink-0"
+                      className="w-8 h-8 bg-taupe-700 text-white rounded-lg hover:bg-taupe-800 transition-colors disabled:opacity-30 flex items-center justify-center flex-shrink-0"
                     >
                       <FiSend size={14} />
                     </motion.button>
@@ -520,7 +520,7 @@ export default function ChatBot() {
                     {input.length > 0 ? (
                       <span
                         className={`text-[10px] ${
-                          input.length > 450 ? "text-amber-500" : "text-gray-300"
+                          input.length > 450 ? "text-taupe-700" : "text-taupe-500"
                         }`}
                       >
                         {input.length}/500
@@ -528,7 +528,7 @@ export default function ChatBot() {
                     ) : (
                       <span />
                     )}
-                    <span className="text-[10px] text-gray-300">
+                    <span className="text-[10px] text-taupe-500">
                       Powered by GPT-4.1 Mini
                     </span>
                   </div>

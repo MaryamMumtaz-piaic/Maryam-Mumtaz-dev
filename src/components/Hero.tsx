@@ -48,7 +48,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center pt-20 pb-10 bg-gradient-to-br from-white via-violet-50/40 to-purple-50/20 overflow-hidden"
+      className="min-h-screen flex items-center pt-20 pb-10 bg-gradient-to-br from-sand-50 via-sand-100 to-taupe-100/60 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -64,7 +64,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 bg-violet-100 text-violet-700 text-sm font-semibold rounded-full mb-6"
+              className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/70 border border-taupe-200 text-taupe-700 text-sm font-semibold rounded-full mb-6 backdrop-blur-sm"
             >
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
               {personalInfo.status}
@@ -75,21 +75,21 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4, duration: 0.5 }}
-              className="text-lg sm:text-xl text-gray-500 font-medium mb-2"
+              className="text-lg sm:text-xl text-taupe-600 font-medium mb-2"
             >
               Hello, I&apos;m
             </motion.p>
 
             {/* Name */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-gray-900 leading-[1.1] tracking-tight whitespace-nowrap">
-              <span className="text-violet-600">Maryam</span> Mumtaz
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-taupe-900 leading-[1.1] tracking-tight whitespace-nowrap">
+              <span className="text-taupe-600">Maryam</span> Mumtaz
             </h1>
 
             {/* Typing Role */}
             <div className="mt-4 h-8 sm:h-10">
-              <p className="text-lg sm:text-2xl font-semibold text-gray-700">
+              <p className="text-lg sm:text-2xl font-semibold text-taupe-700">
                 {typedRole}
-                <span className="inline-block w-0.5 h-5 sm:h-6 bg-violet-600 ml-1 animate-pulse" />
+                <span className="inline-block w-0.5 h-5 sm:h-6 bg-taupe-700 ml-1 animate-pulse" />
               </p>
             </div>
 
@@ -98,7 +98,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.5 }}
-              className="mt-3 flex items-center gap-1.5 text-sm text-gray-400 font-medium"
+              className="mt-3 flex items-center gap-1.5 text-sm text-taupe-600 font-medium"
             >
               <FiMapPin className="w-4 h-4" />
               {personalInfo.location}
@@ -109,7 +109,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.5 }}
-              className="mt-5 text-base sm:text-lg text-gray-500 leading-relaxed max-w-xl"
+              className="mt-5 text-base sm:text-lg text-taupe-700 leading-relaxed max-w-xl"
             >
               {personalInfo.bio}
             </motion.p>
@@ -123,7 +123,7 @@ export default function Hero() {
             >
               <a
                 href="#contact"
-                className="group px-7 py-3.5 bg-violet-600 text-white font-semibold rounded-xl hover:bg-violet-700 transition-all duration-300 hover:shadow-xl hover:shadow-violet-200 hover:-translate-y-0.5"
+                className="group px-7 py-3.5 bg-taupe-700 text-white font-semibold rounded-xl hover:bg-taupe-800 transition-all duration-300 hover:shadow-xl hover:shadow-taupe-900/20 hover:-translate-y-0.5"
               >
                 Get In Touch
               </a>
@@ -131,14 +131,14 @@ export default function Hero() {
                 href={personalInfo.resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-7 py-3.5 border-2 border-violet-600 text-violet-600 font-semibold rounded-xl hover:bg-violet-50 transition-all duration-300 flex items-center gap-2 hover:-translate-y-0.5"
+                className="px-7 py-3.5 border-2 border-taupe-400 text-taupe-700 font-semibold rounded-xl hover:bg-white hover:border-taupe-600 transition-all duration-300 flex items-center gap-2 hover:-translate-y-0.5"
               >
                 <FiExternalLink className="w-4 h-4" /> Web CV
               </a>
               <a
                 href="/cv/Maryam Mumtaz.pdf"
                 download
-                className="px-7 py-3.5 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl hover:bg-gray-50 hover:border-violet-300 hover:text-violet-600 transition-all duration-300 flex items-center gap-2 hover:-translate-y-0.5"
+                className="px-7 py-3.5 border-2 border-taupe-200 text-taupe-700 font-semibold rounded-xl hover:bg-white hover:border-taupe-400 hover:text-taupe-900 transition-all duration-300 flex items-center gap-2 hover:-translate-y-0.5"
               >
                 <FiDownload className="w-4 h-4" /> Download CV
               </a>
@@ -162,7 +162,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-11 h-11 rounded-xl bg-gray-100 hover:bg-violet-600 flex items-center justify-center text-gray-500 hover:text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-violet-200"
+                  className="w-11 h-11 rounded-xl bg-white border border-taupe-200 hover:bg-taupe-700 hover:border-taupe-700 flex items-center justify-center text-taupe-600 hover:text-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-taupe-900/20"
                 >
                   <Icon size={20} />
                 </a>
@@ -179,13 +179,13 @@ export default function Hero() {
           >
             <div className="relative">
               {/* Decorative ring */}
-              <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-violet-400/20 to-purple-400/20 blur-xl" />
+              <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-taupe-300/40 to-taupe-400/30 blur-xl" />
 
               {/* Main image */}
-              <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-violet-400 via-violet-500 to-purple-600 p-1 animate-float">
-                <div className="w-full h-full rounded-full overflow-hidden">
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-sand-400 via-taupe-400 to-taupe-600 p-1 animate-float">
+                <div className="w-full h-full rounded-full overflow-hidden bg-sand-100">
                   <Image
-                    src="/images/hero.png"
+                    src="/images/maryam.png"
                     alt="Maryam Mumtaz"
                     width={400}
                     height={400}
@@ -200,30 +200,30 @@ export default function Hero() {
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1, duration: 0.5 }}
-                className="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 bg-white rounded-2xl shadow-xl p-3 sm:p-4 border border-gray-100"
+                className="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
               >
-                <div className="text-2xl sm:text-3xl font-extrabold text-violet-600">550+</div>
-                <div className="text-xs sm:text-sm text-gray-500 font-medium">AI Agents Built</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">550+</div>
+                <div className="text-xs sm:text-sm text-taupe-600 font-medium">AI Agents Built</div>
               </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.2, duration: 0.5 }}
-                className="absolute -top-2 -left-2 sm:-top-3 sm:-left-3 bg-white rounded-2xl shadow-xl p-3 sm:p-4 border border-gray-100"
+                className="absolute -top-2 -left-2 sm:-top-3 sm:-left-3 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
               >
-                <div className="text-2xl sm:text-3xl font-extrabold text-violet-600">50+</div>
-                <div className="text-xs sm:text-sm text-gray-500 font-medium">Projects</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">50+</div>
+                <div className="text-xs sm:text-sm text-taupe-600 font-medium">Projects</div>
               </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.4, duration: 0.5 }}
-                className="absolute top-1/2 -left-6 sm:-left-10 -translate-y-1/2 bg-white rounded-2xl shadow-xl p-3 sm:p-4 border border-gray-100"
+                className="absolute top-1/2 -left-6 sm:-left-10 -translate-y-1/2 bg-white rounded-2xl shadow-xl shadow-taupe-900/10 p-3 sm:p-4 border border-taupe-200"
               >
-                <div className="text-2xl sm:text-3xl font-extrabold text-violet-600">90%</div>
-                <div className="text-xs sm:text-sm text-gray-500 font-medium">Token Saved</div>
+                <div className="text-2xl sm:text-3xl font-extrabold text-taupe-700">90%</div>
+                <div className="text-xs sm:text-sm text-taupe-600 font-medium">Token Saved</div>
               </motion.div>
             </div>
           </motion.div>

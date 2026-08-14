@@ -79,6 +79,8 @@ function ProjectCard({
   );
 }
 
+const marqueeProjects = projects.filter((p) => p.featured);
+
 export default function FeaturedProjects() {
   const [selected, setSelected] = useState<Project | null>(null);
 
@@ -104,11 +106,11 @@ export default function FeaturedProjects() {
       {/* Marquee — full-bleed so cards scroll edge to edge without page overflow */}
       <div
         className="marquee-viewport relative w-full overflow-hidden"
-        style={{ ["--marquee-duration" as string]: `${projects.length * 5}s` }}
+        style={{ ["--marquee-duration" as string]: `${marqueeProjects.length * 5}s` }}
       >
         <div className="marquee-track gap-5 py-2">
           {[0, 1].map((copy) =>
-            projects.map((project) => (
+            marqueeProjects.map((project) => (
               <ProjectCard
                 key={`${copy}-${project.slug}`}
                 project={project}

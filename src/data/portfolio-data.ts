@@ -175,7 +175,7 @@ export const projects: Project[] = [
     tech: ["Python", "LangGraph", "CrewAI", "FastAPI", "WebSockets", "PostgreSQL", "Redis", "Docker"],
     github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-30-ai-command-control-center`,
     live: "",
-    image: "",
+    image: "/Day 30.png",
     featured: true,
     category: "Agentic AI",
     highlights: [
@@ -194,7 +194,7 @@ export const projects: Project[] = [
     tech: ["Python", "OpenAI SDK", "LangChain", "LangGraph", "CrewAI", "MCP", "FastAPI"],
     github: "https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents",
     live: "",
-    image: "",
+    image: "/ai-developer.PNG",
     featured: true,
     category: "Agentic AI",
     highlights: [
@@ -213,7 +213,7 @@ export const projects: Project[] = [
     tech: ["Python", "LangGraph", "CrewAI", "FastAPI", "Canvas API", "PostgreSQL", "Redis", "Docker"],
     github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-26-enterprise-workflow-automation`,
     live: "",
-    image: "",
+    image: "/Day 26.png",
     featured: true,
     category: "Enterprise AI",
     highlights: [
@@ -232,7 +232,7 @@ export const projects: Project[] = [
     tech: ["Python", "OpenAI SDK", "LangChain", "FastAPI", "PostgreSQL", "Stripe", "OAuth2", "Docker"],
     github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-29-ai-saas-platform`,
     live: "",
-    image: "",
+    image: "/Day 29.png",
     featured: true,
     category: "AI SaaS",
     highlights: [
@@ -251,7 +251,7 @@ export const projects: Project[] = [
     tech: ["Python", "LangChain", "Chroma DB", "FastAPI", "PostgreSQL", "JWT", "Docker"],
     github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-21-multi-tenant-rag-platform`,
     live: "",
-    image: "",
+    image: "/Day 21.PNG",
     featured: true,
     category: "RAG",
     highlights: [
@@ -263,6 +263,120 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "ai-powered-crm-sales-intelligence",
+    title: "AI-Powered CRM with Sales Intelligence",
+    description:
+      "Sales intelligence CRM with AI lead scoring, deal win-probability prediction, call transcription, follow-up generation, and pipeline-aware chat assistance.",
+    tech: ["Python", "FastAPI", "OpenAI GPT-4o", "Whisper", "SQLite", "Chart.js", "JavaScript"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-22-ai-powered-crm`,
+    live: "",
+    image: "/Day 22.png",
+    featured: true,
+    category: "Enterprise AI",
+    highlights: [
+      "AI lead scoring from 0–100 with behavior analysis",
+      "Deal win-probability prediction with confidence and risk factors",
+      "Call transcription using Whisper with GPT-4o insight extraction",
+      "Personalized follow-up email generation with tone control",
+      "CRM pipeline chat assistant with lead, contact, and deal context",
+    ],
+  },
+  {
+    slug: "realtime-ai-trading-dashboard",
+    title: "Real-Time AI Trading Intelligence Dashboard",
+    description:
+      "Trading intelligence dashboard with four AI analysis agents, live quote refreshes, WebSocket price streams, paper trading, alerts, and strategy backtesting.",
+    tech: ["Python", "FastAPI", "OpenAI SDK", "yfinance", "WebSockets", "SQLite", "Chart.js"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-23-realtime-ai-trading-dashboard`,
+    live: "",
+    image: "/Day 23.png",
+    featured: true,
+    category: "Enterprise AI",
+    highlights: [
+      "Four-agent analysis system for technical, fundamental, sentiment, and synthesis workflows",
+      "Live market data for equities and crypto with yfinance refreshes",
+      "WebSocket price stream with candlestick charts and trading levels",
+      "Paper trading portfolio with realized and unrealized P&L tracking",
+      "Five-year strategy backtesting with AI commentary",
+    ],
+  },
+  {
+    slug: "autonomous-brand-manager",
+    title: "Autonomous AI Brand Manager",
+    description:
+      "Autonomous brand management platform with six AI agents for social inbox triage, reply writing, content strategy, A/B variants, competitive intelligence, and brand health reporting.",
+    tech: ["Python", "FastAPI", "OpenAI GPT-4o", "WebSockets", "SQLite", "Tailwind CSS", "Chart.js"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-24-autonomous-brand-manager`,
+    live: "",
+    image: "/Day 24.png",
+    featured: true,
+    category: "Enterprise AI",
+    highlights: [
+      "Six-agent brand management system named Aurelia",
+      "Unified inbox for Twitter, Instagram, and LinkedIn activity",
+      "Confidence-gated auto-replies with escalation for sensitive issues",
+      "Editable brand voice contract for replies, content, and variants",
+      "Weekly brand health reports with risks, mitigations, and next actions",
+    ],
+  },
+  {
+    slug: "ai-security-operations-center",
+    title: "AI Security Operations Center",
+    description:
+      "Passive public-domain security scanning platform with evidence-based scoring, AI summaries, tabbed reports, scan history, quotas, and PDF/JSON exports.",
+    tech: ["Python", "FastAPI", "OpenAI SDK", "SQLite", "PyJWT", "Tailwind CSS", "ReportLab"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-25-ai-security-operations-center`,
+    live: "",
+    image: "/Day 25.png",
+    featured: true,
+    category: "Enterprise AI",
+    highlights: [
+      "Passive scanning using DNS, RDAP, TLS, HTTP headers, CT logs, Wikidata, and IP geolocation",
+      "Evidence-based score deductions from a starting score of 100",
+      "Plain-language AI or fallback narratives for summaries and owner fixes",
+      "Full report tabs covering findings, infrastructure, registration, attack surface, and MITRE mapping",
+      "PDF and JSON report export with user accounts, quotas, and scan history",
+    ],
+  },
+  {
+    slug: "ai-learning-management-system",
+    title: "AI Learning Management System",
+    description:
+      "AI LMS that generates course structures from learning materials, creates adaptive quizzes, builds personalized paths, and supports student and instructor dashboards.",
+    tech: ["Python", "OpenAI SDK", "LangChain", "FastAPI", "SQLite", "Tailwind CSS", "Chart.js"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-27-ai-learning-management-system`,
+    live: "",
+    image: "/day 27.png",
+    featured: true,
+    category: "Enterprise AI",
+    highlights: [
+      "Generates course structure from uploaded learning materials",
+      "Creates module quizzes and adapts difficulty using student performance history",
+      "Builds personalized learning paths with a knowledge-graph approach",
+      "Provides wrong-answer explanations and concept reinforcement",
+      "Includes analytics for completion, time-on-task, and knowledge gaps",
+    ],
+  },
+  {
+    slug: "agentic-api-marketplace",
+    title: "Agentic AI API Marketplace",
+    description:
+      "Marketplace for listing, testing, and selling AI agent APIs with REST endpoints, live playgrounds, API keys, rate limits, billing, usage analytics, and seller dashboards.",
+    tech: ["Python", "FastAPI", "OpenAI SDK", "PostgreSQL", "Stripe API", "JWT", "Docker"],
+    github: `${AGENTS_REPO}/phase-3-enterprise-ai-platforms/day-28-agentic-api-marketplace`,
+    live: "",
+    image: "/Day 28.png",
+    featured: true,
+    category: "AI SaaS",
+    highlights: [
+      "Marketplace for listing and selling AI agent APIs",
+      "Sellers expose agents through REST endpoints",
+      "Buyers can discover and test agents in a live playground",
+      "Authentication, rate limits, billing, and usage analytics",
+      "API key management, quota enforcement, seller analytics, and payout dashboard",
+    ],
+  },
+  {
     slug: "autonomous-data-science-pipeline",
     title: "Autonomous Data Science Pipeline",
     description:
@@ -271,7 +385,7 @@ export const projects: Project[] = [
     github: `${AGENTS_REPO}/phase-2-multi-agent-systems/day-15-autonomous-data-science-pipeline`,
     live: "",
     image: "",
-    featured: true,
+    featured: false,
     category: "Multi-Agent",
     highlights: [
       "End-to-end automated ML workflow on any CSV, no code required",
@@ -290,7 +404,7 @@ export const projects: Project[] = [
     github: `${AGENTS_REPO}/phase-2-multi-agent-systems/day-12-ai-devops-pipeline`,
     live: "",
     image: "",
-    featured: true,
+    featured: false,
     category: "Multi-Agent",
     highlights: [
       "Four analyst agents run concurrently via asyncio, merged by a decision agent",
@@ -362,8 +476,8 @@ export const projects: Project[] = [
     tech: ["Python", "FastAPI", "OpenAI SDK", "Tailwind CSS", "HTML"],
     github: "https://github.com/MaryamMumtaz-piaic/SlideGeneratorAgent",
     live: "",
-    image: "",
-    featured: false,
+    image: "/slide generator agent.PNG",
+    featured: true,
     category: "AI Automation",
     highlights: [
       "Topic-to-deck generation targeting 20–22 slides with 3–5 bullets each",
@@ -400,8 +514,8 @@ export const projects: Project[] = [
     tech: ["Python", "FastAPI", "OpenAI GPT-4.1", "Gemini 2.0", "Tailwind CSS"],
     github: "https://github.com/MaryamMumtaz-piaic/CustomPromptAgent",
     live: "",
-    image: "",
-    featured: false,
+    image: "/cudtom promt agent.png",
+    featured: true,
     category: "AI Automation",
     highlights: [
       "Six structured inputs: role, task, tone, format, audience, context",
@@ -419,7 +533,7 @@ export const projects: Project[] = [
     tech: ["Next.js 16", "TypeScript", "Prisma", "Neon Postgres", "Stripe", "NextAuth", "OpenAI SDK", "Zustand"],
     github: "https://github.com/MaryamMumtaz-piaic/Maryam-E-Commerce",
     live: "",
-    image: "",
+    image: "/Maryam-shop.png",
     featured: true,
     category: "Full Stack",
     highlights: [
@@ -611,7 +725,7 @@ export const faqs = [
 
 export const achievements = [
   { label: "AI Agents Built", value: "100+" },
-  { label: "Portfolio Projects", value: "16" },
+  { label: "Portfolio Projects", value: "22" },
   { label: "Anthropic Certifications", value: "5" },
   { label: "Hackathons", value: "3" },
 ];

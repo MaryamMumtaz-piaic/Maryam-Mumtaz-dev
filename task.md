@@ -1,568 +1,310 @@
-# Portfolio Update Task — Project Section, Content & Data Only
+## Task: Add a Premium Stats Strip Below the Hero Profile
 
-You are working on my existing portfolio website:
+I want you to make a **small, precise UI enhancement** to my existing portfolio website.
 
-**Portfolio:** https://maryam-mumtaz.vercel.app/
-**GitHub:** https://github.com/MaryamMumtaz-piaic
+### Important: Do NOT redesign the website
 
-I want you to update the existing portfolio carefully.
+The existing portfolio already has an established visual identity, layout, typography, spacing system, colors, hero composition, navigation, profile image, buttons, and responsive behavior.
 
-## IMPORTANT — DO NOT REDESIGN THE UI
+**Do not change or redesign any of these.**
 
-Do NOT change the existing visual design, theme, colors, typography, spacing system, navbar design, buttons, animations, layout style, responsive design, or overall UI/UX.
+Do not:
 
-The existing beige/taupe + brown visual style is already approved.
+* Change the existing color palette
+* Change the beige / warm brown visual identity
+* Change typography
+* Change the navbar
+* Change the hero layout
+* Change the profile image
+* Change the existing buttons
+* Change hero spacing unnecessarily
+* Change the page background
+* Change responsive behavior outside the new component
+* Add unnecessary animations
+* Create a completely new card design
+* Introduce blue, purple, green, gradients, glassmorphism, or unrelated visual styles
 
-**This is a content/data and project-section update only.**
-
-Do not redesign anything.
-
----
-
-# 1. HOME PAGE — REMOVE THE CURRENT 6 PROJECT CARDS
-
-On the Home page, there is currently a "Featured Projects" section showing 6 project cards.
-
-Remove the current 6-card grid presentation.
-
-I do NOT want six static project cards displayed in a grid on the Home page anymore.
-
-However:
-
-**DO NOT DELETE THESE PROJECTS FROM THE PROJECT DATABASE/DATA SOURCE.**
-
-They must remain available on the All Projects page.
+The goal is a **surgical UI enhancement**, not a redesign.
 
 ---
 
-# 2. HOME PAGE — CREATE A CONTINUOUS PROJECT MARQUEE
+## What I Want
 
-Replace the current 6-card Featured Projects grid with a **single horizontal scrolling project showcase**.
+Look at the current Hero section.
 
-Requirements:
+I want a **small premium statistics strip/card directly underneath the hero profile area**, inspired by the compact stats section visible.
 
-* All 16 projects should participate in the marquee.
-* Projects should move continuously from **left to right**.
-* The animation should be seamless and infinite.
-* It must loop continuously without a visible jump.
-* Duplicate the project list internally if necessary to create a seamless infinite loop.
-* Do not show a scrollbar.
-* The animation should feel smooth and professional.
-* Do not make it excessively fast.
-* Pause the animation when the user hovers over the project showcase.
-* Resume when the mouse leaves.
-* It must work properly on desktop, tablet and mobile.
-* Do not break the existing page layout.
-* Keep the existing section background and visual styling.
+However, **do not copy its visual style exactly**.
 
-### Project interaction
+The new component must be designed specifically for my existing portfolio's warm beige/brown aesthetic.
 
-Every project in the scrolling showcase must be clickable.
+### Statistics to display
 
-When a user clicks a project:
+Use these three statistics:
 
-* Open that project's project detail/slide view.
-* The project detail should show the existing project information in a clean slide/modal/detail presentation.
-* Do not navigate to an unrelated page.
-* Use the project's existing GitHub URL and/or live demo URL where available.
-* Make sure the correct information is shown for the clicked project.
-* Add keyboard accessibility and proper focus behavior if using a modal/dialog.
+**100+**
+Projects Built
 
-Do NOT create fake project URLs.
+**30+**
+Projects Live
+
+**20+**
+Projects Sold
+
+The numbers must be visually dominant and the labels must be smaller and secondary.
 
 ---
 
-# 3. "VIEW ALL PROJECTS" BUTTON
+## Design Direction
 
-Keep the existing **View All Projects** button.
+The component should feel like it was originally designed as part of this portfolio.
 
-When the user clicks it:
+Use the existing site's:
 
-Navigate to:
+* Warm beige background
+* Brown typography
+* Existing brown accent color
+* Existing border treatment
+* Existing rounded-corner language
+* Existing shadows
+* Existing spacing system
 
-`/projects`
+The card should be:
 
-The All Projects page must display the complete project collection.
+* Compact
+* Elegant
+* Premium
+* Minimal
+* Professional
+* Consistent with the current portfolio
+* Visually balanced with the hero section
 
-Do not rename it to "Products".
-
-It must remain **Projects**.
-
----
-
-# 4. ALL PROJECTS PAGE — TOTAL 16 PROJECTS
-
-The `/projects` page should contain exactly **16 projects**.
-
-The existing 6 projects must remain there.
-
-Add the latest and strongest projects from my provided GitHub repositories and the 30 Days of AI Agents project.
-
-Use real project information from the repositories instead of inventing descriptions.
-
-Source repositories:
-
-1. https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents
-2. https://github.com/MaryamMumtaz-piaic/Maryam-E-Commerce
-3. https://github.com/MaryamMumtaz-piaic/claudecode-cosmetic-website
-4. https://github.com/MaryamMumtaz-piaic/SocialPostCreatorAgent
-5. https://github.com/MaryamMumtaz-piaic/SlideGeneratorAgent
-6. https://github.com/MaryamMumtaz-piaic/CustomPromptAgent
-
-For the 30 Days of AI Agents repository, select the strongest and most portfolio-relevant projects from the latest phases/days.
-
-Prioritize projects that demonstrate:
-
-* Agentic AI
-* Multi-agent systems
-* AI automation
-* Enterprise AI
-* Full-stack engineering
-* MCP
-* RAG
-* AI SaaS
-* Workflow automation
-* Cloud-native systems
-* Real business use cases
-
-Do not simply copy all 30 days.
-
-Select the strongest projects so that the final portfolio contains **exactly 16 unique projects**.
+Think of it as a **small credibility/proof bar**, not a large dashboard widget.
 
 ---
 
-# 5. PROJECT DATA QUALITY
+## Recommended Structure
 
-For every project, make sure the data structure contains, where applicable:
+Create a horizontal three-column stats component:
 
-* title
-* category
-* short description
-* technologies
-* GitHub URL
-* live demo URL
-* project image
-* featured status
-* optional project details
+```text
+┌─────────────────────────────────────────────────────┐
+│       100+          │       30+        │    20+     │
+│   Projects Built    │  Projects Live   │ Projects Sold │
+└─────────────────────────────────────────────────────┘
+```
 
-Descriptions should be concise and professional.
+Use subtle vertical separators between the three statistics.
 
-Do not use generic descriptions such as:
+The entire component should have the same visual language as the existing portfolio.
 
-"An amazing AI project."
+### Desktop
 
-Instead explain what the project actually does.
+On desktop:
 
-Example style:
+* Three columns
+* Equal width
+* Compact height
+* Numbers centered
+* Labels centered
+* Subtle separators
+* Rounded corners consistent with existing UI
+* Position it naturally below/around the hero profile area without making the hero unnecessarily tall
 
-"Enterprise AI workflow automation platform for building, orchestrating, and executing autonomous agent workflows with visual node-based pipelines."
+### Mobile
 
-Keep project descriptions approximately 1–2 sentences.
+On mobile:
 
----
+* Preserve the compact three-column layout if it fits naturally
+* Reduce horizontal padding
+* Reduce font sizes proportionally
+* Make sure no text wraps awkwardly
+* Make sure the card does not overflow horizontally
+* Do not break the existing mobile hero layout
 
-# 6. PROJECT ORDER
-
-Use a professional portfolio-oriented order.
-
-Prioritize:
-
-1. Latest/strongest Agentic AI projects
-2. Enterprise AI platforms
-3. Multi-agent systems
-4. AI automation projects
-5. Full-stack AI applications
-6. E-commerce and other supporting projects
-
-The most impressive and recent work should appear first on the All Projects page.
+If three columns become too cramped at a very small viewport, use a clean responsive layout while preserving the same visual hierarchy.
 
 ---
 
-# 7. BIO / HERO CONTENT UPDATE
+## Typography
 
-Update the existing bio/hero copy using my latest professional positioning.
+Follow the existing typography system.
 
-My current professional identity is:
+Do not introduce another font.
 
-**Maryam Mumtaz — AI Engineer & Full-Stack Developer**
+Numbers should be:
 
-I specialize in:
+* Bold
+* Large enough to immediately communicate the achievement
+* Consistent with the existing heading weight
 
-* Agentic AI
-* AI automation
-* Multi-agent systems
-* Full-stack development
-* AI-powered applications
-* Workflow automation
-* MCP
-* RAG
-* Cloud-native systems
-* Code and no-code automation with n8n
+Labels should be:
 
-I am also the founder of **Marsa Empower**.
+* Smaller
+* Medium/regular weight
+* Slightly muted compared with the numbers
 
-Use professional, concise English.
+Example hierarchy:
 
-Do not exaggerate or invent experience.
+```text
+100+
+Projects Built
+```
 
----
-
-# 8. HOME SECTION COPY
-
-Update outdated Home page copy to reflect my current positioning.
-
-The messaging should communicate that I build:
-
-**intelligent AI agents, autonomous workflows, scalable full-stack platforms, and AI-powered automation systems.**
-
-The copy should feel professional and suitable for:
-
-* AI Engineer roles
-* Full-time opportunities
-* Freelance projects
-* Consulting
-* Partnerships
-
-Use the following availability message:
-
-**Always open to full-time opportunities, freelance projects, consulting, and strategic partnerships.**
+The `100+` should be the primary visual element.
 
 ---
 
-# 9. CONTACT INFORMATION
+## Animation
 
-Use this email:
+Keep animation extremely subtle.
 
-**[maryamqureshimumtazm.a@gmail.com](mailto:maryamqureshimumtazm.a@gmail.com)**
+If the project already has entrance animations, reuse the existing animation system.
 
-Use my LinkedIn:
+Do NOT introduce:
 
-**https://www.linkedin.com/in/maryam-mumtaz**
+* flashy counters
+* bouncing animations
+* excessive hover effects
+* glowing effects
+* parallax
+* unnecessary motion
 
-Portfolio:
-
-**https://maryam-mumtaz.vercel.app/**
-
-Do not invent alternative email addresses or social links.
-
----
-
-# 10. EDUCATION
-
-Keep the existing Education section but make sure the information is accurate and up to date.
-
-### PIAIC
-
-**Agentic & Robotic AI Engineer**
-April 2025 – Present
-In Progress
-
-### Govt. of Sindh VTC Jacobline Saddar Karachi
-
-**DIT — Diploma in Information Technology**
-February 2023 – September 2024
-Completed
-
-### Govt. Degree College for Women
-
-**Intermediate — Engineering**
-April 2021 – November 2023
-Completed
-
-Do not change the existing visual Education UI.
-
-Only update the content if necessary.
+A subtle fade/slide-in is acceptable only if it matches existing animations.
 
 ---
 
-# 11. CERTIFICATIONS
+## Component Architecture
 
-Add/update these certifications in the existing Certifications section.
+Before modifying anything:
 
-### Anthropic — Claude Code in Action
+1. Inspect the existing project structure.
+2. Identify the Hero component.
+3. Identify the existing design tokens/theme.
+4. Identify the existing responsive breakpoints.
+5. Identify whether reusable Card/Stats components already exist.
 
-Issued: March 2026
-Credential ID: `vnisr68f3767`
+If an existing component can be reused safely, reuse it.
 
-Verification:
-https://verify.skilljar.com/c/vnisr68f3767
+Otherwise create a small isolated component such as:
 
-### Anthropic — AI Fluency: Framework & Foundations
+```text
+HeroStats
+```
 
-Issued: April 2026
+or an equivalent name matching the project's architecture.
 
-### Anthropic — Claude 101
-
-Issued: April 2026
-
-### Anthropic — Model Context Protocol: Advanced Topics
-
-Issued: March 2026
-Credential ID: `3atanznvm4zr`
-
-Verification:
-https://verify.skilljar.com/c/3atanznvm4zr
-
-### Anthropic — Introduction to Model Context Protocol
-
-Issued: March 2026
-Credential ID: `scyu7pokq3nq`
-
-Verification:
-https://verify.skilljar.com/c/scyu7pokq3nq
-
-### JDC Free IT City
-
-**Graphic Designer**
-
-Do not invent dates or credential IDs where I have not provided them.
+Keep the implementation clean and maintainable.
 
 ---
 
-# 12. SKILLS — UPDATE CONTENT, NOT UI
+## Data
 
-Keep the current Skills section design exactly as it is.
+Do not hardcode the statistics throughout the JSX.
 
-Update the content to accurately represent my current stack.
+Prefer a small data structure:
 
-### AI & Agentic Systems
+```ts
+const heroStats = [
+  {
+    value: "100+",
+    label: "Projects Built",
+  },
+  {
+    value: "30+",
+    label: "Projects Live",
+  },
+  {
+    value: "20+",
+    label: "Projects Sold",
+  },
+];
+```
 
-* Agentic AI
-* Multi-Agent Systems
-* OpenAI SDK
-* LangChain
-* LangGraph
-* CrewAI
-* MCP
-* RAG
-* Prompt Engineering
-* AI Automation
-* n8n
+Then render the component from the data.
 
-### Frontend
-
-* Next.js
-* React
-* TypeScript
-* JavaScript
-* HTML
-* CSS
-* Tailwind CSS
-
-### Backend
-
-* Python
-* FastAPI
-* PHP
-* SQL
-* PostgreSQL
-* Prisma
-* REST APIs
-
-### Cloud / DevOps
-
-* Docker
-* Kubernetes
-* Minikube
-* Helm
-* GitHub Actions
-* Vercel
-* AWS
-* CI/CD
-
-### Databases / Infrastructure
-
-* PostgreSQL
-* Neon
-* MySQL
-* Redis
-* Vector Databases
-
-### Tools
-
-* Git
-* GitHub
-* VS Code
-* Cursor
-* Claude Code
-* Postman
-* Figma
-* Canva
-
-Only update the data.
-
-Do not redesign the Skills section.
+This makes the statistics easy to update later.
 
 ---
 
-# 13. IMPORTANT FACT-CHECKING RULE
+## Critical Layout Requirement
 
-Before writing project descriptions, inspect the actual GitHub repositories I provided.
+The new statistics strip must **not push the hero content into an awkward position**.
 
-Use the repository README, project structure, technologies and available demos to determine what each project actually does.
+After implementation:
 
-Do not invent:
+* Check desktop viewport
+* Check tablet viewport
+* Check mobile viewport
+* Check very small mobile viewport
 
-* features
-* technologies
-* clients
-* users
-* metrics
-* awards
-* deployment status
-* live URLs
-* business results
+Make sure:
 
-If a project does not have a live demo, show GitHub only.
-
-If a live demo exists, use the real URL.
-
----
-
-# 14. DO NOT USE FAKE TESTIMONIALS OR FAKE METRICS
-
-Remove or stop displaying obviously placeholder/fabricated testimonials and unsupported claims.
-
-Do not claim:
-
-* "30+ happy clients"
-* "90% efficiency gain"
-* "550+ agents"
-* "50+ projects"
-* or any other numerical achievement
-
-unless that number is explicitly supported by my actual project/profile data.
-
-Use only verified information.
+* Hero heading remains visually dominant
+* Profile image remains properly positioned
+* CTA buttons remain accessible
+* Stats do not overlap anything
+* Stats do not cause unexpected horizontal scrolling
+* Existing whitespace remains intentional
+* The overall Hero section still feels balanced
 
 ---
 
-# 15. IMPORTANT UI PRESERVATION RULE
+## Visual Quality Check
 
-This is NOT a redesign.
+Compare the result against the existing portfolio screenshot and preserve the original design language.
 
-Do not change:
+The final result should feel like:
 
-* color palette
-* typography
-* navbar
-* buttons
-* card design
-* section spacing
-* page width
-* background
-* existing animations except the new project marquee
-* responsive breakpoints
-* footer
-* general layout
-* visual identity
+> "This stats section was always part of the original portfolio."
 
-Only make the minimum code changes required for:
+It should NOT feel like:
 
-1. Project data update
-2. Home project marquee
-3. Project click/detail interaction
-4. All Projects page with 16 projects
-5. View All Projects navigation
-6. Bio/content updates
-7. Skills content updates
-8. Education/certification content updates
+> "A component copied from another portfolio and pasted here."
 
 ---
 
-# 16. RESPONSIVENESS
+## Do Not Modify Existing Content
 
-The project marquee must be fully responsive.
+Unless technically necessary for placement, do not modify existing:
 
-Desktop:
+* Hero copy
+* Name
+* Job title
+* Description
+* Profile image
+* CTA buttons
+* Navbar
+* Social links
+* Page sections
+* Footer
+* Existing statistics elsewhere on the website
 
-* Smooth horizontal project movement
-* Multiple project cards visible
-
-Tablet:
-
-* Adjust card width naturally
-
-Mobile:
-
-* Maintain horizontal scrolling animation
-* Do not create horizontal page overflow
-* Keep the entire website responsive
-
----
-
-# 17. CODE QUALITY
-
-Before finishing:
-
-* Inspect the existing project architecture.
-* Reuse existing components wherever possible.
-* Do not create unnecessary duplicate components.
-* Keep project data centralized.
-* Use reusable ProjectCard / ProjectModal / ProjectMarquee components if appropriate.
-* Avoid hardcoding the same project data in multiple places.
-* Preserve TypeScript types if the project uses TypeScript.
-* Ensure there are no console errors.
-* Ensure there are no broken links.
-* Ensure images load correctly.
-* Ensure the build passes.
-
-Run the appropriate lint/build checks after making changes.
+Only add the requested Hero stats strip.
 
 ---
 
-# 18. FINAL ACCEPTANCE CRITERIA
+## Final Validation
 
-The task is complete only when all of these are true:
+After implementation:
 
-[ ] Home page no longer shows the old 6-project static grid.
+1. Run the project.
+2. Check for TypeScript errors.
+3. Check for lint errors.
+4. Check desktop responsiveness.
+5. Check tablet responsiveness.
+6. Check mobile responsiveness.
+7. Verify there is no horizontal overflow.
+8. Verify existing UI remains visually unchanged.
+9. Verify the new stats use the existing theme.
+10. Verify all three statistics are displayed correctly:
 
-[ ] Home page contains one continuous left-to-right project marquee.
+**100+ Projects Built**
+**30+ Projects Live**
+**20+ Projects Sold**
 
-[ ] All 16 projects are included in the marquee.
+If anything in the implementation requires changing existing UI, prefer the **smallest possible change**.
 
-[ ] Clicking any project opens the correct project detail/slide view.
+The priority is:
 
-[ ] "View All Projects" opens `/projects`.
-
-[ ] `/projects` contains exactly 16 unique projects.
-
-[ ] The original 6 projects remain available on `/projects`.
-
-[ ] Latest projects from my provided GitHub sources have been added.
-
-[ ] Project descriptions are based on real repository information.
-
-[ ] No fake URLs or fake project information has been added.
-
-[ ] Bio reflects my current AI Engineer + Full-Stack Developer positioning.
-
-[ ] Home copy is updated professionally.
-
-[ ] Education is accurate.
-
-[ ] Certifications are updated.
-
-[ ] Skills reflect my current AI/Full-Stack/Automation stack.
-
-[ ] Existing UI/design remains unchanged.
-
-[ ] Responsive behavior works on desktop, tablet and mobile.
-
-[ ] No horizontal page overflow.
-
-[ ] No console errors.
-
-[ ] Production build succeeds.
-
----
-
-## MOST IMPORTANT INSTRUCTION
-
-**Do not redesign my portfolio.**
-
-The existing design is approved.
-
-I only want the portfolio content and project experience updated, with the Home project's static grid replaced by a smooth continuous project marquee.
-
-Keep the website visually identical except for the new project-section behavior and the necessary content updates.
+**Existing UI integrity > New stats component > Everything else.**

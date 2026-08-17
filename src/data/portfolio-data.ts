@@ -723,6 +723,12 @@ export const faqs = [
   },
 ];
 
+export const heroStats = [
+  { value: "100+", label: "Projects Built" },
+  { value: "30+", label: "Projects Live" },
+  { value: "20+", label: "Projects Sold" },
+];
+
 export const achievements = [
   { label: "AI Agents Built", value: "100+" },
   { label: "Portfolio Projects", value: "22" },

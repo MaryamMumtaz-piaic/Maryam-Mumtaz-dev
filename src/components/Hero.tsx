@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail, FiDownload, FiExternalLink, FiMapPin } from "react-icons/fi";
 import { personalInfo } from "@/data/portfolio-data";
 import { useEffect, useState } from "react";
+import HeroStats from "./HeroStats";
 
 const roles = [
   "AI Engineer",
@@ -177,7 +178,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="flex justify-center order-1 lg:order-2"
           >
-            <div className="relative">
+            <div className="relative pb-14 sm:pb-16">
               {/* Decorative ring */}
               <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-taupe-300/40 to-taupe-400/30 blur-xl" />
 
@@ -195,6 +196,7 @@ export default function Hero() {
                 </div>
               </div>
 
+              <HeroStats />
             </div>
           </motion.div>
         </div>

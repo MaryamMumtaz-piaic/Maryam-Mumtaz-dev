@@ -161,11 +161,11 @@ export default function CareerExpertise() {
   });
 
   return (
-    <section id="expertise" className="py-20 bg-sand-100 overflow-hidden">
+    <section id="expertise" className="py-14 sm:py-20 bg-sand-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ── Section divider ───────────────────────────────── */}
-        <motion.div {...fadeUp(0)} className="flex items-center gap-5 mb-16">
+        <motion.div {...fadeUp(0)} className="flex items-center gap-5 mb-10 sm:mb-16">
           <div className="h-px flex-1 bg-taupe-200" />
           <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-taupe-400 whitespace-nowrap">
             Career &amp; Expertise
@@ -176,8 +176,8 @@ export default function CareerExpertise() {
         {/* ════════════════════════════════════════════════════
             WHAT I DO — 4 capability cards (unchanged)
         ════════════════════════════════════════════════════ */}
-        <div className="mb-20">
-          <motion.div {...fadeUp(0.04)} className="mb-9">
+        <div className="mb-12 sm:mb-20">
+          <motion.div {...fadeUp(0.04)} className="mb-6 sm:mb-9">
             <SectionLabel>What I Do</SectionLabel>
             <h2 className="text-3xl sm:text-4xl font-bold text-taupe-900 tracking-tight">
               Engineering <span className="text-taupe-600">Intelligence</span> into Every System
@@ -234,8 +234,8 @@ export default function CareerExpertise() {
         {/* ════════════════════════════════════════════════════
             MY AI JOURNEY — alternating centered timeline
         ════════════════════════════════════════════════════ */}
-        <div className="mb-20">
-          <motion.div {...fadeUp(0.04)} className="mb-12 text-center">
+        <div className="mb-12 sm:mb-20">
+          <motion.div {...fadeUp(0.04)} className="mb-8 sm:mb-12 text-center">
             <SectionLabel>Timeline</SectionLabel>
             <h2 className="text-3xl sm:text-4xl font-bold text-taupe-900 tracking-tight">
               My AI <span className="text-taupe-600">Journey</span>
@@ -360,12 +360,12 @@ export default function CareerExpertise() {
         {/* ════════════════════════════════════════════════════
             EDUCATION  |  CERTIFICATIONS  — large premium cards
         ════════════════════════════════════════════════════ */}
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className="grid lg:grid-cols-2 gap-8 sm:gap-10">
 
           {/* ── Education ─────────────────────────────────── */}
           <motion.div {...fadeLeft(0.05)}>
             {/* Heading */}
-            <div className="flex items-center gap-3.5 mb-8">
+            <div className="flex items-center gap-3.5 mb-5 sm:mb-8">
               <div className="w-10 h-10 rounded-xl bg-sand-200 border border-taupe-200 flex items-center justify-center text-taupe-700 flex-shrink-0">
                 <HiOutlineAcademicCap size={20} />
               </div>
@@ -431,7 +431,7 @@ export default function CareerExpertise() {
           {/* ── Certifications ────────────────────────────── */}
           <motion.div {...fadeRight(0.05)}>
             {/* Heading */}
-            <div className="flex items-center gap-3.5 mb-8">
+            <div className="flex items-center gap-3.5 mb-5 sm:mb-8">
               <div className="w-10 h-10 rounded-xl bg-sand-200 border border-taupe-200 flex items-center justify-center text-taupe-700 flex-shrink-0">
                 <FiAward size={19} />
               </div>

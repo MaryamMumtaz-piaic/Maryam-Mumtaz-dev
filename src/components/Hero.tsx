@@ -82,7 +82,7 @@ export default function Hero() {
             </motion.p>
 
             {/* Name */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-taupe-900 leading-[1.1] tracking-tight whitespace-nowrap">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-taupe-900 leading-[1.1] tracking-tight sm:whitespace-nowrap">
               <span className="text-taupe-600">Maryam</span> Mumtaz
             </h1>
 

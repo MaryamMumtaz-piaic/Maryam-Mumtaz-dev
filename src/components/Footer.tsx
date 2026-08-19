@@ -45,7 +45,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-sand-100 py-20 px-6 overflow-hidden border-t border-taupe-200">
+    <footer className="relative bg-sand-100 py-14 sm:py-20 px-6 overflow-hidden border-t border-taupe-200">
       {/* Background accents */}
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-taupe-200/40 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-sand-200/40 rounded-full blur-[100px] pointer-events-none" />
@@ -57,7 +57,7 @@ export default function Footer() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center text-center mb-16"
+          className="flex flex-col items-center text-center mb-10 sm:mb-16"
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white shadow-sm shadow-taupe-900/5 border border-taupe-200 text-taupe-700 text-[13px] font-semibold rounded-full mb-6">
             <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
@@ -87,7 +87,7 @@ export default function Footer() {
           <div className="text-5xl md:text-7xl font-black text-taupe-900/4 select-none pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap uppercase tracking-[0.2em]">
             PORTFOLIO 2026
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-taupe-900 relative z-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-taupe-900 relative z-10">
             Maryam{" "}
             <span className="text-taupe-600">Mumtaz</span>
           </h2>

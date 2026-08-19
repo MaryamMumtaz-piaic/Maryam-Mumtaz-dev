@@ -5,14 +5,14 @@ import { personalInfo } from "@/data/portfolio-data";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-sand-50 overflow-hidden">
+    <section id="about" className="py-14 sm:py-24 bg-sand-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-10 lg:mb-20"
         >
           <span className="inline-block px-4 py-1.5 bg-white border border-taupe-200 text-taupe-700 text-sm font-semibold rounded-full uppercase tracking-wider">
             About Me
@@ -27,7 +27,7 @@ export default function About() {
         </motion.div>
 
         {/* ========== Profile + Summary ========== */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Profile Image Side */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}

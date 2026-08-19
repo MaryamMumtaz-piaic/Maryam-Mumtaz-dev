@@ -21,7 +21,7 @@ export default function FAQ() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="text-center mb-14"
+          className="text-center mb-8 sm:mb-14"
         >
           <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-taupe-400 mb-4">
             Support &amp; Answers
@@ -70,7 +70,7 @@ export default function FAQ() {
                     aria-expanded={isOpen}
                     aria-controls={panelId}
                     onClick={() => toggle(i)}
-                    className="w-full flex items-center gap-5 px-7 py-6 text-left group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-taupe-400 focus-visible:ring-inset rounded-2xl"
+                    className="w-full flex items-center gap-3 sm:gap-5 px-4 py-4 sm:px-7 sm:py-6 text-left group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-taupe-400 focus-visible:ring-inset rounded-2xl"
                   >
                     <span
                       className={`flex-1 text-base font-bold leading-snug transition-colors duration-200 ${
@@ -107,7 +107,7 @@ export default function FAQ() {
                         transition={{ duration: 0.32, ease: "easeInOut" }}
                         className="overflow-hidden"
                       >
-                        <div className="px-7 pb-7">
+                        <div className="px-4 pb-5 sm:px-7 sm:pb-7">
                           <div className="h-px bg-taupe-100 mb-5" />
                           <p className="text-sm text-taupe-600 leading-relaxed">
                             {faq.answer}

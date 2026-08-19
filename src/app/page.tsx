@@ -18,10 +18,10 @@ export default function Home() {
       <Hero />
       <About />
       <CareerExpertise />
-      <Startup />
       <Hackathons />
       <FeaturedProjects />
       <TechStack />
+      <Startup />
       <FAQ />
       <Contact />
       <Footer />

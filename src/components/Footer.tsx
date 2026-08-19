@@ -3,9 +3,10 @@ import {
   FiGithub,
   FiLinkedin,
   FiMail,
-  FiHeart,
   FiArrowUp,
   FiMapPin,
+  FiSend,
+  FiCode,
 } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { personalInfo } from "@/data/portfolio-data";
@@ -17,10 +18,25 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-const connectLinks = [
-  { label: "GitHub", href: personalInfo.github, icon: FiGithub },
-  { label: "LinkedIn", href: personalInfo.linkedin, icon: FiLinkedin },
-  { label: "Email", href: `mailto:${personalInfo.email}`, icon: FiMail },
+const socialLinks = [
+  {
+    label: "GitHub",
+    href: personalInfo.github,
+    icon: FiGithub,
+    title: "View my code",
+  },
+  {
+    label: "LinkedIn",
+    href: personalInfo.linkedin,
+    icon: FiLinkedin,
+    title: "Connect professionally",
+  },
+  {
+    label: "Email",
+    href: `mailto:${personalInfo.email}`,
+    icon: FiMail,
+    title: "Send a message",
+  },
 ];
 
 export default function Footer() {
@@ -30,11 +46,12 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-sand-100 py-20 px-6 overflow-hidden border-t border-taupe-200">
-      {/* Background Accents (Subtle) */}
-      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-taupe-200/40 rounded-full blur-[100px] pointer-events-none" />
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-sand-200/30 rounded-full blur-[100px] pointer-events-none" />
+      {/* Background accents */}
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-taupe-200/40 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-sand-200/40 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto flex flex-col items-center">
+
         {/* Top: Status & CTA */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -47,97 +64,115 @@ export default function Footer() {
             {personalInfo.status}
           </div>
           <h3 className="text-3xl md:text-4xl font-bold text-taupe-900 mb-4 tracking-tight">
-            Interested in <span className="text-taupe-700 underline decoration-taupe-300 decoration-4 underline-offset-8">collaborating</span>?
+            Ready to{" "}
+            <span className="text-taupe-700 underline decoration-taupe-300 decoration-4 underline-offset-8">
+              build something
+            </span>{" "}
+            great?
           </h3>
-          <p className="text-taupe-600 max-w-md mx-auto leading-relaxed">
-            I&apos;m currently open to new projects and opportunities. Let&apos;s turn your vision into a reality.
+          <p className="text-taupe-500 max-w-md mx-auto leading-relaxed text-[15px]">
+            Open to full-time roles, freelance projects, and meaningful collaborations.
+            Let&apos;s create something that matters.
           </p>
         </motion.div>
 
-        {/* Center: Main Branding/Signature */}
+        {/* Center: Branding */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="relative py-12 flex flex-col items-center gap-4"
+          transition={{ duration: 0.7 }}
+          className="relative py-10 flex flex-col items-center gap-3"
         >
-          <div className="text-5xl md:text-7xl font-black text-taupe-900/5 select-none pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap uppercase tracking-[0.2em]">
+          <div className="text-5xl md:text-7xl font-black text-taupe-900/4 select-none pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap uppercase tracking-[0.2em]">
             PORTFOLIO 2026
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-taupe-900 relative z-10">
-            Maryam <span className="text-taupe-600">Mumtaz</span>
+            Maryam{" "}
+            <span className="text-taupe-600">Mumtaz</span>
           </h2>
-          <div className="flex items-center gap-1.5 text-xs font-bold text-taupe-600 uppercase tracking-widest mt-2">
-            <FiMapPin className="text-taupe-600" />
+          <p className="text-[11px] font-bold text-taupe-500 uppercase tracking-[0.2em] relative z-10">
+            Full Stack Developer &amp; AI Engineer
+          </p>
+          <div className="flex items-center gap-1.5 text-xs font-semibold text-taupe-400 uppercase tracking-widest mt-1 relative z-10">
+            <FiMapPin size={11} />
             {personalInfo.location}
           </div>
         </motion.div>
 
-        {/* Nav Links & Socials (Simplified) */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-12 py-10 border-y border-taupe-200">
-          {/* Quick Links */}
-          <div className="flex justify-center md:justify-start gap-8">
+        {/* Nav Links, Scroll-to-Top, Socials */}
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-10 py-10 border-y border-taupe-200">
+
+          {/* Quick Navigation */}
+          <div className="flex justify-center md:justify-start gap-6 flex-wrap">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-semibold text-taupe-700 hover:text-taupe-900 transition-colors"
+                className="relative text-sm font-semibold text-taupe-500 hover:text-taupe-900 transition-colors duration-200 group"
               >
                 {link.label}
+                <span className="absolute -bottom-0.5 left-0 w-0 h-[1.5px] bg-taupe-700 transition-all duration-200 group-hover:w-full rounded-full" />
               </a>
             ))}
           </div>
 
-          {/* Back to Top (Center) */}
-          <div className="flex justify-center animate-bounce-slow">
+          {/* Scroll to Top */}
+          <div className="flex justify-center">
             <button
               onClick={scrollToTop}
-              className="w-12 h-12 rounded-full bg-white shadow-md shadow-taupe-900/10 border border-taupe-200 flex items-center justify-center text-taupe-600 hover:text-taupe-900 transition-all hover:shadow-xl"
-              aria-label="Scroll to top"
+              className="w-11 h-11 rounded-full bg-white shadow-sm shadow-taupe-900/8 border border-taupe-200 flex items-center justify-center text-taupe-500 hover:text-taupe-900 hover:border-taupe-400 hover:shadow-md transition-all duration-200"
+              aria-label="Back to top"
             >
-              <FiArrowUp size={20} />
+              <FiArrowUp size={18} />
             </button>
           </div>
 
-          {/* Socials */}
-          <div className="flex justify-center md:justify-end gap-6">
-            {connectLinks.map((social) => (
+          {/* Social Icons */}
+          <div className="flex justify-center md:justify-end gap-3">
+            {socialLinks.map((social) => (
               <a
                 key={social.label}
                 href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-taupe-600 hover:text-taupe-900 transition-all hover:-translate-y-1"
+                target={social.label !== "Email" ? "_blank" : undefined}
+                rel={social.label !== "Email" ? "noopener noreferrer" : undefined}
+                title={social.title}
                 aria-label={social.label}
+                className="w-10 h-10 flex items-center justify-center rounded-xl border border-taupe-200 bg-white text-taupe-600 hover:bg-taupe-700 hover:text-white hover:border-taupe-700 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-taupe-900/20 transition-all duration-300"
               >
-                <social.icon size={20} />
+                <social.icon size={17} />
               </a>
             ))}
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright & Credit */}
-        <div className="w-full mt-10 flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] font-bold text-taupe-600 uppercase tracking-widest">
-          <p>
-            &copy; {new Date().getFullYear()} {personalInfo.name}
+        {/* Bottom Bar */}
+        <div className="w-full mt-8 flex flex-col md:flex-row items-center justify-between gap-5">
+
+          {/* Copyright */}
+          <p className="text-[11px] font-semibold text-taupe-400 uppercase tracking-widest">
+            &copy; {new Date().getFullYear()} Maryam Mumtaz
           </p>
 
-          <a
-            href={`mailto:${personalInfo.email}`}
-            className="text-taupe-700 hover:text-taupe-900 transition-colors"
-          >
-            {personalInfo.email}
-          </a>
+          {/* Email + CTA button */}
+          <div className="flex items-center gap-3">
+            <span className="text-[11px] font-medium text-taupe-400 tracking-wide hidden sm:block">
+              {personalInfo.email}
+            </span>
+            <a
+              href={`mailto:${personalInfo.email}`}
+              className="inline-flex items-center gap-1.5 px-4 py-2 bg-taupe-700 hover:bg-taupe-800 text-white text-[12px] font-semibold rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-taupe-900/20 active:scale-95"
+            >
+              <FiSend size={12} />
+              Say Hello
+            </a>
+          </div>
 
-          <div className="flex items-center gap-2 group cursor-default">
-            <span>Built with</span>
-            <FiHeart
-              className="text-taupe-600 transition-transform group-hover:scale-125"
-              fill="currentColor"
-              size={12}
-            />
-            <span>by Maryam</span>
+          {/* Credit */}
+          <div className="flex items-center gap-1.5 text-[11px] font-semibold text-taupe-400 uppercase tracking-widest">
+            <FiCode size={11} className="text-taupe-500" />
+            <span>Designed &amp; built by</span>
+            <span className="text-taupe-700 font-bold">Maryam Mumtaz</span>
           </div>
         </div>
       </div>

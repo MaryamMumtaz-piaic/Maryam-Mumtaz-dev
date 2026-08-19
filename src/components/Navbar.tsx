@@ -43,47 +43,47 @@ export default function Navbar() {
 
   return (
     <>
-      {/* ══════════════════════════ Bar ═══════════════════════════ */}
+      {/* ── Navbar bar ─────────────────────────────────────────── */}
       <header
-        className={`fixed top-0 left-0 right-0 z-50 border-b border-taupe-200 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-sand-50/96 backdrop-blur-md shadow-sm shadow-taupe-900/5"
-            : "bg-sand-50/88 backdrop-blur-sm"
+            ? "bg-sand-50/95 backdrop-blur-lg border-b border-taupe-100/80 shadow-sm shadow-taupe-900/4"
+            : "bg-sand-50/70 backdrop-blur-md border-b border-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-[62px] gap-6">
+          <div className="flex items-center h-[60px] gap-6">
 
-            {/* ── Brand ─────────────────────────────────────── */}
+            {/* Brand */}
             <a
               href="#home"
               aria-label="Maryam Mumtaz — back to top"
               className="flex items-center gap-3 flex-shrink-0 group"
             >
-              <div className="w-9 h-9 rounded-full overflow-hidden ring-2 ring-taupe-200 group-hover:ring-taupe-400 transition-all duration-200 flex-shrink-0">
+              <div className="w-8 h-8 rounded-full overflow-hidden ring-1 ring-taupe-200 group-hover:ring-taupe-400 transition-all duration-300 flex-shrink-0">
                 <Image
                   src="/images/maryam.png"
                   alt=""
-                  width={36}
-                  height={36}
+                  width={32}
+                  height={32}
                   className="w-full h-full object-cover"
                   priority
                 />
               </div>
-              <div className="select-none leading-[1.2]">
-                <p className="text-[13.5px] font-bold text-taupe-900 tracking-tight whitespace-nowrap">
+              <div className="select-none leading-[1.25]">
+                <p className="text-[13px] font-bold text-taupe-900 tracking-tight whitespace-nowrap">
                   Maryam Mumtaz
                 </p>
-                <p className="text-[8.5px] font-bold uppercase tracking-[0.16em] text-taupe-400 whitespace-nowrap">
-                  AI Engineer
+                <p className="text-[8px] font-semibold uppercase tracking-[0.18em] text-taupe-400 whitespace-nowrap">
+                  AI · Full Stack
                 </p>
               </div>
             </a>
 
-            {/* ── Nav — centered ────────────────────────────── */}
+            {/* Nav centered */}
             <nav
               aria-label="Primary navigation"
-              className="hidden lg:flex items-center flex-1 justify-center gap-0.5"
+              className="hidden lg:flex items-center flex-1 justify-center gap-1"
             >
               {navLinks.map((link) => {
                 const isActive = activeId === link.href.slice(1);
@@ -91,18 +91,18 @@ export default function Navbar() {
                   <a
                     key={link.href}
                     href={link.href}
-                    className={`relative px-4 py-2 text-[13px] font-medium rounded-lg transition-colors duration-200 ${
+                    className={`relative px-4 py-2 text-[13px] font-medium rounded-lg transition-all duration-250 ${
                       isActive
                         ? "text-taupe-900"
-                        : "text-taupe-600 hover:text-taupe-900 hover:bg-sand-100"
+                        : "text-taupe-500 hover:text-taupe-800 hover:bg-sand-100/80"
                     }`}
                   >
                     <span className="relative z-10">{link.label}</span>
                     {isActive && (
                       <motion.span
                         layoutId="nav-highlight"
-                        className="absolute inset-0 bg-sand-200 rounded-lg"
-                        transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                        className="absolute inset-0 bg-sand-200/90 rounded-lg"
+                        transition={{ type: "spring", stiffness: 260, damping: 30 }}
                       />
                     )}
                   </a>
@@ -110,56 +110,56 @@ export default function Navbar() {
               })}
             </nav>
 
-            {/* ── CTAs ──────────────────────────────────────── */}
+            {/* CTAs */}
             <div className="hidden lg:flex items-center gap-2 flex-shrink-0 ml-auto">
               <a
                 href="https://www.linkedin.com/in/maryam-mumtaz-315358361/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 border border-taupe-300 text-taupe-700 text-[12px] font-semibold rounded-lg hover:border-taupe-500 hover:bg-sand-100 hover:text-taupe-900 transition-all duration-200 whitespace-nowrap"
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 border border-taupe-200 text-taupe-600 text-[12px] font-semibold rounded-lg hover:border-taupe-400 hover:text-taupe-900 hover:bg-sand-100 transition-all duration-250 whitespace-nowrap"
               >
-                <FiLinkedin size={13} />
+                <FiLinkedin size={12} />
                 LinkedIn
               </a>
               <a
                 href="https://github.com/MaryamMumtaz-piaic"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-taupe-800 text-white text-[12px] font-semibold rounded-lg hover:bg-taupe-900 transition-all duration-200 whitespace-nowrap"
+                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-taupe-800 text-white text-[12px] font-semibold rounded-lg hover:bg-taupe-900 transition-all duration-250 whitespace-nowrap"
               >
-                <FiGithub size={13} />
+                <FiGithub size={12} />
                 GitHub
               </a>
             </div>
 
-            {/* ── Mobile toggle ─────────────────────────────── */}
+            {/* Mobile toggle */}
             <button
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
               aria-controls="mobile-nav"
               onClick={() => setMobileOpen((v) => !v)}
-              className="lg:hidden ml-auto w-9 h-9 flex items-center justify-center rounded-lg text-taupe-700 hover:bg-sand-100 transition-colors duration-200"
+              className="lg:hidden ml-auto w-8 h-8 flex items-center justify-center rounded-lg text-taupe-600 hover:bg-sand-100 hover:text-taupe-900 transition-all duration-200"
             >
-              {mobileOpen ? <FiX size={19} /> : <FiMenu size={19} />}
+              {mobileOpen ? <FiX size={17} /> : <FiMenu size={17} />}
             </button>
           </div>
         </div>
       </header>
 
-      {/* ══════════════════════ Mobile drawer ═════════════════════ */}
+      {/* Mobile drawer */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
             id="mobile-nav"
             key="mobile-nav"
-            initial={{ opacity: 0, y: -8 }}
+            initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            className="lg:hidden fixed top-[62px] left-0 right-0 z-40 bg-sand-50 border-b border-taupe-200 shadow-md shadow-taupe-900/6"
+            exit={{ opacity: 0, y: -6 }}
+            transition={{ duration: 0.22, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="lg:hidden fixed top-[60px] left-0 right-0 z-40 bg-sand-50/98 backdrop-blur-lg border-b border-taupe-100 shadow-md shadow-taupe-900/5"
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-              <nav aria-label="Mobile navigation" className="space-y-px mb-2">
+              <nav aria-label="Mobile navigation" className="space-y-0.5 mb-3">
                 {navLinks.map((link) => {
                   const isActive = activeId === link.href.slice(1);
                   return (
@@ -167,10 +167,10 @@ export default function Navbar() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
-                      className={`flex items-center px-3.5 py-2.5 text-[13.5px] font-medium rounded-xl transition-colors duration-150 ${
+                      className={`flex items-center px-3.5 py-2.5 text-[13.5px] font-medium rounded-xl transition-all duration-200 ${
                         isActive
                           ? "bg-sand-200 text-taupe-900"
-                          : "text-taupe-700 hover:bg-sand-100 hover:text-taupe-900"
+                          : "text-taupe-600 hover:bg-sand-100 hover:text-taupe-900"
                       }`}
                     >
                       {link.label}
@@ -184,7 +184,7 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 border border-taupe-300 text-taupe-700 text-[12px] font-semibold rounded-xl hover:bg-sand-100 transition-colors"
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 border border-taupe-200 text-taupe-600 text-[12px] font-semibold rounded-xl hover:border-taupe-400 hover:text-taupe-900 hover:bg-sand-100 transition-all duration-200"
                 >
                   <FiLinkedin size={13} /> LinkedIn
                 </a>
@@ -193,7 +193,7 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
-                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 bg-taupe-800 text-white text-[12px] font-semibold rounded-xl hover:bg-taupe-900 transition-colors"
+                  className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 bg-taupe-800 text-white text-[12px] font-semibold rounded-xl hover:bg-taupe-900 transition-all duration-200"
                 >
                   <FiGithub size={13} /> GitHub
                 </a>

@@ -168,6 +168,46 @@ const AGENTS_REPO = "https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tre
 
 export const projects: Project[] = [
   {
+    slug: "forgecode",
+    title: "ForgeCode",
+    description:
+      "ForgeCode is a production-grade Windows-native autonomous AI coding and computer automation agent. It combines the capabilities of a coding agent, terminal, file manager, task runner, and custom agent platform — all driven by a real stateful agent runtime.",
+    tech: ["TypeScript", "Python", "Node.js", "PowerShell", "CLI"],
+    github: "https://github.com/MaryamMumtaz-piaic/ForgeCode",
+    live: "",
+    image: "/fordge.png",
+    featured: true,
+    category: "Agentic AI",
+    highlights: [
+      "Autonomous agent runtime with a terminal UI — planner, context engine, tool router, and permission engine",
+      "Full filesystem intelligence: search, metadata, diff, and duplicate detection across any drive",
+      "Multi-shell execution across PowerShell, CMD, Git Bash, Node.js, Python, npm/pnpm/yarn, git, and docker",
+      "AI-aware patch-based file editor with diff view, undo/redo, and per-task rollback",
+      "Three-tier permission engine: auto-execute safe ops, approval for writes, always confirm destructive ops",
+      "Persistent task manager with live progress tracking and task recovery across terminal restarts",
+    ],
+  },
+  {
+    slug: "meridian-watch-store",
+    title: "Meridian Watch Store",
+    description:
+      "Meridian — a full-stack smart watch e-commerce store built with Next.js, TypeScript, Prisma, and Stripe.",
+    tech: ["Next.js", "TypeScript", "Prisma", "Stripe", "Tailwind CSS", "PostgreSQL"],
+    github: "https://github.com/MaryamMumtaz-piaic/meridian-watch-store",
+    live: "",
+    image: "/miason temps.png",
+    featured: true,
+    category: "Full Stack",
+    highlights: [
+      "Full brand storytelling front-end: home, about, craftsmanship, and journal/magazine pages",
+      "Complete product catalog with collections, filters, search, and wishlist",
+      "Real shopping flow: cart, multi-step checkout, Stripe payment, and order confirmation email",
+      "Customer accounts with login, order history, and a synced wishlist",
+      "Admin panel for managing products and orders",
+      "Built on Next.js, TypeScript, Tailwind CSS, Prisma, and PostgreSQL on Neon",
+    ],
+  },
+  {
     slug: "ai-command-control-center",
     title: "AI Command & Control Center",
     description:
@@ -731,7 +771,7 @@ export const heroStats = [
 
 export const achievements = [
   { label: "AI Agents Built", value: "100+" },
-  { label: "Portfolio Projects", value: "22" },
+  { label: "Portfolio Projects", value: "24" },
   { label: "Anthropic Certifications", value: "5" },
   { label: "Hackathons", value: "3" },
 ];

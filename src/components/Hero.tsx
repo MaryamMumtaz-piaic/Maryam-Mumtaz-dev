@@ -186,7 +186,7 @@ export default function Hero() {
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-sand-400 via-taupe-400 to-taupe-600 p-1 animate-float">
                 <div className="w-full h-full rounded-full overflow-hidden bg-sand-100">
                   <Image
-                    src="/images/maryam.png"
+                    src="/maryam.png"
                     alt="Maryam Mumtaz"
                     width={400}
                     height={400}

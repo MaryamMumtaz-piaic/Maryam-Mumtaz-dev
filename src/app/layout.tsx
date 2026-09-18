@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Maryam Mumtaz Portfolio",
     images: [
       {
-        url: "/images/maryam.png",
+        url: "/maryam.png",
         width: 1200,
         height: 630,
         alt: "Maryam Mumtaz - AI Engineer",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maryam Mumtaz | AI Engineer",
     description: "AI Agent Engineer & Full-Stack Developer specializing in agentic AI.",
-    images: ["/images/maryam.png"],
+    images: ["/maryam.png"],
   },
   robots: {
     index: true,

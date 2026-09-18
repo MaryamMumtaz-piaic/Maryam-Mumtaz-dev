@@ -39,7 +39,7 @@ export default function About() {
               {/* Main image */}
               <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-3xl overflow-hidden border-4 border-white shadow-2xl shadow-taupe-900/15 relative z-10">
                 <Image
-                  src="/images/maryam.png"
+                  src="/maryam.png"
                   alt="Maryam Mumtaz"
                   width={320}
                   height={320}

@@ -62,7 +62,7 @@ export default function Navbar() {
             >
               <div className="w-8 h-8 rounded-full overflow-hidden ring-1 ring-taupe-200 group-hover:ring-taupe-400 transition-all duration-300 flex-shrink-0">
                 <Image
-                  src="/images/maryam.png"
+                  src="/maryam.png"
                   alt=""
                   width={32}
                   height={32}

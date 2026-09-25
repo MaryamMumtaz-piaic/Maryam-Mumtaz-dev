@@ -7,7 +7,7 @@ export const personalInfo = {
   status: "Available for Hire",
   portfolio: "https://maryam-mumtaz.vercel.app/",
   resume: "https://maryam-resume.vercel.app/",
-  linkedin: "https://www.linkedin.com/in/maryam-mumtaz",
+  linkedin: "https://linkedin.com/in/maryam-mumtaz-",
   github: "https://github.com/MaryamMumtaz-piaic",
   bio: "I build intelligent AI agents, autonomous workflows, scalable full-stack platforms, and AI-powered automation systems. Founder of Marsa Empower, working across agentic AI, MCP, RAG, and cloud-native engineering.",
   summary:

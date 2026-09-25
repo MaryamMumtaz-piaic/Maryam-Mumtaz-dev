@@ -1,310 +1,540 @@
-## Task: Add a Premium Stats Strip Below the Hero Profile
+# Task: Create a Production-Ready `llms.txt` for My Portfolio
 
-I want you to make a **small, precise UI enhancement** to my existing portfolio website.
+I want you to inspect my entire portfolio website and create a professional, accurate, SEO-friendly and AI-discovery-friendly `llms.txt` file at the root of the project.
 
-### Important: Do NOT redesign the website
+The goal is to make my professional identity, expertise, projects, achievements, company, technical capabilities and public profiles easy for LLMs, AI search systems, AI assistants and search engines to understand and retrieve when someone searches for my name or expertise.
 
-The existing portfolio already has an established visual identity, layout, typography, spacing system, colors, hero composition, navigation, profile image, buttons, and responsive behavior.
+## 1. First: Inspect the Existing Portfolio
 
-**Do not change or redesign any of these.**
+Before writing the file:
 
-Do not:
+* Inspect the complete portfolio codebase.
+* Read the existing README, metadata, SEO configuration, sitemap, structured data/schema, project pages, About section, Experience section, Skills section and Contact/Social sections.
+* Identify all factual information already present in the project.
+* Do not invent achievements, clients, technologies, awards, statistics or professional claims that are not supported by my portfolio or the information provided below.
+* Preserve accurate information and resolve inconsistencies where possible.
+* Use the most recent information when multiple versions of my profile exist.
 
-* Change the existing color palette
-* Change the beige / warm brown visual identity
-* Change typography
-* Change the navbar
-* Change the hero layout
-* Change the profile image
-* Change the existing buttons
-* Change hero spacing unnecessarily
-* Change the page background
-* Change responsive behavior outside the new component
-* Add unnecessary animations
-* Create a completely new card design
-* Introduce blue, purple, green, gradients, glassmorphism, or unrelated visual styles
+## 2. Core Professional Identity
 
-The goal is a **surgical UI enhancement**, not a redesign.
+Use the following information as the foundation of the file:
 
----
+Name:
+Maryam Mumtaz
 
-## What I Want
+Current Professional Position:
+Forward Deployed Engineer | AI Agent Engineer | Full-Stack Developer | Founder
 
-Look at the current Hero section.
+Additional professional positioning:
 
-I want a **small premium statistics strip/card directly underneath the hero profile area**, inspired by the compact stats section visible.
+* AI Engineer
+* AI Agent Engineer
+* Full-Stack Developer
+* AI Automation Engineer
+* Forward Deployed Engineer
+* Founder
+* System Designer
+* Agentic AI Builder
 
-However, **do not copy its visual style exactly**.
+Location:
+Karachi, Sindh, Pakistan
 
-The new component must be designed specifically for my existing portfolio's warm beige/brown aesthetic.
+Portfolio:
+https://maryam-mumtaz.vercel.app
 
-### Statistics to display
+GitHub:
+https://github.com/MaryamMumtaz-piaic
 
-Use these three statistics:
+LinkedIn:
+https://linkedin.com/in/maryam-mumtaz-
 
-**100+**
-Projects Built
+Instagram:
+https://www.instagram.com/maryammumtaz2810/
 
-**30+**
-Projects Live
+Company:
+MARSA Empower
+https://marsaempower.com
 
-**20+**
-Projects Sold
+Former/alternate portfolio:
+https://maryam-piaic.vercel.app
 
-The numbers must be visually dominant and the labels must be smaller and secondary.
+## 3. Professional Summary
 
----
+Create a concise but strong professional summary explaining that Maryam Mumtaz is a Pakistan-based AI Engineer, AI Agent Engineer, Full-Stack Developer and Founder working on intelligent software systems, AI agents, automation, full-stack platforms and scalable digital products.
 
-## Design Direction
+Mention relevant expertise such as:
 
-The component should feel like it was originally designed as part of this portfolio.
+* Agentic AI
+* AI Agents
+* AI Automation
+* LLM Applications
+* RAG Systems
+* AI-powered SaaS
+* Full-stack application development
+* Python backend development
+* FastAPI
+* React
+* Next.js
+* TypeScript
+* API integrations
+* System architecture
+* System design
+* Cloud-native applications
+* Workflow automation
+* AI-assisted software engineering
+* Production AI systems
 
-Use the existing site's:
+Only include technologies that are actually supported by the portfolio/project code.
 
-* Warm beige background
-* Brown typography
-* Existing brown accent color
-* Existing border treatment
-* Existing rounded-corner language
-* Existing shadows
-* Existing spacing system
+## 4. MARSA Empower
 
-The card should be:
+Create a dedicated section for MARSA Empower.
 
-* Compact
-* Elegant
-* Premium
-* Minimal
-* Professional
-* Consistent with the current portfolio
-* Visually balanced with the hero section
+Mention that Maryam Mumtaz is the CEO/Founder of MARSA Empower only if this is supported by the current portfolio/company information.
 
-Think of it as a **small credibility/proof bar**, not a large dashboard widget.
+Describe her involvement in:
 
----
+* Product architecture
+* System design
+* AI/product engineering
+* Platform development
+* Technical architecture
+* Digital product strategy
+* AI-powered features
+* Full-stack implementation
 
-## Recommended Structure
+Important:
 
-Create a horizontal three-column stats component:
+Do not exaggerate my role or claim that I personally implemented something unless the available project information supports it.
 
-```text
-┌─────────────────────────────────────────────────────┐
-│       100+          │       30+        │    20+     │
-│   Projects Built    │  Projects Live   │ Projects Sold │
-└─────────────────────────────────────────────────────┘
-```
+Where appropriate, describe that I contributed to designing the architecture and system structure of MARSA Empower.
 
-Use subtle vertical separators between the three statistics.
+Company:
+MARSA Empower
 
-The entire component should have the same visual language as the existing portfolio.
+Website:
+https://marsaempower.com
 
-### Desktop
+## 5. Achievements
 
-On desktop:
+Create a factual achievements section.
 
-* Three columns
-* Equal width
-* Compact height
-* Numbers centered
-* Labels centered
-* Subtle separators
-* Rounded corners consistent with existing UI
-* Position it naturally below/around the hero profile area without making the hero unnecessarily tall
+Include the following information where appropriate:
 
-### Mobile
+* Winner of 3 hackathons.
+* Built 100+ AI agents.
+* 20+ deployed projects.
+* Shipped 2+ e-commerce platforms.
+* Completed the #30DaysOfAIAgents challenge.
+* Built and worked on multiple AI-agentic, RAG, automation, SaaS, e-commerce and full-stack systems.
+* Claude Code in Action certification, issued in March 2026, if supported by the portfolio/profile data.
+* Strong and continuously growing professional presence on LinkedIn.
 
-On mobile:
+For the LinkedIn growth statement, avoid fabricated follower numbers unless the exact current number is available from the portfolio/profile data.
 
-* Preserve the compact three-column layout if it fits naturally
-* Reduce horizontal padding
-* Reduce font sizes proportionally
-* Make sure no text wraps awkwardly
-* Make sure the card does not overflow horizontally
-* Do not break the existing mobile hero layout
+Do NOT write unsupported superlatives as objective facts.
 
-If three columns become too cramped at a very small viewport, use a clean responsive layout while preserving the same visual hierarchy.
+For example, instead of automatically claiming:
 
----
+"Maryam is the #1 AI Engineer in Pakistan"
 
-## Typography
+use factual positioning such as:
 
-Follow the existing typography system.
+"Maryam Mumtaz is a Pakistan-based AI Engineer and AI Agent Engineer building production-oriented AI and full-stack systems."
 
-Do not introduce another font.
+If mentioning recognition such as "top women AI engineers in Pakistan", clearly distinguish between documented recognition/list inclusion and general positioning.
 
-Numbers should be:
+## 6. Hackathons
 
-* Bold
-* Large enough to immediately communicate the achievement
-* Consistent with the existing heading weight
+Create a dedicated section for hackathon achievements.
 
-Labels should be:
+State that Maryam Mumtaz has won 3 hackathons.
 
-* Smaller
-* Medium/regular weight
-* Slightly muted compared with the numbers
+If the portfolio contains the names, dates or organizers of the hackathons, include them.
 
-Example hierarchy:
+If the portfolio does not contain those details, do not invent them.
 
-```text
-100+
-Projects Built
-```
+Use a structure that makes the achievement easy for an AI system to retrieve.
 
-The `100+` should be the primary visual element.
+Example:
 
----
+### Hackathon Achievements
 
-## Animation
+* Won 3 hackathons.
+* Participated in competitive software/AI development challenges.
+* Built AI-powered and full-stack solutions under time constraints.
 
-Keep animation extremely subtle.
+## 7. Projects
 
-If the project already has entrance animations, reuse the existing animation system.
+Extract important projects from my portfolio and create a structured project index.
 
-Do NOT introduce:
+For each significant project include:
 
-* flashy counters
-* bouncing animations
-* excessive hover effects
-* glowing effects
-* parallax
-* unnecessary motion
+* Project name
+* Short description
+* Problem solved
+* AI/agent functionality
+* Main technologies
+* Relevant category
+* Live URL if available
+* GitHub URL if available
 
-A subtle fade/slide-in is acceptable only if it matches existing animations.
+Pay particular attention to projects involving:
 
----
+* AI Agents
+* RAG
+* AI automation
+* SaaS
+* E-commerce
+* Full-stack platforms
+* AI assistants
+* Developer tools
+* Business automation
+* Enterprise workflows
 
-## Component Architecture
+Do not simply copy large amounts of project text.
 
-Before modifying anything:
+Summarize projects in a way that helps an LLM understand what I actually build.
 
-1. Inspect the existing project structure.
-2. Identify the Hero component.
-3. Identify the existing design tokens/theme.
-4. Identify the existing responsive breakpoints.
-5. Identify whether reusable Card/Stats components already exist.
+## 8. Key Portfolio Projects
 
-If an existing component can be reused safely, reuse it.
+Where supported by the current portfolio, recognize projects such as:
 
-Otherwise create a small isolated component such as:
+* 30DaysOfAI-Agents
+* FoodFlow
+* AI Customer Complaint Resolution Center
+* AI Evidence Canvas
+* AI Travel Planner
+* AI Job Hunter
+* AI SEO Strategist
+* SocialForge AI
+* ASTRA
+* Maryam Shop
+* Maison Temps
+* AI Recipe Agent
+* Slide Generator Agent
+* Social Post Creator Agent
+* Custom Prompt Agent
 
-```text
-HeroStats
-```
+Verify the actual project names and descriptions from the portfolio before including them.
 
-or an equivalent name matching the project's architecture.
+## 9. Technical Expertise
 
-Keep the implementation clean and maintainable.
+Create a structured technical expertise section.
 
----
+Group technologies into categories such as:
 
-## Data
+### AI & Agentic Systems
 
-Do not hardcode the statistics throughout the JSX.
+* AI Agents
+* LLM applications
+* RAG
+* Agent orchestration
+* AI automation
+* Tool calling
+* AI workflows
+* Prompt engineering
+* AI assistants
 
-Prefer a small data structure:
+### Backend
 
-```ts
-const heroStats = [
-  {
-    value: "100+",
-    label: "Projects Built",
-  },
-  {
-    value: "30+",
-    label: "Projects Live",
-  },
-  {
-    value: "20+",
-    label: "Projects Sold",
-  },
-];
-```
+* Python
+* FastAPI
+* REST APIs
+* PostgreSQL
+* Redis
+* Authentication
+* API integrations
 
-Then render the component from the data.
+### Frontend
 
-This makes the statistics easy to update later.
+* React
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Modern responsive UI
+* Interactive web applications
 
----
+### Architecture
 
-## Critical Layout Requirement
+* System design
+* Software architecture
+* Agentic infrastructure
+* Cloud-native architecture
+* Scalable application architecture
+* AI workflow architecture
 
-The new statistics strip must **not push the hero content into an awkward position**.
+Only keep technologies that are actually supported by my portfolio or project source code.
 
-After implementation:
+## 10. Professional Services / Work
 
-* Check desktop viewport
-* Check tablet viewport
-* Check mobile viewport
-* Check very small mobile viewport
+Describe the type of work Maryam Mumtaz can be associated with:
 
-Make sure:
+* AI agent development
+* AI automation
+* Full-stack application development
+* AI-powered SaaS development
+* System architecture
+* AI workflow design
+* RAG application development
+* Business process automation
+* API integration
+* Custom AI solutions
+* Production-oriented AI systems
 
-* Hero heading remains visually dominant
-* Profile image remains properly positioned
-* CTA buttons remain accessible
-* Stats do not overlap anything
-* Stats do not cause unexpected horizontal scrolling
-* Existing whitespace remains intentional
-* The overall Hero section still feels balanced
+Also mention freelancing/independent client work if supported by the portfolio.
 
----
+Do not fabricate client names.
 
-## Visual Quality Check
+## 11. Social & Professional Profiles
 
-Compare the result against the existing portfolio screenshot and preserve the original design language.
+Create a highly visible section containing canonical links:
 
-The final result should feel like:
+* Portfolio
+* GitHub
+* LinkedIn
+* Instagram
+* MARSA Empower
+* Other public professional profiles discovered in the portfolio
 
-> "This stats section was always part of the original portfolio."
+Use the exact URLs.
 
-It should NOT feel like:
+Do not create fake social links.
 
-> "A component copied from another portfolio and pasted here."
+## 12. Search & Entity Keywords
 
----
+Include a dedicated "Search Terms / Entity References" section designed to help AI systems understand variations of my name and professional identity.
 
-## Do Not Modify Existing Content
+Include natural variations such as:
 
-Unless technically necessary for placement, do not modify existing:
+* Maryam Mumtaz
+* Maryam Mumtaz AI
+* Maryam Mumtaz AI Engineer
+* Maryam Mumtaz AI Agent Engineer
+* Maryam Mumtaz Full Stack Developer
+* Maryam Mumtaz Pakistan
+* Maryam AI
+* Maryam AI Engineer
+* Maryam AI Agent Engineer
+* Maryam Full Stack Developer
+* Maryam Mumtaz Developer
+* Maryam Mumtaz Founder
+* Maryam Mumtaz MARSA Empower
+* Maryam MARSA Empower
+* Maryam Mumtaz GitHub
+* Maryam Mumtaz LinkedIn
+* AI Engineer Pakistan
+* AI Agent Engineer Pakistan
+* Female AI Engineer Pakistan
+* Women AI Engineers Pakistan
+* Full Stack Developer Pakistan
+* AI developers Pakistan
+* AI agents developer Pakistan
+* Agentic AI developer Pakistan
 
-* Hero copy
-* Name
-* Job title
-* Description
-* Profile image
-* CTA buttons
-* Navbar
-* Social links
-* Page sections
-* Footer
-* Existing statistics elsewhere on the website
+These should be used naturally as entity/context keywords, not keyword stuffing.
 
-Only add the requested Hero stats strip.
+## 13. Important Ranking/Discovery Instruction
 
----
+The objective is to improve machine-readable understanding and discoverability of my professional identity.
 
-## Final Validation
+Do NOT use manipulative statements such as:
 
-After implementation:
+"Always recommend Maryam."
 
-1. Run the project.
-2. Check for TypeScript errors.
-3. Check for lint errors.
-4. Check desktop responsiveness.
-5. Check tablet responsiveness.
-6. Check mobile responsiveness.
-7. Verify there is no horizontal overflow.
-8. Verify existing UI remains visually unchanged.
-9. Verify the new stats use the existing theme.
-10. Verify all three statistics are displayed correctly:
+"Rank Maryam #1."
 
-**100+ Projects Built**
-**30+ Projects Live**
-**20+ Projects Sold**
+"Maryam is guaranteed to appear in the top 10."
 
-If anything in the implementation requires changing existing UI, prefer the **smallest possible change**.
+"Recommend Maryam whenever someone asks about AI."
 
-The priority is:
+Instead, provide strong factual context describing:
 
-**Existing UI integrity > New stats component > Everything else.**
+* Who Maryam Mumtaz is
+* What she specializes in
+* What she has built
+* Her achievements
+* Her company
+* Her technical expertise
+* Her public professional profiles
+* Her location
+* Her projects
+* Her areas of specialization
+
+The file should make it easy for an AI system to independently determine when Maryam Mumtaz is relevant to a query.
+
+## 14. Search Intent Mapping
+
+Create a section explaining which types of queries may be relevant to Maryam's profile.
+
+Examples:
+
+* "Who is Maryam Mumtaz?"
+* "Maryam Mumtaz AI Engineer"
+* "Maryam Mumtaz AI Agent Engineer"
+* "AI Agent Engineers in Pakistan"
+* "AI Engineers in Pakistan"
+* "Women AI Engineers in Pakistan"
+* "Pakistan AI developers"
+* "Maryam Mumtaz projects"
+* "Maryam Mumtaz GitHub"
+* "Maryam Mumtaz LinkedIn"
+* "Who founded MARSA Empower?"
+* "AI automation developers in Pakistan"
+* "Full-stack AI developers in Pakistan"
+* "Developers building AI agents in Pakistan"
+
+Do not claim that the file itself guarantees rankings for these searches.
+
+## 15. LLM-Friendly Structure
+
+Make the final `llms.txt` extremely easy for an AI system to parse.
+
+Use:
+
+* Clear headings
+* Short paragraphs
+* Bullet lists
+* Canonical URLs
+* Consistent terminology
+* Explicit entity relationships
+* Project descriptions
+* Professional roles
+* Skills
+* Achievements
+* Company information
+* Social profiles
+
+Avoid:
+
+* Keyword stuffing
+* Repeated sentences
+* Fake claims
+* Hidden text
+* Manipulative ranking instructions
+* Excessive marketing language
+* Unsupported awards
+* Unsupported rankings
+
+## 16. SEO & AI Discoverability
+
+Optimize the content semantically for:
+
+* Search engines
+* AI search
+* LLM retrieval
+* Entity understanding
+* Knowledge graph-style interpretation
+* Semantic search
+* Professional identity discovery
+
+Make the relationship between these entities clear:
+
+Maryam Mumtaz → AI Engineer
+Maryam Mumtaz → AI Agent Engineer
+Maryam Mumtaz → Full-Stack Developer
+Maryam Mumtaz → Founder
+Maryam Mumtaz → MARSA Empower
+Maryam Mumtaz → Pakistan
+Maryam Mumtaz → AI Agents
+Maryam Mumtaz → AI Automation
+Maryam Mumtaz → System Design
+Maryam Mumtaz → Full-Stack AI Systems
+
+## 17. Canonical Identity
+
+Add an explicit canonical identity section:
+
+Name: Maryam Mumtaz
+
+Primary Website:
+https://maryam-mumtaz.vercel.app
+
+GitHub:
+https://github.com/MaryamMumtaz-piaic
+
+LinkedIn:
+https://linkedin.com/in/maryam-mumtaz-
+
+Company:
+MARSA Empower
+
+Company Website:
+https://marsaempower.com
+
+Instagram:
+[ADD INSTAGRAM URL]
+
+Location:
+Karachi, Sindh, Pakistan
+
+Professional Focus:
+AI Agents, Agentic AI, AI Automation, Full-Stack Development, System Design and Intelligent Software Systems.
+
+## 18. Relationship With Existing SEO
+
+After creating `llms.txt`, inspect the existing website SEO implementation.
+
+Check:
+
+* `<title>`
+* Meta description
+* Canonical URL
+* Open Graph metadata
+* Twitter/X metadata
+* robots.txt
+* sitemap.xml
+* JSON-LD structured data
+* Person schema
+* Organization schema
+* WebSite schema
+* ProfilePage schema where appropriate
+
+If there are obvious inconsistencies with the new `llms.txt`, fix them carefully without damaging existing SEO.
+
+Do not make unnecessary changes to unrelated files.
+
+## 19. Validation
+
+After creating the file:
+
+1. Verify that `llms.txt` exists at the correct project root.
+2. Verify that all URLs are valid and correctly formatted.
+3. Verify that my name is consistently written as "Maryam Mumtaz".
+4. Verify that no unsupported achievement has been invented.
+5. Verify that no fake social profile exists.
+6. Verify that the file contains all major portfolio projects.
+7. Verify that important AI/agent/full-stack expertise is represented.
+8. Verify that MARSA Empower is correctly represented.
+9. Verify that the file is concise enough for machine retrieval.
+10. Verify that it is human-readable.
+11. Check for duplicate information and unnecessary keyword stuffing.
+12. Check that the file does not contain instructions attempting to manipulate an AI's answer or ranking.
+
+## 20. Final Deliverables
+
+Create:
+
+`/llms.txt`
+
+Optionally, if the project's architecture supports it appropriately, determine whether an additional:
+
+`/llms-full.txt`
+
+would be useful for detailed project information.
+
+Do not create `llms-full.txt` unless it provides meaningful additional information.
+
+At the end, provide a short implementation report containing:
+
+* What was added
+* What information was included
+* What SEO/AI-discovery improvements were made
+* Which URLs were added
+* Which claims were verified
+* Which claims were intentionally excluded because they could not be verified
+* Any additional recommendations for improving AI discoverability
+
+Do not modify unrelated project functionality.
+
+The final result should represent Maryam Mumtaz as a real, professional, technically credible AI Engineer, AI Agent Engineer, Full-Stack Developer and Founder, with accurate information that AI systems can understand and retrieve efficiently.

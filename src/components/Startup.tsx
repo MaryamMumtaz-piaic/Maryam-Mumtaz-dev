@@ -29,7 +29,7 @@ const companyDetails = [
   { icon: FiMail, label: "Email", value: "hello@marsaempower.com", href: "mailto:hello@marsaempower.com", external: false },
   { icon: FiMapPin, label: "Location", value: "Karachi, Pakistan", href: null, external: false },
   { icon: FiCalendar, label: "Founded", value: "January 2026", href: null, external: false },
-  { icon: FiLinkedin, label: "LinkedIn", value: "Marsa Empower", href: "https://www.linkedin.com/company/marsaempower", external: true },
+  { icon: FiLinkedin, label: "LinkedIn", value: "MARSA Empower", href: "https://www.linkedin.com/company/marsa-empower", external: true },
 ];
 
 export default function Startup() {

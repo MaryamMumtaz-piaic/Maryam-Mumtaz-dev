@@ -1,0 +1,307 @@
+# Maryam Mumtaz
+
+profile image url = "https://maryam-mumtaz.vercel.app/maryam.png"
+
+> Maryam Mumtaz is a Pakistan-based AI Engineer, AI Agent Engineer, Full-Stack Developer, AI Automation Engineer, and Founder building intelligent software systems, AI agents, RAG applications, automation workflows, and scalable digital products.
+
+Maryam Mumtaz is based in Karachi, Sindh, Pakistan. Her work combines agentic AI and LLM applications with Python and FastAPI backends, Next.js, React, and TypeScript frontends, API integrations, system design, cloud-native architecture, and workflow automation. Her portfolio documents freelance full-stack work since January 2025 and founding work on MARSA Empower since January 2026.
+
+## Canonical Identity
+
+- **Name:** Maryam Mumtaz
+- **Location:** Karachi, Sindh, Pakistan
+- **Professional roles and positioning:** AI Engineer, AI Agent Engineer, Full-Stack Developer, AI Automation Engineer, Forward Deployed Engineer, Founder, System Designer, Agentic AI Builder
+- **Professional focus:** AI agents, agentic AI, AI automation, LLM applications, RAG systems, AI-powered SaaS, full-stack development, system design, and intelligent software systems
+- **Primary website:** https://maryam-mumtaz.vercel.app
+- **Web resume:** https://maryam-resume.vercel.app/
+- **GitHub:** https://github.com/MaryamMumtaz-piaic
+- **LinkedIn:** https://linkedin.com/in/maryam-mumtaz-
+- **Instagram:** https://www.instagram.com/maryammumtaz2810/
+- **Email:** maryamqureshimumtazm.a@gmail.com
+
+## Professional Summary
+
+Maryam Mumtaz designs and builds production-oriented AI and software systems. Her documented work includes single-task AI agents, coordinated multi-agent systems, agent orchestration, RAG pipelines, AI workflow automation, AI-powered SaaS platforms, full-stack web applications, e-commerce systems, developer tools, and cloud-native services.
+
+Her technical practice includes the OpenAI SDK and GPT models, LangChain, LangGraph, CrewAI, MCP, RAG, vector databases, prompt engineering, Python, FastAPI, REST APIs, PostgreSQL, Redis, Next.js, React, TypeScript, Tailwind CSS, Docker, Kubernetes, Kafka, Dapr, and deployment workflows using platforms such as Vercel.
+
+Maryam is open to full-time opportunities, freelance projects, consulting, and strategic partnerships. She also works independently on custom web applications, AI agents, automation workflows, and digital products.
+
+## MARSA Empower
+
+- **Company:** MARSA Empower
+- **Website:** https://marsaempower.com
+- **Location:** Karachi, Pakistan
+- **Founded:** January 2026 (date used by the current portfolio; public company metadata has also displayed 2025)
+- **Company email:** hello@marsaempower.com
+- **Company LinkedIn:** https://www.linkedin.com/company/marsa-empower
+
+Maryam Mumtaz is a founder of MARSA Empower. The portfolio labels her role as Founder and Founder & CEO; the company's team page identifies her as Co-Founder & Product Architect. The portfolio describes her responsibilities as vision and strategic direction, platform development and digital presence, brand building, community growth, and long-term innovation. The company describes MARSA as a digital empowerment platform with AI-powered guidance, health, safety, wellness, and growth experiences for women.
+
+Public company materials associate her with product architecture, product and visual strategy, and frontend/product work; the local portfolio separately lists platform development and digital presence. Specific implementation details and client outcomes are not independently asserted here.
+
+## Professional Experience
+
+- **MARSA Empower — Founder, January 2026 to present, Karachi.** Founded and helped shape a digital platform focused on value-driven content, engagement, community growth, and intelligent product experiences.
+- **Freelance — Full-Stack Developer, January 2025 to present, Self-employed.** Builds custom web applications, AI agents, and automation workflows; handles project scoping, development, and delivery from design through deployment.
+- **Self-employed — Web Developer & Graphic Designer, April 2025 to present, Karachi.** Builds responsive web experiences and visual identities using web technologies, Figma, and Canva.
+
+## Portfolio-Documented Achievements
+
+- The portfolio reports **100+ completed AI agents** across single-agent workflows, multi-agent systems, and enterprise AI platforms.
+- The portfolio contains **35 listed projects** spanning agentic AI, RAG, automation, SaaS, e-commerce, full-stack systems, and developer tools.
+- Portfolio statistics report **100+ projects built**, **30+ projects live**, and **20+ projects sold**. These are portfolio-reported figures, not independently audited counts.
+- The portfolio documents multiple e-commerce projects, including Meridian Watch Store, Mariam.shop E-Commerce, and Modern E-Commerce Platform.
+- Maryam completed the **30-day AI agents challenge/repository** represented by the 30DaysOfAI-Agents project (also referenced as #30DaysOfAIAgents in the task brief), which includes single agents, multi-agent systems, and enterprise AI platforms.
+- **Claude Code in Action**, issued by Anthropic in March 2026; credential ID `vnisr68f3767`; verification: https://verify.skilljar.com/c/vnisr68f3767
+- Additional documented certifications include Model Context Protocol: Advanced Topics and Introduction to Model Context Protocol (March 2026), AI Fluency: Framework & Foundations, and Claude 101 (April 2026).
+- The MARSA team page presents a claim of three Eventon hackathon wins. The individual hackathon cards in the current portfolio label the same entries as participants, so winner status is recorded as a company-page claim rather than an independently verified local fact.
+- A public LinkedIn profile is listed for professional discovery. No follower count is asserted in this file.
+
+## Hackathon Achievements
+
+The MARSA founders/team page presents Maryam Mumtaz as a winner of **3 Eventon hackathons**. The current local portfolio records the same three entries as participation, so the winner status is a qualified company-page claim and is not treated as independently verified here. The portfolio identifies the following projects and events:
+
+### Eventon Hackathon I — Physical AI Textbook
+
+- AI-native educational platform for Physical AI and Humanoid Robotics.
+- Custom RAG agents answer questions grounded in the textbook.
+- Includes bilingual content and Urdu translation support.
+- Technologies: Docusaurus, RAG, Python, cloud-native deployment.
+- Live: https://ai-native-book-iota.vercel.app/
+- Source status: listed as Participant in the portfolio card; listed as a winner on the MARSA team page.
+
+### Eventon Hackathon II — Evolution of Todo
+
+- AI-powered task-management system evolved from a simple todo application.
+- Uses an event-driven architecture with Dapr and Kubernetes deployment.
+- Technologies: OpenAI, Next.js, Dapr, Kubernetes.
+- Live: https://todo-app-sigma-hazel-46.vercel.app/
+- Source status: listed as Participant in the portfolio card; listed as a winner on the MARSA team page.
+
+### Eventon Hackathon III — LearnFlow AI
+
+- Autonomous learning platform with microservices, persistent learner memory, and struggle detection.
+- Coordinates learning services through Kafka and Dapr.
+- Technologies: Kafka, Next.js 15, Goose AI, Dapr.
+- Live: https://frontend-rho-seven-ssq2gwtp54.vercel.app/
+- Source status: listed as Participant in the portfolio card; listed as a winner on the MARSA team page.
+
+## Project Index
+
+The following projects are extracted from the current portfolio data. Each entry summarizes the project's problem/function, AI or agent capability, technologies, category, and available public links. A live URL is included only when the portfolio provides one. GitHub links point to the repository or repository path documented by the portfolio.
+
+### Public Repositories Not Yet in the Local Project Catalog
+
+These public repositories are associated with Maryam Mumtaz's GitHub profile and have implementation or README evidence, but they are not yet represented in the current local `portfolio-data.ts` catalog. They are listed separately rather than presented as entries on the current `/projects` page.
+
+- **ComplaintIQ — AI Customer Complaint Resolution Center** — Full-stack complaint-management system that classifies, resolves, and learns from complaints using grounded responses, escalation tracking, and analytics. Technologies: Python, FastAPI, OpenAI GPT-4o-mini, Tailwind CSS, SQLite, SQLAlchemy, local cosine-similarity vector store, JavaScript, and HTML. GitHub: https://github.com/MaryamMumtaz-piaic/ai-customer-complaint-resolution-center
+- **AI Evidence Canvas** — Visual investigation workspace for ingesting documents, URLs, emails, notes, and images; extracting entities and relationships; rendering an interactive canvas; and asking grounded RAG questions. Technologies: Python, FastAPI, OpenAI GPT-4.1-mini, text-embedding-3-small, HTML5, Tailwind CSS, vanilla JavaScript, JSON storage, PyPDF, and BeautifulSoup. GitHub: https://github.com/MaryamMumtaz-piaic/ai-evidence-canvas
+- **SocialForge AI** — Social-content automation that turns a topic, URL, or image into platform-specific content for ten networks. Technologies: Python, FastAPI, OpenAI API, HTML5, Tailwind CSS, vanilla JavaScript, and JSON storage. GitHub: https://github.com/MaryamMumtaz-piaic/SocialForge-AI
+
+### AI Agents and Enterprise AI Systems
+
+- **AI Agents Portfolio — 100+ Agents** — Ongoing agent-engineering collection covering single intelligent agents, multi-agent crews, and enterprise AI platforms. Technologies: Python, OpenAI SDK, LangChain, LangGraph, CrewAI, MCP, FastAPI. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents
+- **AI Command & Control Center** — Dashboard for deploying, monitoring, and chaining 29 AI agents, with live execution logs, agent health data, resource usage, and per-agent cost tracking. Technologies: Python, LangGraph, CrewAI, FastAPI, WebSockets, PostgreSQL, Redis, Docker. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-30-ai-command-control-center
+- **Enterprise AI Workflow Automation** — Visual node-based builder for composing agent pipelines with 20+ node types, conditional logic, loops, webhooks, cron triggers, and one-click deployment. Technologies: Python, LangGraph, CrewAI, FastAPI, Canvas API, PostgreSQL, Redis, Docker. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-26-enterprise-workflow-automation
+- **Full AI SaaS Platform** — Production-style AI SaaS with OAuth authentication, three Stripe subscription tiers, ten AI tools, quotas, usage tracking, and an admin/revenue dashboard. Technologies: Python, OpenAI SDK, LangChain, FastAPI, PostgreSQL, Stripe, OAuth2, Docker. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-29-ai-saas-platform
+- **Multi-Tenant RAG Platform** — RAG system with isolated tenant knowledge stores, branded assistants, retrieval analytics, citations, and LLM fallback that writes useful answers back to tenant memory. Technologies: Python, LangChain, Chroma DB, FastAPI, PostgreSQL, JWT, Docker. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-21-multi-tenant-rag-platform
+- **AI-Powered CRM with Sales Intelligence** — CRM assistant for lead scoring, deal win-probability prediction, call transcription, follow-up generation, and pipeline-aware chat. Technologies: Python, FastAPI, OpenAI GPT-4o, Whisper, SQLite, Chart.js, JavaScript. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-22-ai-powered-crm
+- **Real-Time AI Trading Intelligence Dashboard** — Four-agent market-analysis system with live quote refreshes, WebSocket price streams, paper trading, alerts, and strategy backtesting. Technologies: Python, FastAPI, OpenAI SDK, yfinance, WebSockets, SQLite, Chart.js. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-23-realtime-ai-trading-dashboard
+- **Autonomous AI Brand Manager** — Six-agent brand-management system for social inbox triage, reply writing, content strategy, A/B variants, competitive intelligence, and brand-health reporting. Technologies: Python, FastAPI, OpenAI GPT-4o, WebSockets, SQLite, Tailwind CSS, Chart.js. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-24-autonomous-brand-manager
+- **AI Security Operations Center** — Passive public-domain security scanning platform with evidence-based scoring, AI or fallback narratives, scan history, quotas, and PDF/JSON report exports. Technologies: Python, FastAPI, OpenAI SDK, SQLite, PyJWT, Tailwind CSS, ReportLab. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-25-ai-security-operations-center
+- **AI Learning Management System** — LMS that generates course structures from learning materials, creates adaptive quizzes and personalized paths, and provides student and instructor dashboards. Technologies: Python, OpenAI SDK, LangChain, FastAPI, SQLite, Tailwind CSS, Chart.js. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-27-ai-learning-management-system
+- **Agentic AI API Marketplace** — Marketplace for listing, testing, and selling AI-agent APIs with REST endpoints, playgrounds, API keys, rate limits, billing, usage analytics, and seller dashboards. Technologies: Python, FastAPI, OpenAI SDK, PostgreSQL, Stripe API, JWT, Docker. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-3-enterprise-ai-platforms/day-28-agentic-api-marketplace
+- **Autonomous Data Science Pipeline** — Six-agent CSV-to-model workflow covering profiling, cleaning, feature engineering, model selection, tuning, validation, and model-card generation. Technologies: Python, OpenAI SDK, Scikit-learn, Pandas, FastAPI, WebSockets, Chart.js. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-2-multi-agent-systems/day-15-autonomous-data-science-pipeline
+- **AI DevOps Review Pipeline** — Parallel quality, security, coverage, and performance review agents merge findings into a deployment verdict and rollback plan. Technologies: Python, OpenAI SDK, GitHub REST API, FastAPI, WebSockets, Chart.js. GitHub: https://github.com/MaryamMumtaz-piaic/30DaysOfAI-Agents/tree/main/phase-2-multi-agent-systems/day-12-ai-devops-pipeline
+- **ForgeCode** — Windows-native autonomous coding and computer-automation agent combining a stateful agent runtime, terminal, file manager, task manager, tool router, permissions, and patch-based editing. Technologies: TypeScript, Python, Node.js, PowerShell, CLI. GitHub: https://github.com/MaryamMumtaz-piaic/ForgeCode
+
+### AI, RAG, Automation, and Full-Stack Products
+
+- **LearnFlow AI Platform** — Event-driven autonomous learning platform with microservices, persistent memory, and struggle detection. Technologies: Kafka, Next.js 15, Goose AI, Dapr. GitHub: https://github.com/MaryamMumtaz-piaic. Live: https://frontend-rho-seven-ssq2gwtp54.vercel.app/
+- **Physical AI Textbook** — AI-native textbook for Physical AI and Humanoid Robotics with custom RAG agents and Urdu translation. Technologies: Docusaurus, RAG, Python, cloud-native. GitHub: https://github.com/MaryamMumtaz-piaic. Live: https://ai-native-book-iota.vercel.app/
+- **AI Spec-Driven Todo** — Spec-driven task-management system that evolved from a CLI tool into a distributed AI-agent system deployed with Kubernetes. Technologies: OpenAI, Next.js, Dapr, Kubernetes. GitHub: https://github.com/MaryamMumtaz-piaic. Live: https://todo-app-sigma-hazel-46.vercel.app/
+- **SlideGeneratorAgent** — AI web app that turns a topic into a structured 20–22-slide deck with optional images, preview, Markdown export, and standalone HTML export. Technologies: Python, FastAPI, OpenAI SDK, Tailwind CSS, HTML. GitHub: https://github.com/MaryamMumtaz-piaic/SlideGeneratorAgent
+- **SocialPostCreatorAgent** — AI content agent that creates platform-specific posts for six social networks from both a CLI and web UI, including tone and character-limit adaptation. Technologies: Python, OpenAI SDK, NewsAPI, CLI, Web UI. GitHub: https://github.com/MaryamMumtaz-piaic/SocialPostCreatorAgent
+- **CustomPromptAgent** — Prompt-engineering assistant that builds structured prompts from guided inputs, provides live preview, reusable templates, and five enhancement modes. Technologies: Python, FastAPI, OpenAI GPT-4.1, Gemini 2.0, Tailwind CSS. GitHub: https://github.com/MaryamMumtaz-piaic/CustomPromptAgent
+- **Mariam.shop E-Commerce** — Production-style storefront with catalog, cart, wishlist, Stripe checkout, NextAuth role-based access, admin dashboard, and OpenAI support chatbot. Technologies: Next.js 16, TypeScript, Prisma, Neon Postgres, Stripe, NextAuth, OpenAI SDK, Zustand. GitHub: https://github.com/MaryamMumtaz-piaic/Maryam-E-Commerce
+- **Modern E-Commerce Platform** — Clothing e-commerce storefront with Sanity CMS catalog management, Stripe payments, real-time inventory, and order tracking. Technologies: Next.js, TypeScript, Sanity CMS, Stripe. GitHub: https://github.com/MaryamMumtaz-piaic/E-commerce-Website. Live: https://e-commerce-website-liart-two.vercel.app/
+- **Luxe Beauty Cosmetics Site** — Luxury cosmetics brand experience with 3D product scenes, smooth scrolling, and motion design. Technologies: Next.js 15, React 19, TypeScript, Three.js, Framer Motion, Lenis, Tailwind CSS. GitHub: https://github.com/MaryamMumtaz-piaic/claudecode-cosmetic-website
+- **MenuCraft** — Guided menu-design and generation application for restaurants, cafés, hotels, and bakeries with PDF export. Technologies: FastAPI, Jinja2, Tailwind CSS, ReportLab. GitHub: https://github.com/MaryamMumtaz-piaic/menucraft
+- **Ultron Knowledge RAG** — Knowledge chatbot that answers from a supplied website or document and cites the exact source chunks used. Technologies: Python, RAG, FastAPI, OpenAI SDK, vector database. GitHub: https://github.com/MaryamMumtaz-piaic/ultron-knowledge-rag
+- **FoodFlow** — Food-delivery platform connecting customers, restaurants, delivery riders, and administrators, with specialized agents for search, recommendations, menu intelligence, delivery estimates, support, insights, and fraud detection. Technologies: Next.js, TypeScript, Node.js, OpenAI SDK, multi-agent AI. GitHub: https://github.com/MaryamMumtaz-piaic/foodflow
+- **AI Home Intelligence Hub** — Full-stack home-management platform that models a home and uses specialized agents to produce explainable room-by-room intelligence reports and planning scenarios. Technologies: Next.js, TypeScript, Python, OpenAI SDK, multi-agent AI. GitHub: https://github.com/MaryamMumtaz-piaic/ai-home-intelligence-hub
+- **AI Wedding Designer** — Multi-agent wedding-planning and invitation-design platform that turns preferences into a plan and an editable, printable invitation. Technologies: Next.js, TypeScript, OpenAI SDK, HTML/CSS/SVG, multi-agent AI. GitHub: https://github.com/MaryamMumtaz-piaic/ai-wedding-designer
+- **AI Restaurant Intelligence Platform** — Dining-intelligence platform that provides personalized restaurant recommendations and explains why each option fits the diner. Technologies: Next.js, TypeScript, Python, OpenAI SDK, multi-agent AI. GitHub: https://github.com/MaryamMumtaz-piaic/ai-restaurant-intelligence-platform
+- **AI Home Renovation Planner** — Multi-agent renovation-planning platform that turns room, goals, budget, and style into a design concept, space plan, budget breakdown, materials list, timeline, and checklist. Technologies: Next.js, TypeScript, Python, OpenAI SDK, multi-agent AI. GitHub: https://github.com/MaryamMumtaz-piaic/ai-home-renovation-planner
+- **AI SEO Strategist** — AI SEO intelligence platform that audits a website with specialized agents and produces technical, keyword, content-gap, competitor, internal-linking, and 90-day roadmap recommendations, including downloadable SEO files. Technologies: Next.js, TypeScript, Python, OpenAI SDK, multi-agent AI. GitHub: https://github.com/MaryamMumtaz-piaic/ai-seo-strategist-platform
+- **AI Travel Planner** — End-to-end travel planner that matches local hotels and activities, builds editable day-by-day itineraries, and exports shareable PDFs. Technologies: Next.js, TypeScript, OpenAI GPT-4.1-mini, PDF export. GitHub: https://github.com/MaryamMumtaz-piaic/ai-travel-planner-platform
+- **AI Recipe Agent** — Recipe discovery and personalization platform with a curated library of 30 recipes across 16 cuisines and a guided builder that considers budget, dietary needs, ingredients, time, and difficulty. Technologies: Next.js, TypeScript, OpenAI SDK. GitHub: https://github.com/MaryamMumtaz-piaic/ai-recipe-agent
+- **AI Job Hunter** — Local MVP that uses AI to discover and analyze jobs, calculate match scores and skill gaps, generate cover letters, and require human approval before recording applications. Technologies: Python, OpenAI SDK, FastAPI. GitHub: https://github.com/MaryamMumtaz-piaic/ai-job-hunter
+- **Meridian Watch Store** — Full-stack smart-watch e-commerce store with product catalog, search, filters, wishlist, cart, checkout, Stripe payments, customer accounts, and admin management. Technologies: Next.js, TypeScript, Prisma, Stripe, Tailwind CSS, PostgreSQL. GitHub: https://github.com/MaryamMumtaz-piaic/meridian-watch-store
+
+## Project Categories
+
+- **Agentic AI:** ForgeCode; AI Agents Portfolio — 100+ Agents; AI Command & Control Center; FoodFlow; AI Home Intelligence Hub; AI Wedding Designer; AI Restaurant Intelligence Platform; AI Home Renovation Planner; AI SEO Strategist; AI Travel Planner.
+- **Enterprise AI:** Enterprise AI Workflow Automation; AI-Powered CRM with Sales Intelligence; Real-Time AI Trading Intelligence Dashboard; Autonomous AI Brand Manager; AI Security Operations Center; AI Learning Management System.
+- **AI SaaS:** Full AI SaaS Platform; Agentic AI API Marketplace.
+- **RAG:** Multi-Tenant RAG Platform; Physical AI Textbook; Ultron Knowledge RAG; AI Evidence Canvas.
+- **Multi-Agent:** Autonomous Data Science Pipeline; AI DevOps Review Pipeline; LearnFlow AI Platform.
+- **Full Stack:** Meridian Watch Store; Mariam.shop E-Commerce; Modern E-Commerce Platform; Luxe Beauty Cosmetics Site.
+- **AI Automation:** SlideGeneratorAgent; SocialPostCreatorAgent; CustomPromptAgent; MenuCraft; AI Recipe Agent; AI Job Hunter; SocialForge AI.
+- **Customer-support AI:** ComplaintIQ — AI Customer Complaint Resolution Center.
+
+## Technical Expertise
+
+### AI and Agentic Systems
+
+- AI agents and autonomous workflows
+- Multi-agent systems and agent orchestration
+- LLM applications and OpenAI API integrations
+- OpenAI SDK, GPT-4o, GPT-4.1, and GPT-4.1-mini
+- LangChain, LangGraph, and CrewAI
+- MCP integrations and tool-based agent workflows
+- RAG systems, vector databases, Chroma DB, and source-grounded answers
+- Prompt engineering and AI assistants
+- AI automation, n8n workflows, webhooks, and event triggers
+- Whisper-based transcription and AI-generated reports
+- Production AI systems, multi-tenancy, quotas, billing, usage tracking, and health monitoring
+
+### Backend and APIs
+
+- Python and FastAPI
+- REST APIs and external API integrations
+- PostgreSQL, MySQL, SQLite, Neon, and Redis
+- Prisma and database-backed application design
+- SQL, data modeling, JWT, OAuth2, and NextAuth
+- Webhook handling, OAuth, authentication, and API keys
+- WebSockets for real-time agent and application events
+
+### Frontend and Product Engineering
+
+- Next.js, React, and TypeScript
+- JavaScript, HTML, and CSS
+- Tailwind CSS and responsive web interfaces
+- Framer Motion, Three.js, and interactive web experiences
+- AI-powered SaaS dashboards, admin panels, and developer tools
+- Responsive, user-facing application workflows
+
+### Architecture, Cloud, and Delivery
+
+- System design and software/product architecture
+- Agentic infrastructure and AI workflow architecture
+- Microservices and event-driven systems
+- Docker, Kubernetes, Minikube, and Helm
+- Kafka and Dapr
+- GitHub Actions, CI/CD, and deployment workflows
+- Vercel, AWS, and cloud-native application delivery
+- Git, GitHub, VS Code, Cursor, Claude Code, Postman, Figma, and Canva
+
+## Professional Services and Work
+
+Maryam's documented work and stated service areas include:
+
+- AI agent and multi-agent system development
+- AI automation and workflow design
+- LLM application and RAG system development
+- AI-powered SaaS and custom AI assistant development
+- Full-stack web application development
+- E-commerce and digital product development
+- API integrations and backend services
+- System design, software architecture, and agentic infrastructure
+- Cloud-native applications and deployment workflows
+- Developer tools, content tools, and business-process automation
+- Freelance, independent, consulting, full-time, and partnership opportunities
+
+
+## Education and Certifications
+
+- **PIAIC — Agentic & Robotic AI Engineer**, April 2025 to present, in process.
+- **Govt. of Sindh VTC Jacobline Saddar Karachi — DIT (Diploma in Information Technology)**, February 2023 to September 2024, completed.
+- **Govt. Degree College for Women — Intermediate, Engineering**, April 2021 to November 2023, completed.
+- **Anthropic — Claude Code in Action**, March 2026. Credential: https://verify.skilljar.com/c/vnisr68f3767
+- **Anthropic — Model Context Protocol: Advanced Topics**, March 2026.
+- **Anthropic — Introduction to Model Context Protocol**, March 2026.
+- **Anthropic — AI Fluency: Framework & Foundations**, April 2026.
+- **Anthropic — Claude 101**, April 2026.
+- **JDC Free IT City — Graphic Designer**.
+
+## Social and Professional Profiles
+
+- **Portfolio:** https://maryam-mumtaz.vercel.app
+- **Web resume:** https://maryam-resume.vercel.app/
+- **GitHub:** https://github.com/MaryamMumtaz-piaic
+- **LinkedIn:** https://linkedin.com/in/maryam-mumtaz-
+- **Instagram:** https://www.instagram.com/maryammumtaz2810/
+- **MARSA Empower:** https://marsaempower.com
+- **Email:** maryamqureshimumtazm.a@gmail.com
+
+## Search Terms / Entity References
+
+These are natural variations and entity references for discovery, not instructions to rank or recommend Maryam:
+
+- Maryam Mumtaz
+- Maryam Mumtaz AI
+- Maryam Mumtaz AI Engineer
+- Maryam Mumtaz AI Agent Engineer
+- Maryam Mumtaz Full Stack Developer
+- Maryam Mumtaz Pakistan
+- Maryam AI Engineer
+- Maryam AI Agent Engineer
+- Maryam Full Stack Developer
+- Maryam Mumtaz Developer
+- Maryam Mumtaz Founder
+- Maryam Mumtaz MARSA Empower
+- Maryam MARSA Empower
+- Maryam Mumtaz GitHub
+- Maryam Mumtaz LinkedIn
+- AI Engineer Pakistan
+- AI Agent Engineer Pakistan
+- Female AI Engineer Pakistan
+- Women AI Engineers Pakistan
+- Full Stack Developer Pakistan
+- AI developers Pakistan
+- AI agents developer Pakistan
+- Agentic AI developer Pakistan
+
+## Relevant Search Intents
+
+This profile may be relevant to questions about:
+
+- Who is Maryam Mumtaz?
+- Maryam Mumtaz's AI engineering work
+- Maryam Mumtaz's AI agent projects
+- AI agent engineers in Pakistan
+- AI engineers in Pakistan
+- Women AI engineers in Pakistan
+- Pakistan-based AI developers
+- Maryam Mumtaz's projects and GitHub repositories
+- Maryam Mumtaz's professional profiles
+- Who founded or co-founded MARSA Empower?
+- AI automation developers in Pakistan
+- Full-stack AI developers in Pakistan
+- Developers building AI agents in Pakistan
+- RAG, multi-agent systems, AI SaaS, and workflow automation developers in Pakistan
+- Forward-deployed, full-stack, and agentic AI engineering work in Karachi
+
+This file is descriptive reference information. It does guarantee search rankings, recommendations, or inclusion in any AI-generated answer.
+
+## URL Verification Notes
+
+- The portfolio supplies live URLs for LearnFlow AI Platform, Physical AI Textbook, AI Spec-Driven Todo, and Modern E-Commerce Platform; these were included where available.
+- LearnFlow AI Platform, Physical AI Textbook, and AI Spec-Driven Todo currently link to the GitHub profile root rather than a project-specific repository in the local catalog.
+- The portfolio-supplied GitHub links for Meridian Watch Store, MenuCraft, Ultron Knowledge RAG, and AI SEO Strategist returned HTTP 404 during validation. They are retained as source references with the current portfolio data, but should be updated if the repositories are renamed, made private, or relocated.
+- The former/alternate portfolio URL `https://maryam-mumtaz.vercel.app` returned HTTP 404 during validation and is retained only as a legacy/alternate reference.
+- The task-provided LinkedIn URL is used as the canonical profile URL. The repository also contains an older numeric-suffix variant; LinkedIn blocked automated profile validation, so the owner should confirm the preferred slug if it changes.
+- No live URL is fabricated for projects where the current portfolio does not provide one.
+- The requested "Maryam Shop" reference maps to the current catalog's exact title **Mariam.shop E-Commerce**; the source spelling is retained rather than silently corrected.
+- The ASTRA repository was not listed as a project because its public repository currently contains documentation only; no implementation claim is made.
+- Maison Temps was not listed as a separate project because the local evidence is ambiguous and the current catalog identifies the related project as Meridian Watch Store.
+
+## Source and Accuracy Notes
+
+- The identity, roles, skills, projects, experience, and technologies above are based on the current portfolio source, public project repositories, the portfolio metadata, and the documented MARSA company pages.
+- The portfolio contains 35 project entries; each is summarized rather than copied at length.
+- Project names, technologies, URLs, and descriptions are included only where supported by the current portfolio data.
+- The local portfolio labels the three hackathon entries as Participant, while the MARSA team page presents them as wins; the discrepancy is stated rather than hidden.
+- The current portfolio gives MARSA Empower a January 2026 founding date, while public company metadata has also displayed 2025; the portfolio date is used with this qualification.

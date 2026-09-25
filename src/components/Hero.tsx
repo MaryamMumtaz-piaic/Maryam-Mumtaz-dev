@@ -137,7 +137,7 @@ export default function Hero() {
                 <FiExternalLink className="w-4 h-4" /> Web CV
               </a>
               <a
-                href="/cv/Maryam Mumtaz.pdf"
+                href="/maryam%20mumtaz.pdf"
                 download
                 className="px-7 py-3.5 border-2 border-taupe-200 text-taupe-700 font-semibold rounded-xl hover:bg-white hover:border-taupe-400 hover:text-taupe-900 transition-all duration-300 flex items-center gap-2 hover:-translate-y-0.5"
               >

@@ -113,7 +113,7 @@ export default function Navbar() {
             {/* CTAs */}
             <div className="hidden lg:flex items-center gap-2 flex-shrink-0 ml-auto">
               <a
-                href="https://www.linkedin.com/in/maryam-mumtaz-315358361/"
+                href="https://linkedin.com/in/maryam-mumtaz-"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3.5 py-1.5 border border-taupe-200 text-taupe-600 text-[12px] font-semibold rounded-lg hover:border-taupe-400 hover:text-taupe-900 hover:bg-sand-100 transition-all duration-250 whitespace-nowrap"
@@ -180,7 +180,7 @@ export default function Navbar() {
               </nav>
               <div className="flex gap-2 pt-2.5 border-t border-taupe-100">
                 <a
-                  href="https://www.linkedin.com/in/maryam-mumtaz-315358361/"
+                  href="https://linkedin.com/in/maryam-mumtaz-"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileOpen(false)}
